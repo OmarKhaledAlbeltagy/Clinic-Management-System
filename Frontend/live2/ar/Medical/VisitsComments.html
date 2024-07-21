@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Visits Comments</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../global/fontawesome/css/all.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+    
+
+  
+  </head>
+  <body class="animsition">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <!-- <img class="navbar-brand-logo" src="../../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Clinic System</div>
+          
+        </div>
+    
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+                  <p id="FullName"></p>
+              </a>
+              <div class="dropdown-menu" role="menu">
+        
+                <a class="dropdown-item" id="sett" href="../Medical/Setting.html" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Settings</a>
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+
+      </div>
+    </nav>  
+    
+    <div class="site-menubar">
+      <div class="site-menubar-body">
+        <div>
+          <div>
+            <ul class="site-menu" data-plugin="menu">
+              <li class="site-menu-category">Menu</li>
+
+
+
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../Medical/Home.html">
+                  <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                  <span class="site-menu-title">Home</span>
+                </a>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-hospital site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Accounts</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/MyAccounts.html">
+                                  <span class="site-menu-title">My Accounts</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyAccountsVisits.html">                                    
+                                  <span class="site-menu-title">My Visits</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-user-md site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Contacts</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/MyContacts.html">
+                                  <span class="site-menu-title">My Contacts</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyContactsVisits.html">                                    
+                                  <span class="site-menu-title">My Visits</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+              
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../Medical/VisitsReporting.html">
+                  <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">Visits Reporting</span>
+                </a>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Plans</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/WeeklyPlan.html">
+                                  <span class="site-menu-title">Weekly Plan</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MonthlyPlan.html">                                    
+                                  <span class="site-menu-title">Monthly plan</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="far fa-calendar-times site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Time Off Territory</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/MakeTimeOffTerritory.html">
+                                  <span class="site-menu-title">Create Time Off Territory</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyTimeOffTerritory.html">                                    
+                                  <span class="site-menu-title">My Time off Territories</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/TimeOffStatus.html">                                    
+                                  <span class="site-menu-title">Requests Status</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/Vacancies.html">                                    
+                                  <span class="site-menu-title">Vacancies</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+              <li class="site-menu-item active">
+                <a class="animsition-link" href="../Medical/VisitsComments.html">
+                  <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">Visits Comments</span>
+                </a>
+              </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Page -->
+      <div class="page" id="page">
+        <div class="page-content">
+
+
+
+          <div id="searchpanel" class="panel">
+            <div class="panel-heading">
+              <h2 class="panel-title">Search</h2>
+              <div class="panel-actions panel-actions-keep">
+                <a class="panel-action icon wb-minus" data-toggle="panel-collapse" aria-hidden="true"></a>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="table-responsive">
+                <table class="table table-borderless text-center">
+                  <thead>
+                    <tr>
+                      <th>
+                        <label class="form-control-label">Comments From:</label><input type="date" id="searchstartdate" class="form-control">
+                      </th>
+                      <th>
+                        <label class="form-control-label">To:</label><input type="date" id="searchenddate" class="form-control">
+                      </th>
+                    </tr>
+                    <tr class="text-center">
+                      <th colspan="2"><input type="button" id="search" value="Search" class="btn btn-primary"></th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="panel">
+            <div class="panel-heading">
+            <h2 class="panel-title"></h2>
+          </div>
+            <div class="panel-body resultspanelbody">
+
+              
+              
+              <div class="table-responsive">
+                <table class="table table-hover text-center">
+                  <thead>
+                    <tr>
+                      <th>Account/Contact</th><th>Visit Date</th><th>Manager</th><th>Manager Comment</th><th>Comment Date</th><th>Your Reply</th><th>Reply Date</th><th>Visit Details</th><th>Reply</th>
+                    </tr>
+                  </thead>
+                  <tbody id="results">
+                    
+                  </tbody>
+                </table>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+    <!-- End Page -->
+
+
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+  
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/config/colors.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    <script src="../global/js/Plugin/panel.js"></script>
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    <script src="../global/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../global/vendor/chartist/chartist.min.js"></script>
+    <script src="../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "Medical Representative") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+
+
+          $(".logout").click(function (e) {
+            e.preventDefault();
+            $.ajax({
+              url: "https://ameksaapii.xyz/users/LogOut",
+              success: function (res) {
+                if (res == true) {
+                  window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                  window.open("../index.html", "_self")
+                }
+                else {
+                  window.open("../error.html", "_self")
+                }
+              }
+            })
+          })
+             //end layout
+
+
+          
+             
+
+             $("#search").click(function(){
+
+             
+    
+              $("#searchstartdate").removeAttr('style');
+              $("#searchenddate").removeAttr('style');
+              $("#results").children('tr').remove();
+        
+              var datestart = $("#searchstartdate").val();
+              var dateend = $("#searchenddate").val();
+
+              if (datestart == "" || dateend == null || dateend == "") {
+               
+                if (datestart == null || datestart == "") {
+                  $("#searchstartdate").css("border-color","#dc3545");
+                }
+                if (dateend == null || dateend == "") {
+                  $("#searchenddate").css("border-color","#dc3545");
+                }
+                return;
+              }
+
+
+              $("#searchpanel").addClass('is-collapse');
+              $("#results").append('<tr id="loadingtr"><td colspan="10"><div id="loading" class="col-12"><div><div class=" h-150 vertical-align text-center"> <div class="loader vertical-align-middle loader-tadpole"></div></div></div></div></td></tr>')
+
+
+              var obj = {"UserId":localStorage.getItem('userid'),"Start":datestart+" 00:00:00","End":dateend+" 23:59:59"}
+
+                  $.ajax({
+                 type: "POST",
+                 contentType: "application/json",
+                 url: "https://ameksaapii.xyz/Chat/GetCommentsByDateRep/",
+                 data: JSON.stringify(obj),
+                 success: function (res) {
+                  $("#loadingtr").remove();
+                   $.each(res, function () {
+
+                    var commentdate = this.managerCommentDateTime.substring(0,10);
+                 
+                    var replydate = this.repReplyDateTime.substring(0,10);
+                   
+                    var visitdate = this.visitDate.substring(0,10);
+
+            
+                    var replybutton;
+                    if (this.repReply == null || this.repReply == "") {
+                      this.repReply = '<span style="color:red;">Not Replied Yet</span>'
+                      replydate = '<span style="color:red;">Not Replied Yet</span>'
+                      if (this.visitType == 1) {
+                       replybutton = '<input type="button" class="btn btn-primary replyam" value="Reply">'
+                    }
+                    if (this.visitType == 2) {
+                      replybutton = '<input type="button" class="btn btn-primary replyas" value="Reply">'
+                    }
+                    if (this.visitType == 3) {
+                      replybutton = '<input type="button" class="btn btn-primary replycm" value="Reply">'
+                    }
+                    }
+                    else{
+                      replybutton = 'Replied';
+                    }
+
+                    var visitdetails;
+                    if (this.visitType == 1) {
+                       visitdetails = '<input type="button" class="btn btn-primary am" value ="Visit Details">'
+                    }
+                    if (this.visitType == 2) {
+                       visitdetails = '<input type="button" class="btn btn-primary as" value ="Visit Details">'
+                    }
+                    if (this.visitType == 3) {
+                       visitdetails = '<input type="button" class="btn btn-primary cm" value ="Visit Details">'
+                    }
+
+
+
+                    $("#results").append('<tr><td>'+this.orgName+'</td><td>'+visitdate+'</td><td>'+this.managerName+'</td><td>'+this.managerComment+'</td><td>'+commentdate+'</td><td>'+this.repReply+'</td><td>'+replydate+'</td><td>'+visitdetails+'<div class="d-none">'+this.visitId+'</div></td><td>'+replybutton+'<div class="d-none">'+this.id+'</div></td></tr>')
+                   })
+                 }
+               })
+
+             })
+
+             $("#results").on('click','.am',function(){
+              var visitid = $(this).next().text();
+              window.open('AccountVisitDetails.html?'+visitid)
+             })
+
+             $("#results").on('click','.as',function(){
+              var visitid = $(this).next().text();
+              window.open('AccountSalesVisitDetails.html?'+visitid)
+              })
+
+              $("#results").on('click','.cm',function(){
+                var visitid = $(this).next().text();
+                window.open('ContactVisitDetails.html?'+visitid)
+              })
+
+              $("#results").on('click','.cancelcomment',function(){
+            $(this).parent().parent().remove();
+          })
+
+              $("#results").on('click','.replyam',function(){
+                var commentid = $(this).next().text();
+                $(this).parent().parent().next('.delcomment').remove();
+                $(this).parent().parent().after('<tr class="delcomment"><td colspan="7"><textarea cols="130" rows="2"></textarea></td><td><input type="button" class="btn btn-success submitamreply" value="Submit"><div class="d-none">'+commentid+'</div></td><td><input type="button" class="btn btn-danger cancelcomment" value="Cancel"></td></tr>')
+              })
+
+              $("#results").on('click','.replyas',function(){
+                var commentid = $(this).next().text();
+                $(this).parent().parent().next('.delcomment').remove();
+                $(this).parent().parent().after('<tr class="delcomment"><td colspan="7"><textarea cols="130" rows="2"></textarea></td><td><input type="button" class="btn btn-success submitasreply" value="Submit"><div class="d-none">'+commentid+'</div></td><td><input type="button" class="btn btn-danger cancelcomment" value="Cancel"></td></tr>')
+              })
+
+              $("#results").on('click','.replycm',function(){
+                var commentid = $(this).next().text();
+                $(this).parent().parent().next('.delcomment').remove();
+                $(this).parent().parent().after('<tr class="delcomment"><td colspan="7"><textarea cols="130" rows="2"></textarea></td><td><input type="button" class="btn btn-success submitcmreply" value="Submit"><div class="d-none">'+commentid+'</div></td><td><input type="button" class="btn btn-danger cancelcomment" value="Cancel"></td></tr>')
+              })
+
+
+
+
+
+            $("#results").on('click', '.submitcmreply', function () {
+            var commentid = $(this).next().text();
+            var comment = $(this).parent().prev().children('textarea').val();
+            var tr = $(this).parent().parent();
+            var submitbutton = $(this);
+            if (comment == "" || comment == null) {
+              $(this).parent().prev().children('textarea').css("border-color", "#dc3545");
+              return;
+            }
+            submitbutton.attr('disabled', 'true');
+
+
+            var obj = { "Id": commentid, "RepReply": comment };
+            $.ajax({
+              type: "POST",
+              contentType: "application/json",
+              url: "https://ameksaapii.xyz/Chat/ContactMedicalRepReply",
+              data: JSON.stringify(obj),
+              success: function (res) {
+                if (res == true){
+                  tr.remove();
+                  window.location.reload();
+                }
+                else {
+                  alert("Error, Please Try Again");
+                  submitbutton.removeAttr('disabled');
+                }
+              }
+            })
+          })
+         
+
+       
+
+      })
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>

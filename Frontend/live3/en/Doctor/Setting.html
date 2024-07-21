@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+
+  <title>Settings</title>
+
+  <link rel="apple-touch-icon" href="../../assets/images/logo.jpg">
+  <link rel="shortcut icon" href="../../assets/images/fav.ico">
+
+  <!-- Stylesheets -->
+   
+  <link rel="stylesheet" href="../../global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../../assets/css/site.min.css">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../global/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../global/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../global/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../global/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../global/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../global/vendor/flag-icon-css/flag-icon.css">
+
+
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../global/fonts/web-icons/web-icons.min.css">
+  <link rel="stylesheet" href="../../global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <link rel="stylesheet" href="../../global/fontawesome/css/all.min.css" />
+  <!--[if lt IE 9]>
+    <script src="../../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 10]>
+    <script src="../../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Scripts -->
+  <script src="../../global/vendor/breakpoints/breakpoints.js"></script>
+  <script src="https://kit.fontawesome.com/15e8ed2b84.js" crossorigin="anonymous"></script>
+  <script>
+    Breakpoints();
+  </script>
+</head>
+
+<body class="animsition">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+        data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
+        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+      </button>
+      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+        <!-- <img class="navbar-brand-logo" src="../../../../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Clinic System</div>
+        
+      </div>
+
+    </div>
+
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="nav-item hidden-float" id="toggleMenubar">
+            <a class="nav-link" data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                <span class="sr-only">Toggle menubar</span>
+                <span class="hamburger-bar"></span>
+              </i>
+            </a>
+          </li>
+          <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+            <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+              <span class="sr-only">Toggle fullscreen</span>
+            </a>
+          </li>
+
+        </ul>
+        <!-- End Navbar Toolbar -->
+
+        <!-- Navbar Toolbar Right -->
+        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+          <li class="nav-item dropdown">
+            <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+              data-animation="scale-up" role="button">
+              <p id="FullName"></p>
+            </a>
+            <div class="dropdown-menu" role="menu">
+
+              <a class="dropdown-item active" href="" id="sett" role="menuitem"><i class="icon wb-settings"
+                  aria-hidden="true"></i> Settings</a>
+                  <a class="dropdown-item" href="InsuranceSetting.html" id="inssett" role="menuitem"><i class="icon wb-settings"
+                    aria-hidden="true"></i> Insurance Settings</a>
+              <div class="dropdown-divider" role="presentation"></div>
+              <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i>
+                Logout</a>
+            </div>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+
+
+    </div>
+  </nav>
+
+
+  <div class="site-menubar">
+    <div class="site-menubar-body">
+      <div>
+        <div>
+          <ul class="site-menu" data-plugin="menu">
+            <li class="site-menu-category">Menu</li>
+            <li class="site-menu-item active">
+              <a class="animsition-link" href="../Doctor/Home.html">
+                <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                <span class="site-menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="dropdown site-menu-item has-sub">
+              <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                      <span class="site-menu-title">Menu Item</span>
+                      <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link"  href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">                                    
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+            
+            <li class="dropdown site-menu-item has-sub">
+              <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                <i class="far fa-registered site-menu-icon" aria-hidden="true"></i>
+                      <span class="site-menu-title">Menu Item</span>
+                      <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link"  href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">                                    
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">                                    
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+            <li class="dropdown site-menu-item has-sub">
+              <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                <i class="fas fa-users site-menu-icon" aria-hidden="true"></i>
+             
+                      <span class="site-menu-title">Users</span>
+                      <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link"  href="#">
+                                <span class="site-menu-title">Manage Assistants</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="DoctorRegister.html">                                    
+                                <span class="site-menu-title">Create Doctor Account</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="AssistantRegister.html">
+                                <span class="site-menu-title">Create Assistant Account</span>
+                              </a>
+                            </li>
+                                                      
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+            <li class="site-menu-item">
+              <a class="animsition-link" href="#">
+        
+                 <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                <span class="site-menu-title">Menu Item</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a class="animsition-link" href="#">
+                 <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                <span class="site-menu-title">Menu Item</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a class="animsition-link" href="#">
+                <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                <span class="site-menu-title">Menu Item</span>
+              </a>
+            </li>
+              </ul>
+            </li>
+           
+          </div>  
+        
+        </div>
+      </div>
+    </div> 
+
+  <!-- Modal -->
+ <div class="modal fade modal-super-scaled" id="oldequalnewmodal" aria-hidden="true"
+ aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+ <div class="modal-dialog modal-simple">
+   <div class="modal-content">
+     <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">×</span>
+       </button>
+       <h4 class="modal-title"></h4>
+     </div>
+     <div class="modal-body">
+       <h4>Your current email is the same of new email</h4>
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">Close</button>
+     </div>
+   </div>
+ </div>
+</div>
+<!-- End Modal -->
+
+  <!-- Modal -->
+  <div class="modal fade modal-super-scaled" id="confirmemailmodal" aria-hidden="true"
+  aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-simple">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+        <h4>Email and Confirm Email not matched</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+ </div>
+ <!-- End Modal -->
+
+   <!-- Modal -->
+   <div class="modal fade modal-super-scaled" id="confirmpasswordmodal" aria-hidden="true"
+   aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-simple">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
+         </button>
+         <h4 class="modal-title"></h4>
+       </div>
+       <div class="modal-body">
+         <h4>Password and Confirm Password not matched</h4>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- End Modal -->
+
+     <!-- Modal -->
+     <div class="modal fade modal-super-scaled" id="passwordsuccessmodal" aria-hidden="true"
+     aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+     <div class="modal-dialog modal-simple">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">×</span>
+           </button>
+           <h4 class="modal-title"></h4>
+         </div>
+         <div class="modal-body">
+           <h4>Password Changed Successfully</h4>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-danger btn-pure refresh" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+     </div>
+    </div>
+    <!-- End Modal -->
+
+     <!-- Modal -->
+   <div class="modal fade modal-super-scaled" id="passwordfailmodal" aria-hidden="true"
+   aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-simple">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
+         </button>
+         <h4 class="modal-title"></h4>
+       </div>
+       <div class="modal-body">
+         <h4>Wrong old password</h4>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- End Modal -->
+
+
+    
+  <!-- Page -->
+  <div class="page">
+    <div class="page-content container-fluid">
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">General Info</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+  
+            <form id="general">
+      
+                
+                  <div class="row">
+                    <div class="form-group col-4">
+                     <label class=" form-control-label">First Name </label>
+                    <input  type="text" id="fname"
+                        class="form-control" placeholder="First Name" required="">
+                      </div>
+                      <div class="form-group col-4">
+                        <label class=" form-control-label">Middle Name </label>
+                       <input  type="text" id="mname"
+                           class="form-control" placeholder="Middle Name" required="">
+                         </div>
+                         <div class="form-group col-4">
+                          <label class=" form-control-label">Last Name </label>
+                         <input  type="text" id="lname"
+                             class="form-control" placeholder="Last Name" required="">
+                           </div>
+                      <div class="form-group col-12">
+                        <label class="form-control-label">Phone Number </label>
+                         <input  type="tel" id="phone"
+                            class="form-control" placeholder="Phone Number" required=""> 
+                          </div>
+                    </div>
+                    
+                <div class="form-group col-xl-12 text-center padding-top-m">
+                  <button type="submit" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline" id="submitgeneral">
+                    <span> Save<i class="icon fa-solid fa-floppy-disk" aria-hidden="true"></i></span>
+                  </button> 
+                </div>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Email</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+  
+            <form id="mail">
+      
+                
+                  <div class="row">
+                    <div class="form-group col-6">
+                     <label class=" form-control-label">Old Email </label>
+                    <input  type="email" id="oldmail"
+                        class="form-control" placeholder="Old Email" required="">
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="form-group col-6">
+                        <label class="form-control-label">New Email</label>
+                         <input  type="email" id="newmail"
+                            class="form-control" placeholder="New Email" required=""> 
+                          </div>
+                          <div class="form-group col-6">
+                            <label class="form-control-label">Confirm New Email</label>
+                             <input  type="email" id="confirmnewmail"
+                                class="form-control" placeholder="Confirm New Email" required=""> 
+                              </div>
+                        </div>
+
+                <div class="form-group col-xl-12 text-center padding-top-m">
+                  <button type="submit" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline" id="submitmail">
+                    <span> Save<i class="icon fa-solid fa-floppy-disk" aria-hidden="true"></i></span>
+                  </button> 
+                  
+            </form>
+  
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Password</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+  
+            <form id="password">
+      
+                
+                  <div class="row">
+                    <div class="form-group col-12">
+                     <label class=" form-control-label">Old Password </label>
+                    <input  type="password" id="oldpassword"
+                        class="form-control" placeholder="Old Password" required="">
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="form-group col-6">
+                        <label class="form-control-label">New Password</label>
+                         <input  type="password" id="newpassword"
+                            class="form-control" placeholder="New Password" required=""> 
+                          </div>
+                          <div class="form-group col-6">
+                            <label class="form-control-label">Confirm New Password</label>
+                             <input  type="password" id="confirmnewpassword"
+                                class="form-control" placeholder="Confirm New Password" required=""> 
+                              </div>
+                        </div>
+
+                <div class="form-group col-xl-12 text-center padding-top-m">
+                  <button type="submit" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline" id="submitpassword">
+                    <span> Save<i class="icon fa-solid fa-floppy-disk" aria-hidden="true"></i></span>
+                  </button> 
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+          <!-- Modal -->
+   <div class="modal fade modal-super-scaled" id="deleteoperationmodal" aria-hidden="true"
+   aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-simple">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
+         </button>
+         <h4 class="modal-title"></h4>
+       </div>
+       <div class="modal-body">
+         <div class="d-none" id="deletedoperationid"></div>
+         <h4>Are you sure to delete <span id="deletedoperationname"></span> operation?</h4>
+       </div>
+       <div class="modal-footer">
+        <button id="confirmdeleteoperation" type="button" class="btn btn-primary btn-pure">Yes</button>
+         <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- End Modal -->
+
+          <!-- Modal -->
+          <div class="modal fade modal-super-scaled" id="editoperationmodal" aria-hidden="true"
+          aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+          <div class="modal-dialog modal-simple">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="d-none" id="editedoperationid"></div>
+               <form>
+            <div class="row">
+              <div class="col-6">
+            <div class="form-group form-material floating" data-plugin="formMaterial">
+              <input type="text" class="form-control" id="editedoperationname" required>
+              <label class="floating-label">Operation Name</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group form-material floating" data-plugin="formMaterial">
+              <input type="number" class="form-control" id="editedoperationprice" required>
+              <label class="floating-label">Price</label>
+            </div>
+          </div>
+          </div>
+        </form>
+              </div>
+              <div class="modal-footer">
+               <button id="confirmeditoperation" type="button" class="btn btn-primary btn-pure">Yes</button>
+                <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+              </div>
+            </div>
+          </div>
+         </div>
+         <!-- End Modal -->
+
+            <!-- Modal -->
+            <div class="modal fade modal-super-scaled" id="addoperationmodal" aria-hidden="true"
+            aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-simple">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                 <form id="newoperationform">
+              <div class="row">
+                <div class="col-6">
+              <div class="form-group form-material floating" data-plugin="formMaterial">
+                <input type="text" class="form-control" id="newoperationname" required>
+                <label class="floating-label">Operation Name</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group form-material floating" data-plugin="formMaterial">
+                <input type="number" class="form-control" id="newoperationprice" required>
+                <label class="floating-label">Base Price</label>
+              </div>
+            </div>
+            </div>
+
+        
+
+          </form>
+                </div>
+                <div class="modal-footer">
+                 <button id="confirmnewoperation" type="button" class="btn btn-primary btn-pure">Yes</button>
+                  <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+                </div>
+              </div>
+            </div>
+           </div>
+           <!-- End Modal -->
+
+
+     
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Operations</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+            
+          
+          <div class="table-responsive">
+            <table class="table table-borderless text-center">
+              <thead>
+                <tr><th>Operation</th><th>Price</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="operations">
+                
+              </tbody>
+              <tfoot>
+                <tr><td colspan="3"><button type="button" id="addoperation" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline">
+                  <span> Add New Operation<i class="icon fas fa-plus" aria-hidden="true"></i></span>
+                </button></td></tr>
+              </tfoot>
+            </table>
+          </div>
+
+           
+
+
+
+          </div>
+        </div>
+      </div>
+
+             <!-- Modal -->
+   <div class="modal fade modal-super-scaled" id="deleteappointmentmodal" aria-hidden="true"
+   aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-simple">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
+         </button>
+         <h4 class="modal-title"></h4>
+       </div>
+       <div class="modal-body">
+         <div class="d-none" id="deletedappointmentid"></div>
+         <h4>Are you sure to delete <span id="deletedappointmentname"></span>?</h4>
+       </div>
+       <div class="modal-footer">
+        <button id="confirmdeleteappointment" type="button" class="btn btn-primary btn-pure">Yes</button>
+         <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- End Modal -->
+
+          <!-- Modal -->
+          <div class="modal fade modal-super-scaled" id="editappointmentmodal" aria-hidden="true"
+          aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+          <div class="modal-dialog modal-simple">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="d-none" id="editedappointmentid"></div>
+               <form>
+            <div class="row">
+              <div class="col-12">
+            <div class="form-group form-material floating" data-plugin="formMaterial">
+              <input type="text" class="form-control" id="editedappointmentname" required>
+              <label class="floating-label">Appointment Name</label>
+            </div>
+          </div>
+        
+          </div>
+        </form>
+              </div>
+              <div class="modal-footer">
+               <button id="confirmeditappointment" type="button" class="btn btn-primary btn-pure">Yes</button>
+                <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+              </div>
+            </div>
+          </div>
+         </div>
+         <!-- End Modal -->
+
+            <!-- Modal -->
+            <div class="modal fade modal-super-scaled" id="addappointmentmodal" aria-hidden="true"
+            aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-simple">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                 <form>
+              <div class="row">
+                <div class="col-12">
+              <div class="form-group form-material floating" data-plugin="formMaterial">
+                <input type="text" class="form-control" id="newappointmentname" required>
+                <label class="floating-label">Appointment Name</label>
+              </div>
+            </div>
+            
+            </div>
+          </form>
+                </div>
+                <div class="modal-footer">
+                 <button id="confirmnewappointment" type="button" class="btn btn-primary btn-pure">Yes</button>
+                  <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+                </div>
+              </div>
+            </div>
+           </div>
+           <!-- End Modal -->
+
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Appointment Types</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-borderless text-center">
+              <thead>
+                <tr><th>Appointment Name</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="appointment">
+               
+              </tbody>
+              <tfoot>
+                <tr><td colspan="3"><button type="button" id="addappointment" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline">
+                  <span> Add New Appointment Type<i class="icon fas fa-plus" aria-hidden="true"></i></span>
+                </button></td></tr>
+              </tfoot>
+            </table>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+            <!-- Modal -->
+   <div class="modal fade modal-super-scaled" id="deletegendermodal" aria-hidden="true"
+   aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-simple">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
+         </button>
+         <h4 class="modal-title"></h4>
+       </div>
+       <div class="modal-body">
+         <div class="d-none" id="deletedgenderid"></div>
+         <h4>Are you sure to delete <span id="deletedgendername"></span>?</h4>
+       </div>
+       <div class="modal-footer">
+        <button id="confirmdeletegender" type="button" class="btn btn-primary btn-pure">Yes</button>
+         <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- End Modal -->
+
+          <!-- Modal -->
+          <div class="modal fade modal-super-scaled" id="editgendermodal" aria-hidden="true"
+          aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+          <div class="modal-dialog modal-simple">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <div class="d-none" id="editedgenderid"></div>
+               <form>
+            <div class="row">
+              <div class="col-12">
+            <div class="form-group form-material floating" data-plugin="formMaterial">
+              <input type="text" class="form-control" id="editedgendername" required>
+              <label class="floating-label">Gender Name</label>
+            </div>
+          </div>
+        
+          </div>
+        </form>
+              </div>
+              <div class="modal-footer">
+               <button id="confirmeditgender" type="button" class="btn btn-primary btn-pure">Yes</button>
+                <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+              </div>
+            </div>
+          </div>
+         </div>
+         <!-- End Modal -->
+
+            <!-- Modal -->
+            <div class="modal fade modal-super-scaled" id="addgendermodal" aria-hidden="true"
+            aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-simple">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                 <form>
+              <div class="row">
+                <div class="col-12">
+              <div class="form-group form-material floating" data-plugin="formMaterial">
+                <input type="text" class="form-control" id="newgendername" required>
+                <label class="floating-label">Gender Name</label>
+              </div>
+            </div>
+            
+            </div>
+          </form>
+                </div>
+                <div class="modal-footer">
+                 <button id="confirmnewgender" type="button" class="btn btn-primary btn-pure">Yes</button>
+                  <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+                </div>
+              </div>
+            </div>
+           </div>
+           <!-- End Modal -->
+
+
+
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Genders</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-borderless text-center">
+              <thead>
+                <tr><th>Gender Name</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="genders">
+               
+              </tbody>
+              <tfoot>
+                <tr><td colspan="3"><button type="button" id="addgender" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline">
+                  <span> Add New Genders<i class="icon fas fa-plus" aria-hidden="true"></i></span>
+                </button></td></tr>
+              </tfoot>
+            </table>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Working Time</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-borderless text-center">
+              <thead>
+                <tr><th>Day</th><th>From</th><th>To</th>Actions</tr>
+              </thead>
+              <tbody id="workingtime">
+               
+              </tbody>
+              <tfoot>
+                <tr><td colspan="3"><button type="button" id="addperiod" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline">
+                  <span> Add New Working Time Period<i class="icon fas fa-plus" aria-hidden="true"></i></span>
+                </button></td></tr>
+              </tfoot>
+            </table>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+     
+
+  <!-- End Page -->
+  
+  
+
+
+  <!-- Core  -->
+  <script src="../../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+  <script src="../../global/vendor/jquery/jquery.js"></script>
+  <script src="../../global/vendor/popper-js/umd/popper.min.js"></script>
+  <script src="../../global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../global/vendor/bootstrap/bootstrap.bundle.js"></script>
+  <script src="../../global/vendor/animsition/animsition.js"></script>
+  <script src="../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+  <script src="../../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+  <script src="../../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+
+  <!-- Plugins -->
+  <script src="../../global/vendor/switchery/switchery.js"></script>
+  <script src="../../global/vendor/intro-js/intro.js"></script>
+  <script src="../../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+
+  <!-- Scripts -->
+  <script src="../../global/js/Component.js"></script>
+  <script src="../../global/js/Plugin.js"></script>
+  <script src="../../global/js/Base.js"></script>
+  <script src="../../global/js/Config.js"></script>
+
+  <script src="../../assets/js/Section/Menubar.js"></script>
+  <script src="../../assets/js/Section/GridMenu.js"></script>
+  <script src="../../assets/js/Section/Sidebar.js"></script>
+  <script src="../../assets/js/Section/PageAside.js"></script>
+  <script src="../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../assets/js/Plugin/menu.js"></script>
+  <script src="../../global/fontawesome/js/all.min.js"></script>
+  <script src="../../global/js/config/colors.js"></script>
+  <script src="../../assets/js/config/tour.js"></script>
+  <script>Config.set('assets', '../../assets');</script>
+  <script src="../../global/js/Plugin/panel.js"></script>
+  <!-- Page -->
+  <script src="../../assets/js/Site.js"></script>
+  <script src="../../global/js/Plugin/asscrollable.js"></script>
+  <script src="../../global/js/Plugin/slidepanel.js"></script>
+  <script src="../../global/js/Plugin/switchery.js"></script>
+
+  <script>
+    (function (document, window, $) {
+      'use strict';
+
+      var Site = window.Site;
+      $(document).ready(function () {
+        Site.run();
+
+        //start layout            
+        if (localStorage.getItem("userrole") !== "Doctor") {
+          window.open("../../notauth.html", "_self")
+        }
+
+        $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+        $(".logout").click(function (e) {
+          e.preventDefault();
+          $.ajax({
+            url: "https://ameksaapii.xyz/users/LogOut",
+            success: function (res) {
+              if (res == true) {
+                window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                window.open("../../index.html", "_self")
+              }
+              else {
+                window.open("../../error.html", "_self")
+              }
+            }
+          })
+        })
+        //end layout
+
+  
+
+
+        var userId = localStorage.getItem("userid")
+
+
+
+
+        $.ajax({
+          url:"http://clinicapi.xyz/Insurance/GetAllInsurancesPackages/",
+          success:function(res){
+            $.each(res,function(){
+              var cname = this.insuranceName;
+              $.each(this.insurancePackages,function(){
+                $("#newoperationform").append('<div class="row"> <div class="col-6"> <span style="color: #ff4c52;">Comapny: '+cname+'</span> </div> <div class="col-6"> <span style="color: #3e8ef7;">Plan: '+this.packageName+'</span> </div> <div class="col-4"> <div class="form-group form-material floating" data-plugin="formMaterial"> <input type="number" value="0" class="form-control pp" required> <div class="d-none">'+this.id+'</div> <label class="floating-label">Paid By Patient</label> </div> </div> <div class="col-4"> <div class="form-group form-material floating" data-plugin="formMaterial"> <input type="number" value="0" class="form-control pi" required> <label class="floating-label">Paid By Insurance</label> </div> </div> <div class="col-4"> <div class="form-group form-material floating" data-plugin="formMaterial"> <input type="number" disabled class="form-control tt" value="0" required> <label class="floating-label">Total</label> </div> </div> </div>')
+              })
+            })
+          }
+        })
+
+        $("#newoperationform").on('change','.pp',function(){
+          var pp = parseFloat($(this).val());
+          var pi = parseFloat($(this).parent().parent().next().children().children().val());
+          var total = pp + pi
+          $(this).parent().parent().next().next().children().children().val(total);
+        })
+
+        $("#newoperationform").on('keyup','.pp',function(){
+          var pp = parseFloat($(this).val());
+          var pi = parseFloat($(this).parent().parent().next().children().children().val());
+          var total = pp + pi
+          $(this).parent().parent().next().next().children().children().val(total);
+        })
+
+        $("#newoperationform").on('change','.pi',function(){
+          var pi = parseFloat($(this).val());
+          var pp = parseFloat($(this).parent().parent().prev().children().children().val());
+          var total = pp + pi
+          $(this).parent().parent().next().children().children().val(total);
+        })
+      
+        $("#newoperationform").on('keyup','.pi',function(){
+          var pi = parseFloat($(this).val());
+          var pp = parseFloat($(this).parent().parent().prev().children().children().val());
+          var total = pp + pi
+          $(this).parent().parent().next().children().children().val(total);
+        })
+
+
+        $.ajax({
+          url:"http://clinicapi.xyz/User/GetUserById/"+userId,
+          success:function(res){
+            $("#fname").val(res.firstName);
+            $("#mname").val(res.middleName);
+            $("#lname").val(res.lastName);
+            $("#phone").val(res.phoneNumber)
+            $("#oldmail").val(res.email)
+          
+          }
+        })
+
+
+        $("#general").submit(function(e){
+          e.preventDefault();
+          
+          var newfname = $("#fname").val();
+          var newmname = $("#mname").val();
+          var newlname = $("#lname").val();
+          var newphone = $("#phone").val();
+
+
+          var obj = {"Id":userId,"FirstName":newfname,"MiddleName":newmname,"LastName":newlname,"PhoneNumber":newphone}
+
+          $.ajax({
+            type:"Post",
+              contentType:"application/json",
+              url:"http://clinicapi.xyz/User/EditUserGeneralSetting",
+              data:JSON.stringify(obj),
+              success:function(res){
+                if (res == true) {
+                  
+                  localStorage.removeItem('userfullname');
+                  window.localStorage.setItem("userfullname", newfname+" "+newmname+" "+newlname);
+                  window.location.reload();
+                }
+              }
+          })
+        })
+
+        $("#mail").submit(function(e){
+          e.preventDefault();
+          var oldmail = $("#oldmail").val();
+          var newmail = $("#newmail").val();
+          var confirmnewmail = $("#confirmnewmail").val();
+          if (newmail == oldmail) {
+            $("#oldequalnewmodal").modal("toggle");
+            return;
+          }
+          if (newmail != confirmnewmail) {
+            $("#confirmemailmodal").modal("toggle");
+            return;
+          }
+
+          var obj = {"Id":userId,"NewEmail":newmail}
+
+          $.ajax({
+            type:"Post",
+              contentType:"application/json",
+              url:"http://clinicapi.xyz/User/EditEmail/",
+              data:JSON.stringify(obj),
+              success:function(res){
+                if (res == true) {
+                  
+                  localStorage.setItem("useremail", newmail);
+                  window.location.reload();
+                }
+              }
+          })
+        })
+
+
+
+
+        $("#password").submit(function(e){
+          e.preventDefault();
+          var oldpassword = $("#oldpassword").val();
+          var newpassword = $("#newpassword").val();
+          var confirmnewpassword = $("#confirmnewpassword").val();
+
+          if (newpassword != confirmnewpassword) {
+            $("#confirmpasswordmodal").modal("toggle");
+            return;
+          }
+
+          var obj = {"UserId":userId,"OldPassword":oldpassword,"NewPassword":newpassword}
+
+          $.ajax({
+            type:"Post",
+              contentType:"application/json",
+              url:"http://clinicapi.xyz/User/EditPassword",
+              data:JSON.stringify(obj),
+              success:function(res){
+                if (res == true) {
+                  $("#passwordsuccessmodal").modal("toggle");
+                }
+                if (res == false) {
+                  $("#passwordfailmodal").modal("toggle");
+                }
+              }
+          })
+        })
+
+        $(".refresh").click(function(){
+          window.location.reload();
+        })
+
+
+        $.ajax({
+          url:"http://clinicapi.xyz/Operation/GetAllOperations",
+          success:function(res){
+            $.each(res,function(){
+              $("#operations").append('<tr><td>'+this.operationName+'</td><td>'+this.price+'</td> <td> <span class="editoperation" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="fa-solid fa-pen-to-square fa-2x"></i> </span><span class="deleteoperation" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Delete"> <i style="margin-right: 10px;" class="fa-solid fa-trash-can fa-2x"></i> </span>  <div class="d-none"> '+this.id+' </div> </td> </tr>')
+            })
+          }
+        })
+
+        //Start Delete Operation
+        $("#operations").on('click','.deleteoperation',function(){
+         //edit
+         //save
+         //delete
+         //cancel
+          
+          var operationid = $(this).next().text();
+          var operationname = $(this).parent().prev().prev().text();
+          $("#deletedoperationid").text(operationid);
+          $("#deletedoperationname").text(operationname);
+          $("#deleteoperationmodal").modal("toggle");
+        })
+
+        $("#confirmdeleteoperation").click(function(){
+          var opid = $("#deletedoperationid").text();
+          $.ajax({
+            url:"http://clinicapi.xyz/Operation/DeleteOperation/"+opid,
+            success:function(res){
+              if (res == true) {
+                window.location.reload();
+              }
+            }
+          })
+        })
+        //End Delete Operation
+
+
+        //Start Edit Operation
+        $("#operations").on('click','.editoperation',function(){
+         //edit
+         //save
+         //delete
+         //cancel
+          
+          var operationid = $(this).next().next().text();
+          var operationname = $(this).parent().prev().prev().text();
+          var operationprice = $(this).parent().prev().text();
+          $("#editedoperationid").text(operationid);
+          $("#editedoperationname").val(operationname);
+          $("#editedoperationprice").val(operationprice);
+          $("#editoperationmodal").modal("toggle")
+        })
+
+
+        $("#confirmeditoperation").click(function(){
+        if ($("#editedoperationname").val() == "" || $("#editedoperationname").val() == null || $("#editedoperationprice").val() == "" || $("#editedoperationprice").val() == null) {
+          return;
+        }  
+
+        var obj = {"Id":$("#editedoperationid").text(),"OperationName":$("#editedoperationname").val(),"Price":$("#editedoperationprice").val()}
+        $.ajax({
+          type: "POST",
+          contentType: "application/json",
+          url: "http://clinicapi.xyz/Operation/EditOperation",
+          data: JSON.stringify(obj),
+          success:function(res){
+            if (res == true) {
+              window.location.reload();
+            }
+          }
+        })
+        })
+        //End Edit Operation
+
+        //Start Add Operation
+        $("#addoperation").click(function(){
+          $("#newoperationname").val("")
+          $("#newoperationprice").val("");
+          $(".pp").val(0)
+          $(".pi").val(0)
+          $(".tt").val(0)
+          $("#addoperationmodal").modal("toggle");
+        })
+
+        $("#confirmnewoperation").click(function(){
+          var err = false;
+          if ($("#newoperationname").val() == "" || $("#newoperationname").val() == null || $("#newoperationprice").val() == "" || $("#newoperationprice").val() == null) {
+            return;
+          }
+          $(".pp").each(function(){
+            if ($(this).val() == "" || $(this).val() == null) {
+              err = true;
+            }
+          })
+          $(".pi").each(function(){
+            if ($(this).val() == "" || $(this).val() == null) {
+              err = true;
+            }
+          })
+          if (err == true) {
+            return;
+          }
+
+          var plans = [];
+
+          $(".pp").each(function(){
+            var planid = $(this).next().text();
+            var pp = $(this).val();
+            var pi = $(this).parent().parent().next().children().children().val();
+            var planobj = {"InsurancePackageId":planid,"PaidByPatient":pp,"PaidByInsurance":pi}
+            plans.push(planobj);
+          })
+          var obj = {"OperationName":$("#newoperationname").val(),"Price":$("#newoperationprice").val(),"insurancePackageOperation":plans}
+          $.ajax({
+          type: "POST",
+          contentType: "application/json",
+          url: "http://clinicapi.xyz/Operation/AddOperation",
+          data: JSON.stringify(obj),
+          success:function(res){
+            if (res == true) {
+              window.location.reload();
+            }
+          }
+        })
+          
+        })
+
+        //End Add Operation
+
+
+        $.ajax({
+          url:"http://clinicapi.xyz/AppointmentType/GetAllAppointmentTypes",
+          success:function(res){
+            $.each(res,function(){
+              $("#appointment").append(' <tr> <td>'+this.appointmentTypeName+'</td> <td> <span class="editappointment" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="fa-solid fa-pen-to-square fa-2x"></i> </span><span class="deleteappointment" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Delete"> <i style="margin-right: 10px;" class="fa-solid fa-trash-can fa-2x"></i> </span> <div class="d-none"> '+this.id+' </div> </td> </tr>')
+            })
+          }
+        })
+
+
+        //Start Delete Appointment
+        $("#appointment").on('click','.deleteappointment',function(){
+         //edit
+         //delete
+   
+          
+          var appointmentid = $(this).next().text();
+          var appointmentname = $(this).parent().prev().text();
+          $("#deletedappointmentid").text(appointmentid);
+          $("#deletedappointmentname").text(appointmentname);
+          $("#deleteappointmentmodal").modal("toggle");
+        })
+
+        $("#confirmdeleteappointment").click(function(){
+          var apid = $("#deletedappointmentid").text();
+          $.ajax({
+            url:"http://clinicapi.xyz/AppointmentType/DeleteAppointmentType/"+apid,
+            success:function(res){
+              if (res == true) {
+                window.location.reload();
+              }
+            }
+          })
+        })
+        //End Delete Appointment
+
+
+          //Start Edit Appointment
+          $("#appointment").on('click','.editappointment',function(){
+         //edit
+         //save
+         //delete
+         //cancel
+          
+          var appointmentid = $(this).next().next().text();
+          var appointmentname = $(this).parent().prev().text();
+
+          $("#editedappointmentid").text(appointmentid);
+          $("#editedappointmentname").val(appointmentname);
+          $("#editappointmentmodal").modal("toggle")
+        })
+
+
+        $("#confirmeditappointment").click(function(){
+        if ($("#editedappointmentname").val() == "" || $("#editedappointmentname").val() == null) {
+          return;
+        }  
+
+        var obj = {"Id":$("#editedappointmentid").text(),"AppointmentTypeName":$("#editedappointmentname").val()}
+        $.ajax({
+          type: "POST",
+          contentType: "application/json",
+          url: "http://clinicapi.xyz/AppointmentType/EditAppointmentType",
+          data: JSON.stringify(obj),
+          success:function(res){
+            if (res == true) {
+              window.location.reload();
+            }
+          }
+        })
+        })
+        //End Edit Appointment
+
+
+          //Start Add Appointment
+          $("#addappointment").click(function(){
+          $("#addappointmentmodal").modal("toggle");
+        })
+
+        $("#confirmnewappointment").click(function(){
+          if ($("#newappointmentname").val() == "" || $("#newappointmentname").val() == null) {
+            return;
+          }
+          var obj = {"AppointmentTypeName":$("#newappointmentname").val()}
+          $.ajax({
+          type: "POST",
+          contentType: "application/json",
+          url: "http://clinicapi.xyz/AppointmentType/AddAppointmentType",
+          data: JSON.stringify(obj),
+          success:function(res){
+            if (res == true) {
+              window.location.reload();
+            }
+          }
+        })
+          
+        })
+
+        //End Add Appointment
+
+
+        
+        $.ajax({
+          url:"http://clinicapi.xyz/Gender/GetAllGenders",
+          success:function(res){
+            $.each(res,function(){
+              $("#genders").append(' <tr> <td>'+this.genderName+'</td> <td> <span class="editgender" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="fa-solid fa-pen-to-square fa-2x"></i> </span><span class="deletegender" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Delete"> <i style="margin-right: 10px;" class="fa-solid fa-trash-can fa-2x"></i> </span> <div class="d-none"> '+this.id+' </div> </td> </tr>')
+            })
+          }
+        })
+
+
+          //Start Delete Gender
+          $("#genders").on('click','.deletegender',function(){
+         //edit
+         //delete
+   
+          
+          var genderid = $(this).next().text();
+          var gendername = $(this).parent().prev().text();
+          $("#deletedgenderid").text(genderid);
+          $("#deletedgendername").text(gendername);
+          $("#deletegendermodal").modal("toggle");
+        })
+
+        $("#confirmdeletegender").click(function(){
+          var genid = $("#deletedgenderid").text();
+          $.ajax({
+            url:"http://clinicapi.xyz/Gender/DeleteGender/"+genid,
+            success:function(res){
+              if (res == true) {
+                window.location.reload();
+              }
+            }
+          })
+        })
+        //End Delete Gender
+
+
+
+             //Start Edit Gender
+             $("#genders").on('click','.editgender',function(){
+         //edit
+         //save
+         //delete
+         //cancel
+          
+          var genderid = $(this).next().next().text();
+          var gendername = $(this).parent().prev().text();
+
+          $("#editedgenderid").text(genderid);
+          $("#editedgendername").val(gendername);
+          $("#editgendermodal").modal("toggle")
+        })
+
+
+        $("#confirmeditgender").click(function(){
+        if ($("#editedgendername").val() == "" || $("#editedgendername").val() == null) {
+          return;
+        }  
+        
+        var obj = {"Id":$("#editedgenderid").text(),"GenderName":$("#editedgendername").val()}
+        $.ajax({
+          type: "POST",
+          contentType: "application/json",
+          url: "http://clinicapi.xyz/Gender/EditGender",
+          data: JSON.stringify(obj),
+          success:function(res){
+            if (res == true) {
+              window.location.reload();
+            }
+          }
+        })
+        })
+        //End Edit Gender
+
+
+   //Start Add Gender
+         $("#addgender").click(function(){
+          $("#addgendermodal").modal("toggle");
+        })
+
+        $("#confirmnewgender").click(function(){
+          if ($("#newgendername").val() == "" || $("#newgendername").val() == null) {
+            return;
+          }
+          var obj = {"GenderName":$("#newgendername").val()}
+          $.ajax({
+          type: "POST",
+          contentType: "application/json",
+          url: "http://clinicapi.xyz/Gender/AddGender",
+          data: JSON.stringify(obj),
+          success:function(res){
+            if (res == true) {
+              window.location.reload();
+            }
+          }
+        })
+          
+        })
+
+        //End Add Gender
+
+
+      });
+    })(document, window, jQuery);
+  </script>
+</body>
+
+</html>

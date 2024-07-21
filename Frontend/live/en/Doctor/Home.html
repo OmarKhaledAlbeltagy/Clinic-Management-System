@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Home</title>
+    
+    <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../../global/vendor/flag-icon-css/flag-icon.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../../global/fontawesome/css/all.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="../../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../../global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+<style>
+  .ml1 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #37474f;
+  transform-origin: 0 0;
+
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+</style>
+
+  
+  </head>
+  <body class="animsition">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <img class="navbar-brand-logo" src="../../assets/images/amelogo.png" title="AME">
+          
+        </div>
+    
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+                  <p id="FullName"></p>
+              </a>
+              <div class="dropdown-menu" role="menu">
+        
+                <a class="dropdown-item" id="sett" href="../FirstLineManager/Setting.html" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Settings</a>
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+
+      </div>
+    </nav>  
+    
+
+      <div class="site-menubar">
+        <div class="site-menubar-body">
+          <div>
+            <div>
+              <ul class="site-menu" data-plugin="menu">
+                <li class="site-menu-category">Menu</li>
+                <li class="site-menu-item active">
+                  <a class="animsition-link" href="../Doctor/Home.html">
+                    <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                    <span class="site-menu-title">Dashboard</span>
+                  </a>
+                </li>
+
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Menu Item</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">                                    
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="far fa-registered site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Menu Item</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">                                    
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">                                    
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="fas fa-users site-menu-icon" aria-hidden="true"></i>
+                 
+                          <span class="site-menu-title">Menu Item</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">                                    
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="#">
+                                    <span class="site-menu-title">Menu Item</span>
+                                  </a>
+                                </li>
+                          
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="#">
+            
+                     <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Menu Item</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="#">
+                     <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Menu Item</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="#">
+                    <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Menu Item</span>
+                  </a>
+                </li>
+                  </ul>
+                </li>
+               
+              </div>  
+            
+            </div>
+          </div>
+        </div> 
+
+      
+
+
+    <!-- Page -->
+    <div class="page" id="page">
+      <div align="center" class="page-header">
+        <h1 class="ml1" class="page-title">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters" id="motivation">Wherever the art of Medicine is loved, there is also a love of Humanity</span>
+            <span class="line line2"></span>
+          </span>
+        </h1>
+      </div>
+      <div class="page-content">
+    
+        <div class="panel">
+          <div class="panel-heading"></div>
+          <h2 class="panel-title">Home</h2>
+          <div class="panel-body">
+     
+     
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+ 
+    <!-- End Page -->
+
+
+    <!-- Core  -->
+    <script src="../../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../../global/vendor/jquery/jquery.js"></script>
+    <script src="../../global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="../../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../../global/vendor/animsition/animsition.js"></script>
+    <script src="../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="../../global/morris.js-0.5.1/morris.js-0.5.1/morris.js"></script>
+    <script src="../../global/raphael-2.3.0/raphael.min.js"></script>
+    <!-- Plugins -->
+    <script src="../../global/vendor/switchery/switchery.js"></script>
+    <script src="../../global/vendor/intro-js/intro.js"></script>
+    <script src="../../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../../global/js/Component.js"></script>
+    <script src="../../global/js/Plugin.js"></script>
+    <script src="../../global/js/Base.js"></script>
+    <script src="../../global/js/Config.js"></script>
+    
+    <script src="../../assets/js/Section/Menubar.js"></script>
+    <script src="../../assets/js/Section/GridMenu.js"></script>
+    <script src="../../assets/js/Section/Sidebar.js"></script>
+    <script src="../../assets/js/Section/PageAside.js"></script>
+    <script src="../../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../../global/js/config/colors.js"></script>
+    <script src="../../assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    
+    <!-- Page -->
+    <script src="../../assets/js/Site.js"></script>
+    <script src="../../global/js/Plugin/asscrollable.js"></script>
+    <script src="../../global/js/Plugin/slidepanel.js"></script>
+    <script src="../../global/js/Plugin/switchery.js"></script>
+    <script src="../../global/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../../global/vendor/chartist/chartist.min.js"></script>
+    <script src="../../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "Doctor") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+          $(".logout").click(function (e) {
+            e.preventDefault();
+            $.ajax({
+              url: "https://ameksaapii.xyz/users/LogOut",
+              success: function (res) {
+                if (res == true) {
+                  window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("userfirstname");
+                      window.localStorage.removeItem("usermiddlename");
+                      window.localStorage.removeItem("userlastname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+
+                  window.open("../index.html", "_self")
+                }
+                else {
+                  window.open("../error.html", "_self")
+                }
+              }
+            })
+          })
+             //end layout
+
+
+             //motivation
+         
+
+             
+     
+              var textWrapper = document.querySelector('.ml1 .letters');
+              textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+              anime.timeline({loop: true})
+                .add({
+                  targets: '.ml1 .letter',
+                  scale: [0.3,1],
+                  opacity: [0,1],
+                  translateZ: 0,
+                  easing: "easeOutExpo",
+                  duration: 600,
+                  delay: (el, i) => 70 * (i+1)
+                }).add({
+                  targets: '.ml1 .line',
+                  scaleX: [0,1],
+                  opacity: [0.5,1],
+                  easing: "easeOutExpo",
+                  duration: 700,
+                  offset: '-=875',
+                  delay: (el, i, l) => 80 * (l - i)
+                }).add({
+                  targets: '.ml1',
+                  opacity: 0,
+                  duration: 1000,
+                  easing: "easeOutExpo",
+                  delay: 1000
+                });
+
+    
+
+
+
+             $.ajax({
+               url:"https://ameksaapii.xyz/Attend/GetAttendCountCity/"+localStorage.getItem('userid'),
+               success:function(res){
+                $("#eventresult").append('<tr><td>'+res.cityName+'</td><td>'+res.coming+'</td><td>'+res.notComing+'</td></tr>');
+               }
+             })
+
+             $("#exportevent").click(function(){
+                window.open("https://ameksaapii.xyz/Attend/GetAllDataCity/"+localStorage.getItem('userid'));
+              })
+
+
+
+             $.ajax({
+            url:"https://ameksaapii.xyz/Category/GetTimeNow",
+            success:function(res){
+              var d = new Date(res);
+              var month = d.getMonth() + 1;
+              var year = d.getFullYear();
+              if (month < 10) {
+                month = '0'+month;
+              }
+              $("#month").val(year+"-"+month)
+              $("#month").change();
+            }
+          })
+
+
+          $.ajax({
+               url:"https://ameksaapii.xyz/FirstManager/GetMyTeamMedical/"+localStorage.getItem('userid'),
+               success:function(res){
+                 $.each(res,function(){
+                  $("#medicalteam").append('<option value="'+this.userId+'">'+this.fullName+'</option>');
+                 })
+               }
+             })
+
+             $.ajax({
+               url:"https://ameksaapii.xyz/FirstManager/GetMyTeamSales/"+localStorage.getItem('userid'),
+               success:function(res){
+                 $.each(res,function(){
+                  $("#salesteam").append('<option value="'+this.userId+'">'+this.fullName+'</option>');
+                 })
+               }
+             })
+
+
+             $("#medicalsearch").click(function(){
+
+               $("#medicalmonth").removeAttr("style");
+               $("#medicalteam").removeAttr("style");
+
+              var date = $("#medicalmonth").val();
+              var repid = $("#medicalteam").children('option:selected').val();
+
+              if (date == "" || date == null || repid == 0) {
+                if (date == "" || date == null) {
+                  $("#medicalmonth").css("border-color","#dc3545");
+                }
+                if (repid == 0) {
+                  $("#medicalteam").css("border-color","#dc3545");
+                }
+                return;
+              }
+              var year = date.substring(0,4);
+              var month = date.substring(5);
+
+              $("#medicalchart").empty();
+              $("#medicaltable").children('tr').remove();
+
+
+              $.ajax({
+            url:"https://ameksaapii.xyz/Rep/VisitedContactsByMonth/"+year+"/"+month+"/"+repid,
+            success:function(res){
+              Morris.Donut({
+                 resize: true,
+                 element: 'medicalchart',
+                 data: [{
+                   label: 'Visited',
+                   value: res.visited
+
+                 }, {
+                  label: 'Not Visited',
+                   value: res.notVisited
+
+                 }
+                ],
+                 colors: ['#34cf00', '#f96868'] //valueColors: ['#37474f', '#f96868', '#76838f']
+
+               }).on('click', function (i, row) {
+                 console.log(i, row);
+               });
+
+               var visitedper = (res.visited/res.total)*100
+               var notvisitedper = (res.notVisited/res.total)*100
+
+              $('#medicaltable').append('<tr><td style="color:#34cf00;">Visited</td><td style="color:#34cf00;">'+res.visited+'</td><td style="color:#34cf00;">'+visitedper.toFixed(2)+'%</td></tr><tr><td style="color:#f96868;">Not Visited</td><td style="color:#f96868;">'+res.notVisited+'</td><td style="color:#f96868;">'+notvisitedper.toFixed(2)+'%</td></tr><tr><td>Total</td><td>'+res.total+'</td><td>100%</td></tr>')
+            }
+          })
+
+
+             })
+
+
+
+
+             $("#salessearch").click(function () {
+
+            $("#salesmonth").removeAttr("style");
+            $("#salesteam").removeAttr("style");
+
+            var date = $("#salesmonth").val();
+            var repid = $("#salesteam").children('option:selected').val();
+
+            if (date == "" || date == null || repid == 0) {
+              if (date == "" || date == null) {
+                $("#salesmonth").css("border-color", "#dc3545");
+              }
+              if (repid == 0) {
+                $("#salesteam").css("border-color", "#dc3545");
+              }
+              return;
+            }
+            var year = date.substring(0, 4);
+            var month = date.substring(5);
+
+            $("#saleschart").empty();
+            $("#salestable").children('tr').remove();
+
+
+            $.ajax({
+              url: "https://ameksaapii.xyz/Rep/VisitedAccountsByMonthSales/" + year + "/" + month + "/" + repid,
+              success: function (res) {
+                Morris.Donut({
+                  resize: true,
+                  element: 'saleschart',
+                  data: [{
+                    label: 'Visited',
+                    value: res.visited
+
+                  }, {
+                    label: 'Not Visited',
+                    value: res.notVisited
+
+                  }
+                  ],
+                  colors: ['#34cf00', '#f96868'] //valueColors: ['#37474f', '#f96868', '#76838f']
+
+                }).on('click', function (i, row) {
+                  console.log(i, row);
+                });
+
+                var visitedper = (res.visited / res.total) * 100
+                var notvisitedper = (res.notVisited / res.total) * 100
+
+                $('#salestable').append('<tr><td style="color:#34cf00;">Visited</td><td style="color:#34cf00;">' + res.visited + '</td><td style="color:#34cf00;">' + visitedper.toFixed(2) + '%</td></tr><tr><td style="color:#f96868;">Not Visited</td><td style="color:#f96868;">' + res.notVisited + '</td><td style="color:#f96868;">' + notvisitedper.toFixed(2) + '%</td></tr><tr><td>Total</td><td>' + res.total + '</td><td>100%</td></tr>')
+              }
+            })
+
+
+          })
+
+          
+          $("#month").change(function(){
+               var date = $("#month").val();
+               var year = date.substring(0,4);
+               var month = date.substring(5);
+
+
+               $("#visitschart").empty();
+
+
+
+               $.ajax({
+            url:"https://ameksaapii.xyz/FirstManager/GetVisitsCountByMonth/"+year+"/"+month+"/"+localStorage.getItem("userid"),
+            success:function(res){
+              Morris.Donut({
+                 resize: true,
+                 element: 'visitschart',
+                 data: [{
+                  label: res[0].visitType,
+                  value: res[0].visitCount
+
+                 }, {
+                  label: res[1].visitType,
+                  value: res[1].visitCount
+
+                 }, {
+                  label: res[2].visitType,
+                  value: res[2].visitCount
+
+                 }
+                ],
+                 colors: ['#f96868', '#62a9eb', '#f3a754']
+
+               }).on('click', function (i, row) {
+                 console.log(i, row);
+               });
+               $("#visitscount").children('tr').remove();
+               $.each(res,function(){
+
+                 $("#visitscount").append('<tr><td>'+this.visitType+'</td><td>'+this.visitCount+'</td></tr>')
+               })
+            }
+          })
+               
+             })
+
+
+     
+            $.ajax({
+            url:"https://ameksaapii.xyz/FirstManager/AccountThisMonthPercentage/"+localStorage.getItem('userid'),
+            success:function(res){
+              $.each(res,function(){
+                $("#thismonthaccounts").append('<tr><td>'+this.categoryName+'</td><td> <div class="progress"> <div class="progress-bar" role="progressbar" style="width: '+this.percentage.toFixed(2)+'%;" aria-valuenow="'+this.percentage.toFixed(2)+'" aria-valuemin="0" aria-valuemax="100">'+this.percentage.toFixed(2)+'%</div> </div></td></tr>')
+              })
+            }
+          }).then(function(){
+            $.ajax({
+            url:"https://ameksaapii.xyz/FirstManager/ContactThisMonthPercentage/"+localStorage.getItem('userid'),
+            success:function(res){
+              $.each(res,function(){
+                $("#thismonthcontacts").append('<tr><td>'+this.categoryName+'</td><td> <div class="progress"> <div class="progress-bar" role="progressbar" style="width: '+this.percentage.toFixed(2)+'%;" aria-valuenow="'+this.percentage.toFixed(2)+'" aria-valuemin="0" aria-valuemax="100">'+this.percentage.toFixed(2)+'%</div> </div></td></tr>')
+              })
+            }
+          })
+          }).then(function(){
+            $.ajax({
+            url:"https://ameksaapii.xyz/FirstManager/AccountpastMonthPercentage/"+localStorage.getItem('userid'),
+            success:function(res){
+              $.each(res,function(){
+                $("#pastmonthaccounts").append('<tr><td>'+this.categoryName+'</td><td> <div class="progress"> <div class="progress-bar" role="progressbar" style="width: '+this.percentage.toFixed(2)+'%;" aria-valuenow="'+this.percentage.toFixed(2)+'" aria-valuemin="0" aria-valuemax="100">'+this.percentage.toFixed(2)+'%</div> </div></td></tr>')
+              })
+            }
+          })
+          }).then(function(){
+            $.ajax({
+            url:"https://ameksaapii.xyz/FirstManager/ContactPastMonthPercentage/"+localStorage.getItem('userid'),
+            success:function(res){
+              $.each(res,function(){
+                $("#pastmonthcontacts").append('<tr><td>'+this.categoryName+'</td><td> <div class="progress"> <div class="progress-bar" role="progressbar" style="width: '+this.percentage.toFixed(2)+'%;" aria-valuenow="'+this.percentage.toFixed(2)+'" aria-valuemin="0" aria-valuemax="100">'+this.percentage.toFixed(2)+'%</div> </div></td></tr>')
+              })
+            }
+          })
+          })
+          
+
+
+          
+     
+
+          
+
+
+         
+
+      
+
+      })
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,886 @@
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Home</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../global/fontawesome/css/all.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+<style>
+  .ml1 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #37474f;
+  transform-origin: 0 0;
+
+}
+
+.ml1 .line1 { top: 0; }
+.ml1 .line2 { bottom: 0; }
+</style>
+
+  
+  </head>
+  <body class="animsition">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <!-- <img class="navbar-brand-logo" src="../../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Clinic System</div>
+          <!--  -->
+        </div>
+    
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+                  <p id="FullName"></p>
+              </a>
+              <div class="dropdown-menu" role="menu">
+        
+                <a class="dropdown-item" id="sett" href="../Medical/Setting.html" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Settings</a>
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+
+      </div>
+    </nav>  
+    
+
+      <div class="site-menubar">
+        <div class="site-menubar-body">
+          <div>
+            <div>
+              <ul class="site-menu" data-plugin="menu">
+                <li class="site-menu-category">Menu</li>
+
+
+
+                <li class="site-menu-item active">
+                  <a class="animsition-link" href="../Medical/Home.html">
+                    <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                    <span class="site-menu-title">Home</span>
+                  </a>
+                </li>
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="fas fa-hospital site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Accounts</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="../Medical/MyAccounts.html">
+                                    <span class="site-menu-title">My Accounts</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/MyAccountsVisits.html">                                    
+                                    <span class="site-menu-title">My Visits</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="fas fa-user-md site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Contacts</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="../Medical/MyContacts.html">
+                                    <span class="site-menu-title">My Contacts</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/MyContactsVisits.html">                                    
+                                    <span class="site-menu-title">My Visits</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../Medical/VisitsReporting.html">
+                    <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Visits Reporting</span>
+                  </a>
+                </li>
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Plans</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="../Medical/WeeklyPlan.html">
+                                    <span class="site-menu-title">Weekly Plan</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/MonthlyPlan.html">                                    
+                                    <span class="site-menu-title">Monthly plan</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="far fa-calendar-times site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Time Off Territory</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="../Medical/MakeTimeOffTerritory.html">
+                                    <span class="site-menu-title">Create Time Off Territory</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/MyTimeOffTerritory.html">                                    
+                                    <span class="site-menu-title">My Time off Territories</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/TimeOffStatus.html">                                    
+                                    <span class="site-menu-title">Requests Status</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/Vacancies.html">                                    
+                                    <span class="site-menu-title">Vacancies</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../Medical/VisitsComments.html">
+                    <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Visits Comments</span>
+                  </a>
+                </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      
+
+
+    <!-- Page -->
+    <div class="page" id="page">
+      <div align="center" class="page-header">
+        <h1 class="ml1" class="page-title">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters" id="motivation"></span>
+            <span class="line line2"></span>
+          </span>
+        </h1>
+      </div>
+      <div class="page-content">
+
+    
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h2 class="panel-title">Accounts & Contacts To Visit Now</h2>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="form-group col-6" align="right">
+                <a href="#accountsdiv" role="button" class="btn btn-primary">Accounts To Visit Now</a>
+            </div>
+            <div class="form-group col-6" align="left">
+              <a href="#contactsdiv" data-animation="" role="button" class="btn btn-primary">Contacts To Visit Now</a>
+            </div>
+            </div>
+              <div class="table-responsive" id="accountsdiv">
+                <table class="table table-hover table-bordered text-center">
+                  <thead>
+                    <tr>
+                      <th colspan="5">Accounts To Visit Now</th>
+                    </tr>
+                    <tr>
+                      <th>Account</th><th>District</th><th colspan="2">Best Time For Visit</th><th>Make A Visit</th>
+                    </tr>
+                    <tr>
+                      <th></th><th></th><th>From</th><th>To</th><th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="accountsnow">
+                    
+                  </tbody>
+                </table>
+              </div>
+              <hr style="border-color: black; border-style: dotted;">
+              
+              <div class="table-responsive" id="contactsdiv">
+                <table class="table table-hover table-bordered text-center">
+                  <thead>
+                    <tr>
+                      <th colspan="6">
+                        Contacts to visit now
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>Contact</th><th>Account Affiliation</th><th>District</th><th colspan="2">Best Time For Visit</th><th>Make A Visit</th>
+                    </tr>
+                    <tr>
+                      <th></th><th></th><th></th><th>From</th><th>To</th><th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="contactsnow">
+
+                  </tbody>
+                </table>
+              </div>
+       
+    
+          </div>
+        </div>
+
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h2 class="panel-title">Working Days</h2>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+            
+              <div class="table-responsive">
+                <table class="table table-hover text-center">
+               <colgroup>
+              <col style="width:25%;">
+              <col style="width:25%;">
+              <col style="width:25%;">
+              <col style="width:25%;">
+              </colgroup>
+                  <thead>
+                    <tr><th class="text-right">Working Days This Month:</th><th class="text-left" id="wdthismonth"></th><th class="text-right">Actual Working Days This Month:</th><th class="text-left" id="awdthismonth"></th></tr>
+                    <!-- <tr></tr> -->
+                    <tr><th class="text-right">Working Days Past Month:</th><th class="text-left" id="wdpastmonth"></th><th class="text-right">Actual Working Days Past Month:</th><th class="text-left" id="awdpastmonth"></th></tr>
+                    <tr></tr>
+                  </thead>
+                </table>
+              </div>
+
+          </div>
+        </div>
+
+
+        <div class="panel">
+          <div class="panel-heading">
+            <h2 class="panel-title">Contacts visited this month</h2>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-minus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+            
+            <div class="table-responsive">
+              <table class="table table-borderless text-center">
+                <thead>
+                 <tr><label class="form-control-label">Month</label><input type="month" id="month" class="form-control"></tr>
+                </thead>
+              </table>
+            </div> 
+
+               <!-- Browser Flow Card -->
+               <div id="browsersFlowWidget" class="card card-shadow card-md">
+                <div class="card-header card-header-transparent pb-15">
+   
+                </div>
+                <div class="card-block px-30">
+                  <div class="row">
+                    <div class="col-6">
+                      <!-- Browsers Vists Table -->
+                      <table  class="table table-analytics mb-0 table-hover">
+                        
+                        <tbody id="alltable">
+             
+                        </tbody>
+                      </table>
+                      <!-- End Browsers Vists Table -->
+                    </div>
+                    <div class="col-6 px-0">
+                      <!-- MorrisDonut -->
+                      <div id="allchart"></div>
+                      <!-- End MorrisDonut -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+
+        <div class="panel">
+          <div class="panel-heading">
+            <h2 class="panel-title">Contacts visited this month by category</h2>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-minus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body" id="categoryreport">
+            
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  
+
+
+ 
+    <!-- End Page -->
+
+
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="../global/morris.js-0.5.1/morris.js-0.5.1/morris.js"></script>
+    <script src="../global/raphael-2.3.0/raphael.min.js"></script>
+    
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../global/js/config/colors.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    <script src="../global/js/Plugin/panel.js"></script>
+    
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/vendor/chartist/chartist.min.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "Medical Representative") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+
+
+          $(".logout").click(function (e) {
+            e.preventDefault();
+            $.ajax({
+              url: "https://ameksaapii.xyz/users/LogOut",
+              success: function (res) {
+                if (res == true) {
+                  window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                  window.open("../index.html", "_self")
+                }
+                else {
+                  window.open("../error.html", "_self")
+                }
+              }
+            })
+          })
+             //end layout
+
+           
+          //motivation
+
+          $.ajax({
+               url:"https://ameksaapii.xyz/StringProperties/GetMotivation/",
+               success:function(res){
+                $("#motivation").text(res);
+               }
+             }).then(
+        
+            function(){
+              var textWrapper = document.querySelector('.ml1 .letters');
+              textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+              anime.timeline({loop: true})
+                .add({
+                  targets: '.ml1 .letter',
+                  scale: [0.3,1],
+                  opacity: [0,1],
+                  translateZ: 0,
+                  easing: "easeOutExpo",
+                  duration: 600,
+                  delay: (el, i) => 70 * (i+1)
+                }).add({
+                  targets: '.ml1 .line',
+                  scaleX: [0,1],
+                  opacity: [0.5,1],
+                  easing: "easeOutExpo",
+                  duration: 700,
+                  offset: '-=875',
+                  delay: (el, i, l) => 80 * (l - i)
+                }).add({
+                  targets: '.ml1',
+                  opacity: 0,
+                  duration: 1000,
+                  easing: "easeOutExpo",
+                  delay: 1000
+                });
+            }
+                          )
+
+             
+             
+
+            $.ajax({
+              url:"https://ameksaapii.xyz/TimeOff/CaculateActualWorkingDaysByMonthMedical/"+localStorage.getItem('userid'),
+              success:function(res){
+                $.each(res,function(){
+                  if (this.role == 1) {
+                    $("#wdthismonth").append(this.workingDays);
+                    $("#awdthismonth").append(this.actualWorkingDays)
+                  }
+                  if (this.role == 2) {
+                    $("#wdpastmonth").append(this.workingDays);
+                    $("#awdpastmonth").append(this.actualWorkingDays)
+                  }
+                })
+              }
+            })
+
+
+
+
+            $.ajax({
+            url:"https://ameksaapii.xyz/Category/GetTimeNow",
+            success:function(res){
+              var d = new Date(res);
+              var month = d.getMonth() + 1;
+              var year = d.getFullYear();
+              if (month < 10) {
+                month = '0'+month;
+              }
+              $("#month").val(year+"-"+month)
+              $("#month").change();
+            }
+          })
+
+
+          $("#month").change(function(){
+
+            var date = $("#month").val();
+            var year = date.substring(0,4);
+            var month = date.substring(5);
+            $("#allchart").empty();
+            $("#alltable").children('tr').remove();
+
+            $.ajax({
+            url:"https://ameksaapii.xyz/Rep/VisitedContactsByMonth/"+year+"/"+month+"/"+localStorage.getItem('userid'),
+            success:function(res){
+              Morris.Donut({
+                 resize: true,
+                 element: 'allchart',
+                 data: [{
+                   label: 'Visited',
+                   value: res.visited
+
+                 }, {
+                  label: 'Not Visited',
+                   value: res.notVisited
+
+                 }
+                ],
+                 colors: ['#34cf00', '#f96868'] //valueColors: ['#37474f', '#f96868', '#76838f']
+
+               }).on('click', function (i, row) {
+                 console.log(i, row);
+               });
+
+               var visitedper = (res.visited/res.total)*100
+               var notvisitedper = (res.notVisited/res.total)*100
+
+              $('#alltable').append('<tr><td style="color:#34cf00;">Visited</td><td style="color:#34cf00;">'+res.visited+'</td><td style="color:#34cf00;">'+visitedper.toFixed(2)+'%</td></tr><tr><td style="color:#f96868;">Not Visited</td><td style="color:#f96868;">'+res.notVisited+'</td><td style="color:#f96868;">'+notvisitedper.toFixed(2)+'%</td></tr><tr><td>Total</td><td>'+res.total+'</td><td>100%</td></tr>')
+            }
+          })
+
+          })
+
+
+            
+
+
+
+          $.ajax({
+            url:"https://ameksaapii.xyz/Rep/VisitedContactsThisMonthByCategory/"+localStorage.getItem('userid'),
+            success:function(res){
+
+              $.each(res,function(){
+
+                $("#categoryreport").append(' <div id="browsersFlowWidget" class="card card-shadow card-md"> <div class="card-header card-header-transparent pb-15"> </div> <div class="card-block px-30"> <div class="row"> <div class="col-6"> <!-- Browsers Vists Table --> <table  class="table table-analytics mb-0 table-hover"><thead><tr><th colspan="2">'+this.category+'</th></tr></thead><tbody id="thistable"><tr><td style="color:#34cf00;">Visited</td><td style="color:#34cf00;">'+this.visited+'</td></tr><tr><td style="color:#f96868;">Not Visited</td><td style="color:#f96868;">'+this.notVisited+'</td></tr><tr><td>Total</td><td>'+this.total+'</td></tr></tbody> </table> <!-- End Browsers Vists Table --> </div> <div class="col-6 px-0"> <!-- MorrisDonut --> <div id="thischart"></div> <!-- End MorrisDonut --> </div> </div> </div> </div>')
+
+                Morris.Donut({
+                 resize: true,
+                 element: 'thischart',
+                 data: [{
+                   label: 'Visited',
+                   value: this.visited
+
+                 }, {
+                  label: 'Not Visited',
+                   value: this.notVisited
+
+                 }
+                ],
+                 colors: ['#34cf00', '#f96868'] //valueColors: ['#37474f', '#f96868', '#76838f']
+
+               }).on('click', function (i, row) {
+                 console.log(i, row);
+               });
+               
+              $("#thischart").removeAttr('id');
+              $('#thistable').removeAttr('id');
+
+              })
+             
+            
+              
+            }
+          })
+
+
+
+
+
+             function formatTimeShow(h_24) {
+            var h = h_24 % 12;
+            return (h < 10 ? '0' : '') + h;
+          }
+
+         $.ajax({
+           url:"https://ameksaapii.xyz/AccountSalesVisit/AccountsToVisitNow/"+localStorage.getItem("userid"),
+           success:function(res){
+             $.each(res,function(){
+
+
+                var timefrom = this.bestTimeFrom.substring(11,16);
+                var h = timefrom.substring(0,2);
+                var m = timefrom.substring(3);
+
+                if (h == 0) {
+                  var newh = 12
+                  this.bestTimeFrom = newh+":"+m+" AM";
+                }
+                else{
+                if (h>12) {
+                  var newh = formatTimeShow(h);
+                  this.bestTimeFrom = newh+":"+m+" PM";
+                }
+
+        
+                
+               else{
+                this.bestTimeFrom = timefrom+" AM";
+               }
+
+              }
+
+               var timeto = this.bestTimeTo.substring(11,16);
+               var h = timeto.substring(0,2);
+          
+               var m = timeto.substring(3);
+               if (h == 0) {
+                  var newh = 12
+                  this.bestTimeTo = newh+":"+m+" AM";
+                }
+                else{
+               if ( h > 12) {
+                  var newh = formatTimeShow(h);
+                  this.bestTimeTo = newh+":"+m+" PM";
+               }
+            
+               else{
+                 this.bestTimeTo = timeto+" AM";
+               }
+              }
+
+
+
+              $("#accountsnow").append('<tr><td>'+this.accountName+'</td><td>'+this.districtName+'</td><td>'+this.bestTimeFrom+'</td><td>'+this.bestTimeTo+'</td><td><input type="button" value="Make A Visit" class="btn btn-primary accountvisit"><div class="d-none">'+this.id+'</div></td></tr>')
+             })
+           }
+         })
+
+
+         $.ajax({
+          url:"https://ameksaapii.xyz/ContactMedicalVisit/GetContactsToVisitNow/"+localStorage.getItem('userid'),
+          success:function(res){
+            $.each(res,function(){
+
+
+              var timefrom = this.bestTimeFrom.substring(11,16);
+                var h = timefrom.substring(0,2);
+                var m = timefrom.substring(3);
+
+                if (h == 0) {
+                  var newh = 12
+                  this.bestTimeFrom = newh+":"+m+" AM";
+                }
+                else{
+                if (h>12) {
+                  var newh = formatTimeShow(h);
+                  this.bestTimeFrom = newh+":"+m+" PM";
+                }
+
+        
+                
+               else{
+                this.bestTimeFrom = timefrom+" AM";
+               }
+
+              }
+
+               var timeto = this.bestTimeTo.substring(11,16);
+               var h = timeto.substring(0,2);
+          
+               var m = timeto.substring(3);
+               if (h == 0) {
+                  var newh = 12
+                  this.bestTimeTo = newh+":"+m+" AM";
+                }
+                else{
+               if ( h > 12) {
+                  var newh = formatTimeShow(h);
+                  this.bestTimeTo = newh+":"+m+" PM";
+               }
+            
+               else{
+                 this.bestTimeTo = timeto+" AM";
+               }
+              }
+
+
+
+
+              $("#contactsnow").append('<tr><td>'+this.contactName+'</td><td>'+this.accountName+'</td><td>'+this.districtName+'</td><td>'+this.bestTimeFrom+'</td><td>'+this.bestTimeTo+'</td><td><input type="button" value="Make A Visit" class="btn btn-primary contactvisit"><div class="d-none">'+this.id+'</div></td></tr>')
+            })
+          }
+        })
+
+
+        $("#accountsnow").on('click','.accountvisit',function(){
+          var id = $(this).next().text();
+          window.open('../Medical/MakeAccountVisit.html?'+id,'_self');
+        })
+
+        $("#contactsnow").on('click','.contactvisit',function(){
+          var id = $(this).next().text();
+          window.open('../Medical/MakeContactVisit.html?'+id,'_self');
+        })
+
+
+
+
+
+  
+
+      })
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>

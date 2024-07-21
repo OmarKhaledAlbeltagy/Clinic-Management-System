@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="AME KSA Reporting System">
+    <meta name="author" content="">
+    
+    <title>Login</title>
+    
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="global/vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="global/vendor/waves/waves.css">
+        <link rel="stylesheet" href="assets/examples/css/pages/login-v2.css">
+    
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="global/fonts/material-design/material-design.min.css">
+    <link rel="stylesheet" href="global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    
+    <!--[if lt IE 9]>
+    <script src="global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="global/vendor/media-match/media.match.min.js"></script>
+    <script src="global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+    <style>
+
+    </style>
+  </head>
+  <body class="animsition page-login-v2 layout-full page-dark">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <!-- Page -->
+    <div class="page" data-animsition-in="fade-in" data-animsition-out="fade-out">
+      <div class="page-content">
+        <div class="page-brand-info">
+          <div class="brand">
+
+
+            <h1 class="brand-text ml2" id="qq" style="font-style: italic; padding-top: 33%;"></h1>
+
+          </div>
+          
+        </div>
+
+        <div class="page-login-main">
+          <div class="brand hidden-md-up" align="center">
+            <!-- <img class="brand-img" width="25%" height="25%" src="assets//images/logo.jpg" alt="..."> -->
+          </div>
+          <div class="brand hidden-md-up" align="center">
+            <h3 id="qqq" class=" ml2" style="font-style: italic; color: black; font-weight: bolder;"></h3>
+          </div>
+          <h3 align="center" class="font-size-24" id="s">Sign In</h3>
+          
+
+          <form method="post" id="login" action="login-v2.html" autocomplete="off">
+            <div class="form-group form-material floating" data-plugin="formMaterial">
+              <input type="email" class="form-control empty" id="email" name="email" required>
+              <label class="floating-label" for="inputEmail">Email</label>
+            </div>
+            <div class="form-group form-material floating" data-plugin="formMaterial">
+              <input type="password" class="form-control empty" id="password" name="password" required >
+              <label class="floating-label" for="inputPassword">Password</label>
+            </div>
+            <div class="form-group clearfix">
+           
+              <a class="float-right" href="forgot-password-request.html" >Forgot password?</a>
+            </div>
+            <div style="margin-left: 165px;" align='center' id="load" class="d-none loader vertical-align-middle">
+              <div class="loader-grill"></div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block" id="sign">Sign in</button>
+          </form>
+
+          <footer class="page-copyright">
+            <p>AME KSA</p>
+            <p>© 2022. All RIGHT RESERVED.</p>
+            
+          </footer>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Page -->
+
+
+    <!-- Core  -->
+    <script src="global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="global/vendor/jquery/jquery.js"></script>
+    <script src="global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="global/vendor/animsition/animsition.js"></script>
+    <script src="global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="global/vendor/waves/waves.js"></script>
+    
+    <!-- Plugins -->
+    <script src="global/vendor/switchery/switchery.js"></script>
+    <script src="global/vendor/intro-js/intro.js"></script>
+    <script src="global/vendor/screenfull/screenfull.js"></script>
+    <script src="global/vendor/slidepanel/jquery-slidePanel.js"></script>
+        <script src="global/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+    
+    <!-- Scripts -->
+    <script src="global/js/Component.js"></script>
+    <script src="global/js/Plugin.js"></script>
+    <script src="global/js/Base.js"></script>
+    <script src="global/js/Config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+    <script src="assets/js/Section/Menubar.js"></script>
+    <script src="assets/js/Section/Sidebar.js"></script>
+    <script src="assets/js/Section/PageAside.js"></script>
+    <script src="assets/js/Plugin/menu.js"></script>
+    
+    <!-- Config -->
+    <script src="global/js/config/colors.js"></script>
+    <script src="assets/js/config/tour.js"></script>
+    <script>Config.set('assets', 'assets');</script>
+    
+    <!-- Page -->
+    <script src="assets/js/Site.js"></script>
+    <script src="global/js/Plugin/asscrollable.js"></script>
+    <script src="global/js/Plugin/slidepanel.js"></script>
+    <script src="global/js/Plugin/switchery.js"></script>
+        <script src="global/js/Plugin/jquery-placeholder.js"></script>
+        <script src="global/js/Plugin/material.js"></script>
+    
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          $("#login").submit(function (e) {
+            e.preventDefault()
+            $("#sign").addClass('d-none');
+            $("#load").removeClass('d-none');
+
+            $("#wrong").remove();
+
+            
+          var remember = false;
+            var email = $("#email").val();
+            var password = $("#password").val();
+
+            var login = { "Email": email, "password": password, "RememberMe": remember }
+            $.ajax({
+              type: "POST",
+              contentType: "application/json",
+              url: "https://ameksaapii.xyz/users/Login/",
+              data: JSON.stringify(login),
+              success: function (res) {
+                if (res == "not found") {
+                  $("#s").after('<div align="center"><h3 class="brand-text font-size-18" id="wrong" style="color: red;">Wrong Email!</h3></div>');
+                  $("#sign").removeClass('d-none');
+                 $("#load").addClass('d-none');
+                 }
+
+                else {
+                  if (res == "deactivated") {
+                    window.open("user-deactivated.html","_self");
+                  }
+
+                  else {
+                    if (res == "not found") {
+                      $("#wrong").append("Wrong password!");
+                      $("#sign").removeClass('d-none');
+                     $("#load").addClass('d-none');
+                    }
+
+                    else {
+                      if (res == "wrong password") {
+                        $("#s").after('<div align="center"><h3 class="brand-text font-size-18" align="center" id="wrong" style="color: red;">Wrong Password!</h3></div>');
+                        $("#sign").removeClass('d-none');
+                         $("#load").addClass('d-none');
+                      }
+                    else{
+                      window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                      
+                      window.localStorage.setItem("userfullname", res.fullName)
+                      window.localStorage.setItem("useremail", res.userEmail)
+                      window.localStorage.setItem("userid", res.userId)
+                      window.localStorage.setItem("userrole", res.roleName)
+                      switch (res.roleName) {
+                        case "System Admin":
+                          window.open("SystemAdmin/Home.html", "_self")
+                          break;
+                        case "Top Line Manager":
+                          window.open("TopManagers/Home.html", "_self")
+                          break;
+                        case "First Line Manager":
+                          window.open("FirstLineManager/Home.html", "_self")
+                          break;
+                        case "Medical Representative":
+                          window.open("Medical/Home.html", "_self")
+                          break;
+                        case "Sales Representative":
+                          window.open("Sales/Home.html", "_self")
+                          break;
+                        case "HR":
+                          window.open("Hr/Home.html","_self")
+                          break;
+                       
+                      }
+                    }
+                    }
+                  }
+                }
+
+
+              }
+            })
+          })
+       
+
+
+
+          var quotes = [
+    {
+        "Id": "1",
+        "q": "Concentrate all your thoughts upon the work in hand. The sun's rays do not burn until brought to a focus."
+    },
+    {
+        "Id": "2",
+        "q": "Either you run the day or the day runs you."
+    },
+    {
+        "Id": "3",
+        "q": "I’m a greater believer in luck, and I find the harder I work the more I have of it."
+    },
+    {
+        "Id": "4",
+        "q": "When we strive to become better than we are, everything around us becomes better too."
+    },
+    {
+        "Id": "5",
+        "q": "Opportunity is missed by most people because it is dressed in overalls and looks like work."
+    },
+    {
+        "Id": "6",
+        "q": "You've got to get up every morning with determination if you're going to go to bed with satisfaction."
+    },
+    {
+        "Id": "7",
+        "q": "Don’t judge each day by the harvest you reap but by the seeds that you plant."
+    },
+    {
+        "Id": "8",
+        "q": "Just one small positive thought in the morning can change your whole day"
+    },
+    {
+        "Id": "9",
+        "q": "One of the best pieces of advice I ever got was from a horse master. He told me to go slow to go fast. I think that applies to everything in life. We live as though there aren't enough hours in the day but if we do each thing calmly and carefully we will get it done quicker and with much less stress."
+    },
+    {
+        "Id": "10",
+        "q": "Whether you think you can, or you think you can’t – you’re right."
+    },
+    {
+        "Id": "11",
+        "q": "Time is an equal opportunity employer. Each human being has exactly the same number of hours and minutes every day. Rich people can't buy more hours. Scientists can't invent new minutes. And you can't save time to spend it on another day. Even so, time is amazingly fair and forgiving. No matter how much time you've wasted in the past, you still have an entire tomorrow."
+    },
+    {
+        "Id": "12",
+        "q": "Don’t wish it were easier. Wish you were better."
+    },
+    {
+        "Id": "13",
+        "q": "Do the hard jobs first. The easy jobs will take care of themselves."
+    },
+    {
+        "Id": "14",
+        "q": "Developing a good work ethic is key. Apply yourself at whatever you do, whether you're a janitor or taking your first summer job because that work ethic will be reflected in everything you do in life."
+    },
+    {
+        "Id": "15",
+        "q": "Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort."
+    },
+    {
+        "Id": "16",
+        "q": "Success means doing the best we can with what we have. Success is the doing, not the getting; in the trying, not the triumph. Success is a personal standard, reaching for the highest that is in us, becoming all that we can be."
+    },
+    {
+        "Id": "17",
+        "q": "The future depends on what you do today."
+    },
+    {
+        "Id": "18",
+        "q": "Do more than is required. What is the distance between someone who achieves their goals consistently and those who spend their lives and careers merely following? The extra mile."
+    },
+    {
+        "Id": "19",
+        "q": "The man who moves a mountain begins by carrying away small stones."
+    },
+    {
+        "Id": "20",
+        "q": "Things may come to those who wait, but only the things left by those who hustle."
+    },
+    {
+        "Id": "21",
+        "q": "Start by doing what’s necessary, then what’s possible; and suddenly you are doing the impossible."
+    },
+    {
+        "Id": "22",
+        "q": "To think too long about doing a thing often becomes its undoing."
+    },
+    {
+        "Id": "23",
+        "q": "Don't be afraid to give your best to what seemingly are small jobs. Every time you conquer one it makes you that much stronger. If you do the little jobs well, the big ones will tend to take care of themselves."
+    },
+    {
+        "Id": "24",
+        "q": "Talent means nothing, while experience, acquired in humility and with hard work, means everything."
+    },
+    {
+        "Id": "25",
+        "q": "You will never plough a field if you only turn it over in your mind."
+    },
+    {
+        "Id": "26",
+        "q": "Success seems to be connected with action. Successful people keep moving. They make mistakes, but they don’t quit."
+    },
+    {
+        "Id": "27",
+        "q": "You don’t have to see the whole staircase, just take the first step."
+    },
+    {
+        "Id": "28",
+        "q": "Dreams can come true, but there is a secret. They're realized through the magic of persistence, determination, commitment, passion, practice, focus and hard work. They happen a step at a time, manifested over years, not weeks."
+    },
+    {
+        "Id": "29",
+        "q": "This is the real secret of life — to be completely engaged with what you are doing in the here and now. And instead of calling it work, realize it is play."
+    },
+    {
+        "Id": "30",
+        "q": "Motivation is a fire from within. If someone else tries to light that fire under you, chances are it will burn very briefly."
+    },
+    {
+        "Id": "31",
+        "q": "Nothing in the world can take the place of perseverance. Talent will not; nothing is more common than unsuccessful people with talent. Genius will not; unrewarded genius is almost legendary. Education will not; the world is full of educated derelicts. Perseverance and determination alone are omnipotent."
+    },
+    {
+        "Id": "32",
+        "q": "Try not to become a person of success, but rather try to become a person of value."
+    },
+    {
+        "Id": "33",
+        "q": "The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks, and then starting on the first one."
+    },
+    {
+        "Id": "34",
+        "q": "Happiness is the real sense of fulfillment that comes from hard work."
+    },
+    {
+        "Id": "35",
+        "q": "If I had eight hours to chop down a tree, I’d spend six hours sharpening my ax."
+    },
+    {
+        "Id": "36",
+        "q": "Nothing is less productive than to make more efficient what should not be done at all."
+    },
+    {
+        "Id": "37",
+        "q": "Let me tell you the secret that has led me to my goals: my strength lies solely in my tenacity."
+    },
+    {
+        "Id": "38",
+        "q": "In a moment of decision, the best thing you can do is the right thing to do, the next best thing is the wrong thing, and the worst thing you can do is nothing."
+    },
+    {
+        "Id": "39",
+        "q": "Luck is a matter of preparation meeting opportunity."
+    },
+    {
+        "Id": "40",
+        "q": "It is not a daily increase, but a daily decrease. Hack away at the inessentials."
+    },
+    {
+        "Id": "41",
+        "q": "Don’t be afraid of hard work. Nothing worthwhile comes easily. Don’t let others discourage you or tell you that you can’t do it. In my day I was told women didn’t go into chemistry. I saw no reason why we couldn’t."
+    },
+    {
+        "Id": "42",
+        "q": "If you want to make an easy job seem mighty hard, just keep putting off doing it."
+    },
+    {
+        "Id": "43",
+        "q": "It does not matter how slowly you go, so long as you do not stop."
+    },
+    {
+        "Id": "44",
+        "q": "I am not a product of my circumstances. I am a product of my decisions."
+    },
+    {
+        "Id": "45",
+        "q": "Plenty of men can do good work for a spurt and with immediate promotion in mind, but for promotion you want a man in whom good work has become a habit."
+    },
+    {
+        "Id": "46",
+        "q": "Learn from the mistakes of others. You can’t live long enough to make them all yourselves."
+    },
+    {
+        "Id": "47",
+        "q": "Attitude is a choice. Happiness is a choice. Optimism is a choice. Kindness is a choice. Giving is a choice. Respect is a choice. Whatever choice you make makes you. Choose wisely."
+    },
+    {
+        "Id": "48",
+        "q": "Amateurs sit and wait for inspiration, the rest of us just get up and go to work."
+    },
+    {
+        "Id": "49",
+        "q": "There are no shortcuts to any place worth going."
+    },
+    {
+        "Id": "50",
+        "q": "I would visualize things coming to me. It would just make me feel better. Visualization works if you work hard. That’s the thing. You can’t just visualize and go eat a sandwich."
+    },
+    {
+        "Id": "51",
+        "q": "If you don’t pay appropriate attention to what has your attention, it will take more of your attention than it deserves."
+    },
+    {
+        "Id": "52",
+        "q": "A clay pot sitting in the sun will always be a clay pot. It has to go through the white heat of the furnace to become porcelain."
+    },
+    {
+        "Id": "53",
+        "q": "If something is wrong, fix it now. But train yourself not to worry, worry fixes nothing."
+    },
+    {
+        "Id": "54",
+        "q": "Think of many things; do one."
+    },
+    {
+        "Id": "55",
+        "q": "Much of the stress that people feel doesn't come from having too much to do. It comes from not finishing what they started."
+    },
+    {
+        "Id": "56",
+        "q": "Our greatest fear should not be of failure but of succeeding at things in life that don't really matter."
+    },
+    {
+        "Id": "57",
+        "q": "The price of success is hard work, dedication to the job at hand, and the determination that whether we win or lose, we have applied the best of ourselves to the task at hand."
+    },
+    {
+        "Id": "58",
+        "q": "Once you have commitment, you need the discipline and hard work to get you there."
+    },
+    {
+        "Id": "59",
+        "q": "Thirty years ago my older brother, who was ten years old at the time, was trying to get a report written on birds that he’d had three months to write, which was due the next day. We were out at our family cabin in Bolinas, and he was at the kitchen table close to tears, surrounded by binder paper and pencils and unopened books about birds, immobilized by the hugeness of the task ahead. Then my father sat down beside him put his arm around my brother’s shoulder, and said, “Bird by bird, buddy. Just take it bird by bird."
+    },
+    {
+        "Id": "60",
+        "q": "Whatever you do, do it with all your might. Work at it, early and late, in season and out of season, not leaving a stone unturned, and never deferring for a single hour that which can be done just as well as now."
+    },
+    {
+        "Id": "61",
+        "q": "It isn’t the mountains ahead to climb that wear you out; it’s the pebble in your shoe."
+    },
+    {
+        "Id": "62",
+        "q": "There is no traffic jam along the extra mile."
+    },
+    {
+        "Id": "63",
+        "q": "Your ability to discipline yourself to set clear goals, and then to work toward them every day, will do more to guarantee your success than any other single factor."
+    },
+    {
+        "Id": "64",
+        "q": "Follow effective actions with quiet reflection. From the quiet reflection will come even more effective action."
+    },
+    {
+        "Id": "65",
+        "q": "Spend eighty percent of your time focusing on the opportunities of tomorrow rather than the problems of yesterday."
+    },
+    {
+        "Id": "66",
+        "q": "When you get into a tight place and everything goes against you, till it seems as though you could not hang on a minute longer, never give up then, for that is just the place and time that the tide will turn."
+    },
+    {
+        "Id": "67",
+        "q": "Most of the important things in the world have been accomplished by people who have kept on trying when there seemed to be no hope at all."
+    },
+    {
+        "Id": "68",
+        "q": "Failure is the condiment that gives success its flavor."
+    },
+    {
+        "Id": "69",
+        "q": "I have always believed, and I still believe, that whatever good or bad fortune may come our way we can always give it meaning and transform it into something of value."
+    },
+    {
+        "Id": "70",
+        "q": "When we long for life without difficulties, remind us that oaks grow strong in contrary winds and diamonds are made under pressure."
+    },
+    {
+        "Id": "71",
+        "q": "It ain’t as bad as you think. It will look better in the morning."
+    },
+    {
+        "Id": "72",
+        "q": "The truth is that our finest moments are most likely to occur when we are feeling deeply uncomfortable, unhappy, or unfulfilled. For it is only in such moments, propelled by our discomfort, that we are likely to step out of our ruts and start searching for different ways or truer answers."
+    },
+    {
+        "Id": "73",
+        "q": "The best way out is always through."
+    },
+    {
+        "Id": "74",
+        "q": "There are two primary choices in life: to accept conditions as they exist, or accept the responsibility for changing them."
+    },
+    {
+        "Id": "75",
+        "q": "As long as they are well-intentioned, mistakes are not a matter for shame, but for learning."
+    },
+    {
+        "Id": "76",
+        "q": "Concentrate all your thoughts upon the work in hand. The sun's rays do not burn until brought to a focus."
+    }
+]
+          const rndInt = Math.floor(Math.random() * 75) + 1
+
+          $.each(quotes,function(){
+            if(this.Id == rndInt)
+            {
+
+              var qqq = this.q;
+              $("#qq").text('"'+qqq+'"');
+              $("#qqq").text('"'+qqq+'"');
+            }
+          
+          })
+          
+
+            // Wrap every letter in a span
+var textWrapper = document.querySelector('#qq');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '#qq .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '#qq',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 10000
+  });
+
+              // Wrap every letter in a span
+var textWrapper = document.querySelector('#qqq');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '#qqq .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '#qqq',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 10000
+  });
+   
+   
+        });
+
+      })(document, window, jQuery);
+    </script>
+    
+  </body>
+</html>

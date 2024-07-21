@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+
+  <title>Settings</title>
+
+  <link rel="apple-touch-icon" href="../../assets/images/logo.jpg">
+  <link rel="shortcut icon" href="../../assets/images/fav.ico">
+
+  <!-- Stylesheets -->
+   
+  <link rel="stylesheet" href="../../global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../../assets/css/site.min.css">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../global/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../global/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../global/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../global/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../global/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../global/vendor/flag-icon-css/flag-icon.css">
+        <link rel="stylesheet" href="../../global/vendor/footable/footable.core.css">
+        <link rel="stylesheet" href="../../assets/examples/css/tables/footable.css">
+
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../global/fonts/web-icons/web-icons.min.css">
+  <link rel="stylesheet" href="../../global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <link rel="stylesheet" href="../../global/fontawesome/css/all.min.css" />
+  <!--[if lt IE 9]>
+    <script src="../../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 10]>
+    <script src="../../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Scripts -->
+  <script src="../../global/vendor/breakpoints/breakpoints.js"></script>
+  <script src="https://kit.fontawesome.com/15e8ed2b84.js" crossorigin="anonymous"></script>
+  <script>
+    Breakpoints();
+  </script>
+</head>
+
+<body class="animsition">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+        data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
+        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+      </button>
+      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+        <!-- <img class="navbar-brand-logo" src="../../../../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Clinic System</div>
+        
+      </div>
+
+    </div>
+
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="nav-item hidden-float" id="toggleMenubar">
+            <a class="nav-link" data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                <span class="sr-only">Toggle menubar</span>
+                <span class="hamburger-bar"></span>
+              </i>
+            </a>
+          </li>
+          <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+            <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+              <span class="sr-only">Toggle fullscreen</span>
+            </a>
+          </li>
+
+        </ul>
+        <!-- End Navbar Toolbar -->
+
+        <!-- Navbar Toolbar Right -->
+        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+          <li class="nav-item dropdown">
+            <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+              data-animation="scale-up" role="button">
+              <p id="FullName"></p>
+            </a>
+            <div class="dropdown-menu" role="menu">
+
+              <a class="dropdown-item" href="Setting.html" id="sett" role="menuitem"><i class="icon wb-settings"
+                aria-hidden="true"></i> General Settings</a>
+                <a class="dropdown-item active" href="" id="inssett" role="menuitem"><i class="icon wb-settings"
+                  aria-hidden="true"></i> Insurance Settings</a>
+              <div class="dropdown-divider" role="presentation"></div>
+              <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i>
+                Logout</a>
+            </div>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+
+
+    </div>
+  </nav>
+
+
+  <div class="site-menubar">
+    <div class="site-menubar-body">
+      <div>
+        <div>
+          <ul class="site-menu" data-plugin="menu">
+            <li class="site-menu-category">Menu</li>
+            <li class="site-menu-item active">
+              <a class="animsition-link" href="../Doctor/Home.html">
+                <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                <span class="site-menu-title">Dashboard</span>
+              </a>
+            </li>
+
+
+            <li class="dropdown site-menu-item has-sub">
+              <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                      <span class="site-menu-title">Menu Item</span>
+                      <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link"  href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">                                    
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+            
+            <li class="dropdown site-menu-item has-sub">
+              <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                <i class="far fa-registered site-menu-icon" aria-hidden="true"></i>
+                      <span class="site-menu-title">Menu Item</span>
+                      <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link"  href="#">
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">                                    
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="#">                                    
+                                <span class="site-menu-title">Menu Item</span>
+                              </a>
+                            </li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+            <li class="dropdown site-menu-item has-sub">
+              <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                <i class="fas fa-users site-menu-icon" aria-hidden="true"></i>
+             
+                      <span class="site-menu-title">Users</span>
+                      <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="site-menu-scroll-wrap is-list">
+                      <div>
+                        <div>
+                          <ul class="site-menu-sub site-menu-normal-list">
+                            <li class="site-menu-item">
+                              <a class="animsition-link"  href="#">
+                                <span class="site-menu-title">Manage Assistants</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="DoctorRegister.html">                                    
+                                <span class="site-menu-title">Create Doctor Account</span>
+                              </a>
+                            </li>
+                            <li class="site-menu-item">
+                              <a class="animsition-link" href="AssistantRegister.html">
+                                <span class="site-menu-title">Create Assistant Account</span>
+                              </a>
+                            </li>
+                                                      
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+            <li class="site-menu-item">
+              <a class="animsition-link" href="#">
+        
+                 <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                <span class="site-menu-title">Menu Item</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a class="animsition-link" href="#">
+                 <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                <span class="site-menu-title">Menu Item</span>
+              </a>
+            </li>
+            <li class="site-menu-item">
+              <a class="animsition-link" href="#">
+                <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                <span class="site-menu-title">Menu Item</span>
+              </a>
+            </li>
+              </ul>
+            </li>
+           
+          </div>  
+        
+        </div>
+      </div>
+    </div> 
+
+     <!-- Modal -->
+     <div class="modal fade modal-super-scaled" id="insurancemodal" aria-hidden="true"
+     aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+     <div class="modal-dialog modal-simple">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">×</span>
+           </button>
+           <h4 class="modal-title"></h4>
+         </div>
+         <div class="modal-body">
+           <div class="d-none" id="editedinsuranceid"></div>
+          <form>
+       <div class="row">
+         <div class="col-12">
+       <div class="form-group form-material floating" data-plugin="formMaterial">
+         <input type="text" class="form-control" id="editedinsurancename" required>
+         <label class="floating-label">Insurance Name</label>
+       </div>
+     </div>
+     </div>
+   </form>
+         </div>
+         <div class="modal-footer">
+          <button id="confirmeditinsurance" type="button" class="btn btn-primary btn-pure">Yes</button>
+           <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+         </div>
+       </div>
+     </div>
+    </div>
+    <!-- End Modal -->
+
+     <!-- Modal -->
+     <div class="modal fade modal-super-scaled" id="deleteinsurancemodal" aria-hidden="true"
+     aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+     <div class="modal-dialog modal-simple">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">×</span>
+           </button>
+           <h4 class="modal-title"></h4>
+         </div>
+         <div class="modal-body">
+           <div class="d-none" id="deletedinsuranceid"></div>
+        <h4>Are you sure to Delete <span style="color: #ff4c52;" id="deletedinsurancename"></span> and all its plans?</h4>
+         </div>
+         <div class="modal-footer">
+          <button id="confirmdeleteinsurance" type="button" class="btn btn-primary btn-pure">Yes</button>
+           <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+         </div>
+       </div>
+     </div>
+    </div>
+    <!-- End Modal -->
+
+
+      <!-- Modal -->
+      <div class="modal fade modal-super-scaled" id="addinsurancemodal" aria-hidden="true"
+      aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-simple">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+  
+           <form>
+        <div class="row">
+          <div class="col-12">
+        <div class="form-group form-material floating" data-plugin="formMaterial">
+          <input type="text" class="form-control" id="addedinsurancename" required>
+          <label class="floating-label">Insurance Name</label>
+        </div>
+      </div>
+      </div>
+    </form>
+          </div>
+          <div class="modal-footer">
+           <button id="confirmaddinsurance" type="button" class="btn btn-primary btn-pure">Yes</button>
+            <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+     </div>
+     <!-- End Modal -->
+ 
+
+
+    
+  <!-- Page -->
+  <div class="page">
+    <div class="page-content container-fluid">
+        <div class="col-12">
+          <!-- Panel -->
+          <div class="panel is-collapse">
+            <div class="panel-heading">
+              <h3 class="panel-title">Insurance Providers</h3>
+              <div class="panel-actions panel-actions-keep">
+                <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+              </div>
+            </div>
+            <div class="panel-body">
+  
+             
+    
+              <div class="table-responsive">
+                <table class="table table-striped table-hover text-center">
+                  <thead>
+                   <tr>
+                     <th class="d-none">id</th>
+                     <th>Insurance</th>
+                     <th>Actions</th>
+                   </tr>
+                  </thead>
+                  <tbody id="insurances">
+                  
+                  </tbody>
+                  <tfoot>
+                    <tr class="text-center"><td colspan="3"><button type="button" id="addinsurance" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline">
+                      <span> Add New Insurance Provider<i class="icon fas fa-plus" aria-hidden="true"></i></span>
+                    </button></td></tr>
+                  </tfoot>
+                </table>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade modal-super-scaled" id="addexaminationmodal" aria-hidden="true"
+  aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-simple">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title">Adding new plan to <span id="addplaninsurancename" style="color: #ff4c52;"></span></h4>
+      </div>
+      <div class="modal-body">
+
+       <form>
+         <div class="d-none" id="addedplaninsuranceid"></div>
+    <div class="row">
+      <div class="col-12">
+    <div class="form-group form-material floating" data-plugin="formMaterial">
+      <input type="text" class="form-control" id="addedplanename" required>
+      <label class="floating-label">Plan Name</label>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-12"><h5 style="color: #3e8ef7;">Examination Pricing</h5></div>
+    <div class="col-4">
+  <div class="form-group form-material floating" data-plugin="formMaterial">
+    <input type="number" min="0" class="form-control" id="addedepp" required>
+    <label class="floating-label">Paid By Patient</label>
+  </div>
+</div>
+<div class="col-4">
+  <div class="form-group form-material floating" data-plugin="formMaterial">
+    <input type="number" min="0" class="form-control" id="addedepi" required>
+    <label class="floating-label">Paid By Insurance</label>
+  </div>
+</div>
+<div class="col-4">
+  <div class="form-group form-material floating" data-plugin="formMaterial">
+    <input type="number" min="0" class="form-control" id="addedetotal" disabled required>
+    <label class="floating-label">Total</label>
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-12"><h5 style="color: #ff4c52;;">Followup Pricing</h5></div>
+  <div class="col-4">
+<div class="form-group form-material floating" data-plugin="formMaterial">
+  <input type="number" min="0" class="form-control" id="addedfpp" required>
+  <label class="floating-label">Paid By Patient</label>
+</div>
+</div>
+<div class="col-4">
+<div class="form-group form-material floating" data-plugin="formMaterial">
+  <input type="number" min="0" class="form-control" id="addedfpi" required>
+  <label class="floating-label">Paid By Insurance</label>
+</div>
+</div>
+<div class="col-4">
+<div class="form-group form-material floating" data-plugin="formMaterial">
+  <input type="number" min="0" class="form-control" id="addedftotal" disabled required>
+  <label class="floating-label">Total</label>
+</div>
+</div>
+</div>
+</form>
+      </div>
+      <div class="modal-footer">
+       <button id="confirmaddplan" type="button" class="btn btn-primary btn-pure">Yes</button>
+        <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+ </div>
+ <!-- End Modal -->
+
+   <!-- Modal -->
+   <div class="modal fade modal-super-scaled" id="editplannamemodal" aria-hidden="true"
+   aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+   <div class="modal-dialog modal-simple">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">×</span>
+         </button>
+         <h4 class="modal-title">Edit Plan Name</h4>
+       </div>
+       <div class="modal-body">
+ 
+        <form>
+          <div class="d-none" id="editedplannameid"></div>
+   
+   <div class="row">
+     <div class="col-12">
+   <div class="form-group form-material floating" data-plugin="formMaterial">
+     <input type="text" class="form-control" id="editedplanname" required>
+     <label class="floating-label">Plan Name</label>
+   </div>
+ </div>
+ </div>
+ </form>
+       </div>
+       <div class="modal-footer">
+        <button id="confirmeditplanname" type="button" class="btn btn-primary btn-pure">Yes</button>
+         <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  <!-- End Modal -->
+
+
+     <!-- Modal -->
+     <div class="modal fade modal-super-scaled" id="deleteplanmodal" aria-hidden="true"
+     aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+     <div class="modal-dialog modal-simple">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">×</span>
+           </button>
+           <h4 class="modal-title"></h4>
+         </div>
+         <div class="modal-body">
+           <div class="d-none" id="deletedplanid"></div>
+        <h4>Are you sure to Delete <span style="color: #ff4c52;" id="deletedplanname"></span> plan and all its pricing setting?</h4>
+         </div>
+         <div class="modal-footer">
+          <button id="confirmdeleteplan" type="button" class="btn btn-primary btn-pure">Yes</button>
+           <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+         </div>
+       </div>
+     </div>
+    </div>
+    <!-- End Modal -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade modal-super-scaled" id="editexaminationmodal" aria-hidden="true"
+      aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-simple">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Editing <span id="editedexaminationname" style="color: #3e8ef7;"></span> examination pricing</h4>
+          </div>
+          <div class="modal-body">
+    
+            <form>
+              <div class="d-none" id="editedexaminationid"></div>
+              <div class="row">
+                <div class="col-12">
+                  <h5 style="color: #3e8ef7;">Examination Pricing</h5>
+                </div>
+                <div class="col-4">
+                  <div class="form-group form-material floating" data-plugin="formMaterial">
+                    <input type="number" min="0" class="form-control" id="editedepp" required>
+                    <label class="floating-label">Paid By Patient</label>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group form-material floating" data-plugin="formMaterial">
+                    <input type="number" min="0" class="form-control" id="editedepi" required>
+                    <label class="floating-label">Paid By Insurance</label>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="form-group form-material floating" data-plugin="formMaterial">
+                    <input type="number" min="0" class="form-control" id="editedetotal" disabled required>
+                    <label class="floating-label">Total</label>
+                  </div>
+                </div>
+              </div>
+           
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button id="confirmeditexamination" type="button" class="btn btn-primary btn-pure">Yes</button>
+            <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+
+       <!-- Modal -->
+       <div class="modal fade modal-super-scaled" id="editfollowmodal" aria-hidden="true"
+       aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+       <div class="modal-dialog modal-simple">
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">×</span>
+             </button>
+             <h4 class="modal-title">Editing <span id="editedfollowname" style="color: #ff4c52;"></span> followup pricing</h4>
+           </div>
+           <div class="modal-body">
+     
+             <form>
+               <div class="d-none" id="editedfollowid"></div>
+               <div class="row">
+                 <div class="col-12">
+                   <h5 style="color: #ff4c52;">Followup Pricing</h5>
+                 </div>
+                 <div class="col-4">
+                   <div class="form-group form-material floating" data-plugin="formMaterial">
+                     <input type="number" min="0" class="form-control" id="editedfpp" required>
+                     <label class="floating-label">Paid By Patient</label>
+                   </div>
+                 </div>
+                 <div class="col-4">
+                   <div class="form-group form-material floating" data-plugin="formMaterial">
+                     <input type="number" min="0" class="form-control" id="editedfpi" required>
+                     <label class="floating-label">Paid By Insurance</label>
+                   </div>
+                 </div>
+                 <div class="col-4">
+                   <div class="form-group form-material floating" data-plugin="formMaterial">
+                     <input type="number" min="0" class="form-control" id="editedftotal" disabled required>
+                     <label class="floating-label">Total</label>
+                   </div>
+                 </div>
+               </div>
+            
+             </form>
+           </div>
+           <div class="modal-footer">
+             <button id="confirmeditfollow" type="button" class="btn btn-primary btn-pure">Yes</button>
+             <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- End Modal -->
+
+
+
+        
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Examination & Followup Insurance Pricing</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body" id="insurancespanel">
+
+           
+  
+          
+  
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Modal -->
+      <div class="modal fade modal-super-scaled" id="editoperation" aria-hidden="true"
+      aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+      <div class="modal-dialog modal-simple">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">Editing <span id="operationplanname" style="color: #3e8ef7;"></span> operations pricing</h4>
+          </div>
+          <div class="modal-body">
+            <div class="d-none" id="operationplanid"></div>
+            <form id="operationform">
+
+
+              
+
+
+            </form>
+            <div align='center' id="load" class="d-none loader vertical-align-middle" style="margin-left: 270px;">
+              <div class="loader-grill"></div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button id="confirmeditoperation" type="button" class="btn btn-primary btn-pure">Yes</button>
+            <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Operations Insurance Pricing</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body" id="operationspanel">
+
+         
+            
+  
+          
+  
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+     
+
+  <!-- End Page -->
+  
+  
+
+
+  <!-- Core  -->
+  <script src="../../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+  <script src="../../global/vendor/jquery/jquery.js"></script>
+  <script src="../../global/vendor/popper-js/umd/popper.min.js"></script>
+  <script src="../../global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../global/vendor/bootstrap/bootstrap.bundle.js"></script>
+  <script src="../../global/vendor/animsition/animsition.js"></script>
+  <script src="../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+  <script src="../../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+  <script src="../../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+
+  <!-- Plugins -->
+  <script src="../../global/vendor/switchery/switchery.js"></script>
+  <script src="../../global/vendor/intro-js/intro.js"></script>
+  <script src="../../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+
+  <!-- Scripts -->
+  <script src="../../global/js/Component.js"></script>
+  <script src="../../global/js/Plugin.js"></script>
+  <script src="../../global/js/Base.js"></script>
+  <script src="../../global/js/Config.js"></script>
+
+  <script src="../../assets/js/Section/Menubar.js"></script>
+  <script src="../../assets/js/Section/GridMenu.js"></script>
+  <script src="../../assets/js/Section/Sidebar.js"></script>
+  <script src="../../assets/js/Section/PageAside.js"></script>
+  <script src="../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../assets/js/Plugin/menu.js"></script>
+  <script src="../../global/fontawesome/js/all.min.js"></script>
+  <script src="../../global/js/config/colors.js"></script>
+  <script src="../../assets/js/config/tour.js"></script>
+  <script>Config.set('assets', '../../assets');</script>
+  <script src="../../global/js/Plugin/panel.js"></script>
+  <!-- Page -->
+  <script src="../../assets/js/Site.js"></script>
+  <script src="../../global/js/Plugin/asscrollable.js"></script>
+  <script src="../../global/js/Plugin/slidepanel.js"></script>
+  <script src="../../global/js/Plugin/switchery.js"></script>
+      <script src="../../global/vendor/moment/moment.min.js"></script>
+      <script src="../../global/vendor/footable/footable.min.js"></script>
+  <script>
+    (function (document, window, $) {
+      'use strict';
+
+      var Site = window.Site;
+      $(document).ready(function () {
+        Site.run();
+
+        //start layout            
+        if (localStorage.getItem("userrole") !== "Doctor") {
+          window.open("../../notauth.html", "_self")
+        }
+
+        $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+        $(".logout").click(function (e) {
+          e.preventDefault();
+          $.ajax({
+            url: "https://ameksaapii.xyz/users/LogOut",
+            success: function (res) {
+              if (res == true) {
+                window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                window.open("../../index.html", "_self")
+              }
+              else {
+                window.open("../../error.html", "_self")
+              }
+            }
+          })
+        })
+        //end layout
+
+
+     
+    
+          
+      
+        var userId = localStorage.getItem("userid")
+
+
+
+        $("#operationspanel").on('click','.editoperation',function(){
+          $(".oprationpricing").each(function(){
+            $(this).remove()
+          })
+          $("#load").removeClass("d-none")
+          $("#editoperation").modal("toggle");
+          var planid = $(this).parent().prev().prev().text();
+          var planname = $(this).parent().prev().text();
+
+          $("#operationplanid").text(planid)
+          $("#operationplanname").text(planname)
+          
+          $.ajax({
+            url:"http://clinicapi.xyz/Insurance/GetOperationPackageByPackageId/"+planid,
+            success:function(res){
+              $.each(res,function(){
+                $("#operationform").append('<div class="row oprationpricing"> <div class="col-12"> <h5 style="color: #3e8ef7;" class="text-center">'+this.operationName+' Pricing</h5> <div class="d-none">'+this.operationId+'</div> </div> <div class="col-4"> <div class="form-group form-material floating" data-plugin="formMaterial"> <input type="number" min="0" class="form-control operationpp" value="'+this.paidByPatient+'" required> <label class="floating-label">Paid By Patient</label> </div> </div> <div class="col-4"> <div class="form-group form-material floating" data-plugin="formMaterial"> <input type="number" min="0" class="form-control operationpi" value="'+this.paidByInsurance+'" required> <label class="floating-label">Paid By Insurance</label> </div> </div> <div class="col-4"> <div class="form-group form-material floating" data-plugin="formMaterial"> <input type="number" min="0" class="form-control operationtotal" value="'+this.totalPrice+'" disabled required> <label class="floating-label">Total</label> </div> </div> </div>')
+              })
+              $("#load").addClass("d-none")
+            }
+          })
+        })
+
+        $("#confirmeditoperation").click(function(){
+          var err = false;
+          var list = [];
+
+          $(".operationpi").each(function(){
+            if ($(this).val() == "" || $(this).val() == null) {
+              err = true;
+            }
+          })
+          $(".operationpp").each(function(){
+            if ($(this).val() == "" || $(this).val() == null) {
+              err = true;
+            }
+          })
+
+          if (err == true) {
+            return;
+          }
+          var planid = $("#operationplanid").text();
+          $(".oprationpricing").each(function(){
+            var operationid = $(this).children().first().children('div').text()
+            var pp = $(this).children().first().next().children().children('input').val();
+            var pi = $(this).children().first().next().next().children().children('input').val();
+            var obj = {"InsurancePackageId":planid,"OperationId":operationid,"PaidByPatient":pp,"PaidByInsurance":pi}
+            alert("OperationId = "+operationid+"\nPaid By Patient ="+pp+"\nPaid By Insurance = "+pi+"\nPlanId = "+planid)
+            list.push(obj);
+          })
+
+          $.ajax({
+            type:"Post",
+            contentType:"application/json",
+            url:"http://clinicapi.xyz/Insurance/EditPlanOperationsPricing",
+            data:JSON.stringify(list),
+            success:function(res){
+              if (res == true) {
+                window.location.reload();
+              }
+                   }
+     })
+
+        })
+
+        $.ajax({
+       url:"http://clinicapi.xyz/Insurance/GetAllInsurancesPackages",
+       success:function(res){
+        $.each(res,function(){
+          $("#insurancespanel").append(' <div class="table-responsive"> <table class="table table-striped table-hover toggle-circle examination"><colgroup><col style="width:69%"></colgroup> <thead id="insurancesexaminationbody"> <tr class="text-center"><th colspan="2" class="insurancename" style="background-color:#76838f; color:black; font-size:larger"><span class="insurancename">'+this.insuranceName+'</span><div class="d-none">'+this.id+'</div></th></tr> <tr> <th data-visible="false" data-filterable="false">ID</th> <th>Plan</th> <th>Actions</th> <th data-breakpoints="all"><span style="color: #3e8ef7;">Examination Pricing</span> </th> <th data-breakpoints="all"> <span style="color: #3e8ef7;"> Paid By Patient</span></th> <th data-breakpoints="all"> <span style="color: #3e8ef7;">Paid By Insurance</span> </th> <th data-breakpoints="all"> <span style="color: #3e8ef7;">Total</span></th> <th data-breakpoints="all"><span style="color: #ff4c52;">Followup Pricing</span></th> <th data-breakpoints="all"> <span style="color: #ff4c52;">Paid By Patient</span></th> <th data-breakpoints="all"> <span style="color: #ff4c52;">Paid By Insurance</span></th> <th data-breakpoints="all"> <span style="color: #ff4c52;">Total</span></th> </tr> </thead> <tbody id="insurancesexamination"> </tbody> <tfoot> <tr class="text-center"><td colspan="3"><button type="button" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline addplan"> <span> Add New Plan<i class="icon fas fa-plus" aria-hidden="true"></i></span> </button></td></tr> </tfoot> </table> </div><hr>');
+          $("#operationspanel").append('   <div class="table-responsive"> <table class="table table-striped table-hover toggle-circle operation"> <colgroup> <col style="width:69%"> </colgroup> <thead id="insurancesoperationbody"> <tr class="text-center"> <th colspan="2" class="insurancename" style="background-color:#76838f; color:black; font-size:larger"><span class="insurancename">'+this.insuranceName+'</span> <div class="d-none">'+this.id+'</div> </th> </tr> <tr> <th data-visible="false" data-filterable="false">ID</th> <th>Plan</th> <th>Actions</th> </tr> </thead> <tbody id="insurancesoperation"> </tbody> </table> </div> <hr>')
+          $.each(this.insurancePackages,function(){
+            
+            $("#insurancesexamination").append('<tr> <td>'+this.id+'</td> <td>'+this.packageName+'</td> <td><span class="editplan" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="fa-solid fa-pen-to-square fa-2x"></i> </span><span class="deleteplan" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Delete"> <i style="margin-right: 10px;" class="fa-solid fa-trash-can fa-2x"></i> </span></td> <td><span class="editexamination" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="fa-solid fa-pen-to-square fa-2x"></i> </span></td> <td>'+this.examinationPaidByPatient+'</td> <td>'+this.examinationPaidByInsurance+'</td> <td>'+this.examinationTotalPrice+'</td> <td><span class="editfollowup" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="fa-solid fa-pen-to-square fa-2x"></i> </span></td> <td>'+this.followupPaidByPatient+'</td> <td>'+this.followupPaidByInsurance+'</td> <td>'+this.followupTotalPrice+'</td> </tr>')
+            $("#insurancesoperation").append('<tr> <td>'+this.id+'</td> <td>'+this.packageName+'</td> <td><span class="editoperation" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="fa-solid fa-pen-to-square fa-2x"></i> </span></td> </tr>')
+          })
+
+          $("#insurancesexamination").removeAttr('id');
+          $("#insurancesoperation").removeAttr('id');
+        })
+       }
+     }).then(function(){
+      $('.examination').footable({
+      "toggleColumn": "first",
+      "showToggle": true,
+      "expandFirst": false
+      
+    });
+    $('.operation').footable({
+      
+    });
+     })
+
+
+    
+
+
+
+        $("#insurancespanel").on('click','.editexamination',function(){
+          var planid = $(this).parent().parent().parent().parent().parent().parent().prev().children().first('td').text();
+          var planname = $(this).parent().parent().parent().parent().parent().parent().prev().children().first('td').next().text();
+          var pp = $(this).parent().parent().next().children('td').text();
+          var pi = $(this).parent().parent().next().next().children('td').text();
+          var total = $(this).parent().parent().next().next().next().children('td').text();
+
+          
+          $("#editedexaminationid").text(planid);
+          $("#editedexaminationname").text(planname);
+          $("#editedepp").val(pp);
+          $("#editedepi").val(pi);
+          $("#editedetotal").val(total);
+          $("#editexaminationmodal").modal("toggle")
+        });
+
+
+        $("#confirmeditexamination").click(function(){
+          var planid = $("#editedexaminationid").text();
+          var pp = $("#editedepp").val();
+          var pi = $("#editedepi").val();
+          if (pp == "" || pp == null || pi == "" || pi == null) {
+            return;
+          }
+          var obj = {"Id":planid,"ExaminationPaidByPatient":pp,"ExaminationPaidByInsurance":pi}
+          $.ajax({
+            type:"Post",
+            contentType:"application/json",
+            url:"http://clinicapi.xyz/Insurance/EditPlanExaminationPricing",
+            data:JSON.stringify(obj),
+            success:function(res){
+              if (res == true) {
+                window.location.reload()
+              }
+            }
+          })
+        })
+
+
+        $("#insurancespanel").on('click','.editfollowup',function(){
+          var planid = $(this).parent().parent().parent().parent().parent().parent().prev().children().first('td').text();
+          var planname = $(this).parent().parent().parent().parent().parent().parent().prev().children().first('td').next().text();
+
+          
+          var pp = $(this).parent().parent().next().children('td').text();
+          var pi = $(this).parent().parent().next().next().children('td').text();
+          var total = $(this).parent().parent().next().next().next().children('td').text();
+          
+          
+          $("#editedfollowid").text(planid);
+          $("#editedfollowname").text(planname);
+          $("#editedfpp").val(pp);
+          $("#editedfpi").val(pi);
+          $("#editedftotal").val(total);
+          $("#editfollowmodal").modal("toggle")
+        })
+
+
+        $("#confirmeditfollow").click(function(){
+          var planid = $("#editedfollowid").text();
+          var pp = $("#editedfpp").val();
+          var pi = $("#editedfpi").val();
+          if (pp == "" || pp == null || pi == "" || pi == null) {
+            return;
+          }
+          var obj = {"Id":planid,"FollowupPaidByPatient":pp,"FollowupPaidByInsurance":pi}
+          $.ajax({
+            type:"Post",
+            contentType:"application/json",
+            url:"http://clinicapi.xyz/Insurance/EditPlanFollowupPricing",
+            data:JSON.stringify(obj),
+            success:function(res){
+              if (res == true) {
+                window.location.reload()
+              }
+            }
+          })
+        })
+
+
+
+
+
+
+     $("#insurancespanel").on("click",".deleteplan",function(){
+      var planid = $(this).parent().prev().prev().text();
+      var planname = $(this).parent().prev().text();
+      $("#deletedplanid").text(planid);
+      $("#deletedplanname").text(planname)
+      $("#deleteplanmodal").modal("toggle")
+     })
+
+
+     $("#confirmdeleteplan").click(function(){
+       var planid = $("#deletedplanid").text();
+
+       $.ajax({
+         url:"http://clinicapi.xyz/Insurance/DeletePackage/"+planid,
+         success:function(res){
+          if (res == true) {
+            window.location.reload();
+          }
+         }
+       })
+     })
+
+
+
+     $("#insurancespanel").on('click','.editplan',function(){
+      var planid = $(this).parent().prev().prev().text();
+      var planname = $(this).parent().prev().text();
+
+       $("#editedplannameid").text(planid);
+       $("#editedplanname").val(planname);
+       $("#editplannamemodal").modal("toggle")
+      
+     })
+
+
+     $("#confirmeditplanname").click(function(){
+       var planid = $("#editedplannameid").text();
+       var planname = $("#editedplanname").val();
+       if (planname == "" || planname == null) {
+         return;
+       }
+       var obj = {"Id":planid,"PackageName":planname}
+       $.ajax({
+        type:"Post",
+        contentType:"application/json",
+        url:"http://clinicapi.xyz/Insurance/EditPackageName",
+        data:JSON.stringify(obj),
+        success:function(res){
+          if (res == true) {
+            window.location.reload();
+          }
+        }
+       })
+     })
+
+
+
+   
+
+
+     $("#insurancespanel").on('click','.addplan',function(){
+
+      $("#addedplanename").val('');
+          $("#addedepp").val(0);
+          $("#addedepi").val(0);
+          $("#addedetotal").val(0);
+          $("#addedfpp").val(0);
+          $("#addedfpi").val(0);
+          $("#addedftotal").val(0);
+
+       var insuranceid = $(this).parent().parent().parent().prev().prev().children().children().children('div').text();
+       var insurancename = $(this).parent().parent().parent().prev().prev().children().children().children('.insurancename').text();
+
+       $("#addplaninsurancename").text(insurancename);
+       $("#addedplaninsuranceid").text(insuranceid);
+
+       $("#addexaminationmodal").modal("toggle");
+     })
+
+
+     $("#confirmaddplan").click(function(){
+
+       var addedplaninsuranceid =  $("#addedplaninsuranceid").text();
+       var addedplanname =  $("#addedplanename").val();
+       var epp = $("#addedepp").val();
+       var epi = $("#addedepi").val();
+       var fpp = $("#addedfpp").val();
+       var fpi = $("#addedfpi").val();
+   
+       if (addedplanname == "" || addedplanname == null || epp == "" || epp == null || epi == "" || epi == null || fpp == "" || fpp == null || fpi == "" || fpi == null) {
+         return;
+       }
+  
+       var obj = {"InsuranceId":addedplaninsuranceid,"PackageName":addedplanname,"ExaminationPaidByPatient":epp,"ExaminationPaidByInsurance":epi,"FollowupPaidByPatient":fpp,"FollowupPaidByInsurance":fpi}
+
+       $.ajax({
+        type:"Post",
+        contentType:"application/json",
+        url:"http://clinicapi.xyz/Insurance/AddInsurancePackage",
+        data:JSON.stringify(obj),
+        success:function(res){
+          window.location.reload();
+        }
+       })
+
+     })
+
+                    
+
+     $.ajax({
+       url:"http://clinicapi.xyz/Insurance/GetAllInsurances",
+       success:function(res){
+        $.each(res,function(){
+          $("#insurances").append(' <tr> <td class="d-none">'+this.id+'</td> <td>'+this.insuranceName+'</td> <td><span class="editinsurance" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="fa-solid fa-pen-to-square fa-2x"></i> </span><span class="deleteinsurance" style="cursor:pointer; padding-left: 10px; padding-right: 10px;" data-toggle="tooltip" data-placement="top" title="Delete"> <i style="margin-right: 10px;" class="fa-solid fa-trash-can fa-2x"></i> </span></td> </tr>')
+        })
+       }
+     })
+
+     $("#insurances").on('click','.editinsurance',function(){
+       var insuranceid = $(this).parent().prev().prev().text();
+       var insurancename = $(this).parent().prev().text();
+       $("#editedinsuranceid").text(insuranceid);
+       $("#editedinsurancename").val(insurancename);
+       $("#insurancemodal").modal('toggle');
+     })
+
+     $("#confirmeditinsurance").click(function(){
+      var insuranceid = $("#editedinsuranceid").text();
+      var insurancename = $("#editedinsurancename").val();
+
+      if (insurancename == "" || insurancename == null) {
+        return;
+      }
+
+      var obj = {"Id":insuranceid,"InsuranceName":insurancename}
+
+      $.ajax({
+            type:"Post",
+              contentType:"application/json",
+              url:"http://clinicapi.xyz/Insurance/EditInsurance",
+              data:JSON.stringify(obj),
+              success:function(res){
+                if (res == true) {
+                  window.location.reload();
+                }
+              }
+          })
+     })
+
+
+
+     $("#insurances").on('click','.deleteinsurance',function(){
+      var insuranceid = $(this).parent().prev().prev().text();
+      var insurancename = $(this).parent().prev().text();
+       $("#deletedinsuranceid").text(insuranceid);
+       $("#deletedinsurancename").text(insurancename);
+       $("#deleteinsurancemodal").modal('toggle');
+     })
+
+
+     $("#confirmdeleteinsurance").click(function(){
+      var insuranceid = $("#deletedinsuranceid").text();
+      $.ajax({
+        url:"http://clinicapi.xyz/Insurance/DeleteInsurance/"+insuranceid,
+        success:function(res){
+          if (res == true) {
+            window.location.reload();
+          }
+        }
+      })
+     })
+
+
+
+     $("#addinsurance").click(function(){
+       $("#addedinsurancename").val("")
+      $("#addinsurancemodal").modal("toggle");
+     })
+
+     $("#confirmaddinsurance").click(function(){
+      var insurancename = $("#addedinsurancename").val();
+      if (insurancename == "" || insurancename == null) {
+        return;
+      }
+
+      var obj = {"InsuranceName":insurancename};
+
+      $.ajax({
+            type:"Post",
+              contentType:"application/json",
+              url:"http://clinicapi.xyz/Insurance/AddInsurance",
+              data:JSON.stringify(obj),
+              success:function(res){
+                if (res == true) {
+                  window.location.reload();
+                }
+              }
+          })
+
+     })
+
+
+     $("#addedepp").change(function(){
+      
+       
+      var pp = parseFloat($("#addedepp").val());
+      var pi = parseFloat($("#addedepi").val());
+
+      var total = pp + pi;
+     $("#addedetotal").val(total)
+    })
+
+    $("#addedepp").keyup(function(){
+     
+      
+     var pp = parseFloat($("#addedepp").val());
+     var pi = parseFloat($("#addedepi").val());
+
+     var total = pp + pi;
+    $("#addedetotal").val(total)
+   })
+
+   $("#addedepi").change(function(){
+     
+      
+     var pp = parseFloat($("#addedepp").val());
+     var pi = parseFloat($("#addedepi").val());
+
+     var total = pp + pi;
+    $("#addedetotal").val(total)
+   })
+
+   $("#addedepi").keyup(function(){
+     
+      
+     var pp = parseFloat($("#addedepp").val());
+     var pi = parseFloat($("#addedepi").val());
+
+     var total = pp + pi;
+    $("#addedetotal").val(total)
+   })
+
+
+   $("#addedfpp").change(function(){
+     
+      
+     var pp = parseFloat($("#addedfpp").val());
+     var pi = parseFloat($("#addedfpi").val());
+
+     var total = pp + pi;
+    $("#addedftotal").val(total)
+   })
+
+   $("#addedfpp").keyup(function(){
+     
+      
+     var pp = parseFloat($("#addedfpp").val());
+     var pi = parseFloat($("#addedfpi").val());
+
+     var total = pp + pi;
+    $("#addedftotal").val(total)
+   })
+
+   $("#addedfpi").change(function(){
+     
+      
+     var pp = parseFloat($("#addedfpp").val());
+     var pi = parseFloat($("#addedfpi").val());
+
+     var total = pp + pi;
+    $("#addedftotal").val(total)
+   })
+
+   $("#addedfpi").keyup(function(){
+     
+      
+     var pp = parseFloat($("#addedfpp").val());
+     var pi = parseFloat($("#addedfpi").val());
+
+     var total = pp + pi;
+    $("#addedftotal").val(total)
+   })
+
+   $("#editedepp").change(function(){
+    var pp = parseFloat($("#editedepp").val());
+     var pi = parseFloat($("#editedepi").val());
+
+     var total = pp + pi;
+    $("#editedetotal").val(total)
+   })
+
+   $("#editedepp").keyup(function(){
+    var pp = parseFloat($("#editedepp").val());
+     var pi = parseFloat($("#editedepi").val());
+
+     var total = pp + pi;
+    $("#editedetotal").val(total)
+   })
+
+   $("#editedepi").change(function(){
+    var pp = parseFloat($("#editedepp").val());
+     var pi = parseFloat($("#editedepi").val());
+
+     var total = pp + pi;
+    $("#editedetotal").val(total)
+   })
+
+   $("#editedepi").keyup(function(){
+    var pp = parseFloat($("#editedepp").val());
+     var pi = parseFloat($("#editedepi").val());
+
+     var total = pp + pi;
+    $("#editedetotal").val(total)
+   })
+
+   $("#editedfpp").change(function(){
+    var pp = parseFloat($("#editedfpp").val());
+     var pi = parseFloat($("#editedfpi").val());
+
+     var total = pp + pi;
+    $("#editedftotal").val(total)
+   })
+
+   $("#editedfpp").keyup(function(){
+    var pp = parseFloat($("#editedfpp").val());
+     var pi = parseFloat($("#editedfpi").val());
+
+     var total = pp + pi;
+    $("#editedftotal").val(total)
+   })
+
+   $("#editedfpi").change(function(){
+    var pp = parseFloat($("#editedfpp").val());
+     var pi = parseFloat($("#editedfpi").val());
+
+     var total = pp + pi;
+    $("#editedftotal").val(total)
+   })
+
+   $("#editedfpi").keyup(function(){
+    var pp = parseFloat($("#editedfpp").val());
+     var pi = parseFloat($("#editedfpi").val());
+
+     var total = pp + pi;
+    $("#editedftotal").val(total)
+   })
+
+
+
+   $("#operationform").on('change','.operationpp',function(){     
+     var pp = parseFloat($(this).val());
+     var pi = parseFloat($(this).parent().parent().next().children().children('input').val());
+     var total = pp + pi;
+     $(this).parent().parent().next().next().children().children('input').val(total)
+   })
+
+   $("#operationform").on('keyup','.operationpp',function(){     
+     var pp = parseFloat($(this).val());
+     var pi = parseFloat($(this).parent().parent().next().children().children('input').val());
+     var total = pp + pi;
+     $(this).parent().parent().next().next().children().children('input').val(total)
+   })
+
+   $("#operationform").on('change','.operationpi',function(){     
+     var pp = parseFloat($(this).parent().parent().prev().children().children('input').val())
+     var pi = parseFloat($(this).val());
+     var total = pp + pi;
+     $(this).parent().parent().next().children().children('input').val(total)
+   })
+
+   $("#operationform").on('keyup','.operationpi',function(){     
+     var pp = parseFloat($(this).parent().parent().prev().children().children('input').val())
+     var pi = parseFloat($(this).val());
+     var total = pp + pi;
+     $(this).parent().parent().next().children().children('input').val(total)
+   })
+
+      });
+    })(document, window, jQuery);
+  </script>
+</body>
+
+</html>

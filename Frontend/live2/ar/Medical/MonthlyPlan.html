@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Monthly Plan</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../global/fontawesome/css/all.min.css"/>
+    <link rel="stylesheet" href="../global/Calendar/main.css">
+    <link rel="stylesheet" href="../global/vendor/jquery-selective/jquery-selective.css">
+
+ 
+
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+    
+
+  <style>
+    :root {
+      --fc-today-bg-color: #ffffff;
+    
+  
+}
+
+  </style>
+  </head>
+  <body class="animsition">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <!-- <img class="navbar-brand-logo" src="../../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Clinic System</div>
+          
+        </div>
+    
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+                  <p id="FullName"></p>
+              </a>
+              <div class="dropdown-menu" role="menu">
+        
+                <a class="dropdown-item" id="sett" href="../Medical/Setting.html" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Settings</a>
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+
+      </div>
+    </nav>  
+    
+    <div class="site-menubar">
+      <div class="site-menubar-body">
+        <div>
+          <div>
+            <ul class="site-menu" data-plugin="menu">
+              <li class="site-menu-category">Menu</li>
+
+
+
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../Medical/Home.html">
+                  <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                  <span class="site-menu-title">Home</span>
+                </a>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-hospital site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Accounts</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/MyAccounts.html">
+                                  <span class="site-menu-title">My Accounts</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyAccountsVisits.html">                                    
+                                  <span class="site-menu-title">My Visits</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-user-md site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Contacts</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/MyContacts.html">
+                                  <span class="site-menu-title">My Contacts</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyContactsVisits.html">                                    
+                                  <span class="site-menu-title">My Visits</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+              
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../Medical/VisitsReporting.html">
+                  <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">Visits Reporting</span>
+                </a>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub active">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Plans</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/WeeklyPlan.html">
+                                  <span class="site-menu-title">Weekly Plan</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item active">
+                                <a class="animsition-link" href="../Medical/MonthlyPlan.html">                                    
+                                  <span class="site-menu-title">Monthly plan</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="far fa-calendar-times site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Time Off Territory</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/MakeTimeOffTerritory.html">
+                                  <span class="site-menu-title">Create Time Off Territory</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyTimeOffTerritory.html">                                    
+                                  <span class="site-menu-title">My Time off Territories</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/TimeOffStatus.html">                                    
+                                  <span class="site-menu-title">Requests Status</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/Vacancies.html">                                    
+                                  <span class="site-menu-title">Vacancies</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../Medical/VisitsComments.html">
+                  <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">Visits Comments</span>
+                </a>
+              </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Plan Visit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="mod">
+            <div class="table-responsive">
+            <table class="table table-borderless text-center">
+              <input type="hidden" id="planned">
+              <thead>
+                <tr>
+                  <th>
+                    <label class="form-control-label">Account</label><select id="contact" class="form-control"><option value="0">-- Account --</option></select>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <label class="form-control-label">Time (optional)</label><input type="time" id="time" class="form-control">
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="save">Save</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Delete Planned Visit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <input type="hidden" id="del">
+          <div class="modal-body" id="mod">
+            <h3 id="deletedcontact"></h1>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="Delete">Yes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <button type="button" id="clic" class="btn btn-primary d-none" data-toggle="modal" data-target="#exampleModal"></button>
+    <button type="button" id="delclic" class="btn btn-primary d-none" data-toggle="modal" data-target="#modd"></button>
+    <!-- Page -->
+    <div class="page">
+      <div class="page-content">
+    
+        <div class="panel">
+          <div class="panel-body">
+            
+    
+            <div class="calendar-container">
+              <div align="center">
+                <button type="button" id="print" class="btn btn-animate btn-animate-side btn-primary btn-outline">
+                  <span><i class="icon wb-print" aria-hidden="true"></i>Go to print screen</span>
+                </button>
+              </div>
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ 
+    <!-- End Page -->
+
+
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+  
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../global/js/config/colors.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    <script src="../global/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../global/vendor/chartist/chartist.min.js"></script>
+    <script src="../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+    <script src="../global/Calendar/main.js"></script>
+           
+  
+    
+
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "Medical Representative") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+
+
+          $(".logout").click(function (e) {
+            e.preventDefault();
+            $.ajax({
+              url: "https://ameksaapii.xyz/users/LogOut",
+              success: function (res) {
+                if (res == true) {
+                  window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                  window.open("../index.html", "_self")
+                }
+                else {
+                  window.open("../error.html", "_self")
+                }
+              }
+            })
+          })
+             //end layout
+
+             var now;
+
+             var calendarEl = document.getElementById('calendar');
+             var ev = [];
+             var calendar;
+             let clickCnt = 0;
+
+
+
+
+             $.ajax({
+            url:"https://ameksaapii.xyz/DateTime/GetCurrentTime/",
+            success:function(res){
+              now = res;
+            }
+          })
+
+          //getplanned
+           $.ajax({
+             url:"https://ameksaapii.xyz/AccountMonthlyPlan/GetMyPlanThisMonth/"+localStorage.getItem('userid'),
+             success:function(res){
+              $.each(res,function(){
+               
+                if (this.plannedDate.substring(11) == "00:00:00") {
+                  var date = this.plannedDate.substring(0,10);
+                }
+                else{
+                  var date = this.plannedDate;
+                }
+                var obj;
+
+             
+
+                if (this.status == true) {
+                   obj = {id:this.id,title:this.orgName,start:date,end:date,color:'green',display:"block"};
+                
+                }
+                else{
+                  if (this.plannedDate >= this.now) {
+                     obj = {id:this.id,title:this.orgName,start:date,end:date,color:'#ded300',display:"block"};
+               
+                  }
+                  else{
+                    if (this.plannedDate < this.now) {
+                       obj = {id:this.id,title:this.orgName,start:date,end:date,color:'red',display:"block"};
+                      
+                    }
+                  }
+                }
+                ev.push(obj);
+                
+                
+                
+              })
+             }
+           }).then(
+            function(){
+               calendar = new FullCalendar.Calendar(calendarEl,
+            {
+              initialView: 'dayGridMonth',
+              selectable: true,
+              headerToolbar: {
+                start: 'title', // will normally be on the left. if RTL, will be on the right
+                center: '',
+                end: 'prev,next dayGridMonth listWeek' // will normally be on the right. if RTL, will be on the left
+              },
+              
+              firstDay:6,
+              dayHeaderFormat:{weekday: 'short'},
+              fixedWeekCount:false,
+              eventClick:function(cl){
+                if (cl.el.style.borderColor === 'green') {
+                  return;
+                }
+                if (cl.el.style.borderColor === 'red') {
+                  return;
+                }
+              
+                var eve = new Date(cl.event.start);
+                
+             
+                $("#deletedcontact").text("")
+                $("#del").val(cl.event.id);
+                 $("#deletedcontact").text("Are you sure to delete planned visit to "+cl.event.title+" on "+eve.getDate()+"/"+eve.getMonth()+"/"+eve.getFullYear()+" ?")
+                 $("#delclic").click();
+             
+           
+
+              },
+              businessHours:{
+                daysOfWeek:[0,1,2,3,4,6,7],
+                startTime: '08:30',
+                endTime: '22:00'
+              },
+              height:'auto'
+              
+            });
+
+          
+
+            calendar.render();
+       
+       
+            calendar.on('dateClick', function (e) {
+     
+
+              if (e.dateStr < now.substring(0,10)) {
+                return;
+              }
+              $("#planned").val(e.dateStr);
+              
+              $("#clic").click()
+          });
+      
+
+
+          calendar.addEventSource(ev);
+            }
+           )
+
+       
+
+
+
+    
+           $.ajax({
+             url:"https://ameksaapii.xyz/AccountMonthlyPlan/GetMyAccountsForPlan/"+localStorage.getItem('userid'),
+             success:function(res){
+              $.each(res,function(){
+                var op;
+                if (this.choosed === false)
+                {
+                  op = '<option class="rem" value = "'+this.id+'">'
+                }
+                else{
+                  op = '<option class="rem" style="color:red;" value = "'+this.id+'">'
+                }
+                $("#contact").append(op+this.accountName+'</option>')
+              })
+             }
+           })
+
+
+
+
+           //add plan visit
+           $("#save").click(function(){
+            $("#exampleModal").modal('toggle');
+             var contactid = $("#contact").children('option:selected').val();
+             var time = $("#time").val();
+             var d = $("#planned").val();
+             if (contactid == 0) {
+              $("#contact").css("border-color","#dc3545");
+              return;
+             }
+             var contactname = $("#contact").children('option:selected').text();
+             if (time == "" || time == null) {
+              var date = $("#planned").val();
+             }
+             else{
+              var date = $("#planned").val()+"T"+time;
+             }
+             var userid = localStorage.getItem('userid');
+             var obj = {"AccountId":contactid,"ExtendIdentityUserId":userid,"PlannedDate":date,"Date":d}
+            $.ajax({
+              type: "POST",
+              contentType: "application/json",
+              url: "https://ameksaapii.xyz/AccountMonthlyPlan/PlanVisit",
+              data: JSON.stringify(obj),
+              success:function(ress){
+        
+                  
+            
+                  if (date >= now){
+                   var  o = {id:ress.id,title:contactname,start:date,end:date,color:'#ded300',display:"block"};
+                  }
+
+                  else{
+                    var  o = {id:ress.id,title:contactname,start:date,end:date,color:'red',display:"block"};
+                  }
+         
+                ev.push(o);
+                calendar = new FullCalendar.Calendar(calendarEl,
+            {
+              initialView: 'dayGridMonth',
+              selectable: true,
+              headerToolbar: {
+                start: 'title', // will normally be on the left. if RTL, will be on the right
+                center: '',
+                end: 'prev,next dayGridMonth listWeek' // will normally be on the right. if RTL, will be on the left
+              },
+              firstDay:6,
+              dayHeaderFormat:{weekday: 'short'},
+              fixedWeekCount:false,
+              eventClick:function(cl){
+                if (cl.el.style.borderColor === 'green') {
+                  return;
+                }
+             
+                var eve = new Date(cl.event.start);
+                
+         
+                $("#deletedcontact").text("")
+                $("#del").val(cl.event.id);
+                 $("#deletedcontact").text("Are you sure to delete planned visit to "+cl.event.title+" on "+eve.getDate()+"/"+eve.getMonth()+"/"+eve.getFullYear()+" ?")
+                 $("#delclic").click();
+             
+          
+
+              },
+              businessHours:{
+                daysOfWeek:[0,1,2,3,4,6,7],
+                startTime: '08:30',
+                endTime: '22:00'
+              },
+              height:'auto'
+              
+            });
+
+                calendar.render();
+                calendar.addEventSource(ev);
+                calendar.on('dateClick', function (e) {
+              $("#planned").val(e.dateStr);
+              
+              $("#clic").click()
+          });
+               
+              }
+            }).then(function(){
+             
+
+
+
+               
+           $.ajax({
+             url:"https://ameksaapii.xyz/AccountMonthlyPlan/GetMyAccountsForPlan/"+localStorage.getItem('userid'),
+             success:function(res){
+              $("#contact").children('option').remove();
+              $("#contact").append('<option value="0">-- Account --</option>');
+              $.each(res,function(){
+                var op;
+                if (this.choosed === false)
+                {
+                  op = '<option class="rem" value = "'+this.id+'">'
+                }
+                else{
+                  op = '<option class="rem" style="color:red;" value = "'+this.id+'">'
+                }
+                $("#contact").append(op+this.accountName+'</option>')
+              })
+             }
+           })
+            })
+           })
+           
+
+
+
+           //deleteplanvisit
+           $("#Delete").click(function(){
+            var planid = $("#del").val();
+             $.ajax({
+               url:"https://ameksaapii.xyz/AccountMonthlyPlan/DeletePlannedVisit/"+planid,
+               success:function(res){
+                 if (res == true) {
+                   window.location.reload();
+                 
+                 }
+               }
+             })
+           })
+           
+
+         
+          
+
+           $("#print").click(function(){
+             window.open('../Medical/PrintMonthlyPlan.html');
+           })
+         
+
+        
+
+       
+      })
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>

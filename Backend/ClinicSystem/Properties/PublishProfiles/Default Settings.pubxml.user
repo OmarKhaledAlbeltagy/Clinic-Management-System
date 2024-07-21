@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfwoAPbGWkk+hsljIcd8KPgAAAAACAAAAAAAQZgAAAAEAACAAAAB1Sttl9t9TVITzYGkYFYYTDSGHe3erjlXmD/hnpE9HQwAAAAAOgAAAAAIAACAAAADbVS2BF1ybrAAZTNChtfQsvuQCLZSq+i6PM/5oLdRIsCAAAABC5sbZOzmrsU+4HKC1AtcdGv1EmtYQdE8LdvdVnBkqh0AAAACGmq5jl3C2KGuzw/AKFNbxIUGPwwhmXx3L8pX6yPlXlhSxfk82va/g93xGS6+ndZGVLYGPfIktpQVXqme5zJkU</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="con">
+      <Value>Server=sql5100.site4now.net%3bDatabase=db_a74967_clinic%3bIntegrated security=false%3bUser Id=db_a74967_clinic_admin%3bPassword=Ameksapass%401</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

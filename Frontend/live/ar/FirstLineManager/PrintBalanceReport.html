@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Print Balance Report</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../global/fontawesome/css/all.min.css"/>
+    <link rel="stylesheet" href="../global/Calendar/main.css">
+    <link rel="stylesheet" href="../global/vendor/jquery-selective/jquery-selective.css">
+
+ 
+
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+    
+
+ <style>
+  :root {
+    --fc-today-bg-color: #ffffff;
+  
+
+}
+
+.fc-list-event-graphic{
+display: none;
+}
+.fc-list-event-title{
+font-size: large;
+font-weight: 400;
+color: black;
+}
+.fc-list-day-text{
+font-size: large;
+}
+.fc-list-day-side-text{
+font-size: large;
+}
+</style>
+  </head>
+  <body class="animsition">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  
+    
+  
+
+
+    <!-- Page -->
+
+      <div class="page-content">
+    
+        <div class="panel">
+          <div class="panel-body container-fluid">
+            
+            <div class="table-responsive">
+              <table class="table table-bordered text-center" style="font-size: large;">
+                <thead>
+                  <tr> <th ></th><th ></th><th>From</th><th>To</th><th ></th><th ></th></tr>
+                  <tr> <th ></th><th ></th><th class="from"></th><th class="to"></th><th ></th><th ></th></tr>
+                  <tr>
+                    <th>Name</th><th>Total Balance</th><th colspan="2">Total Collection</th><th>Credit Limit</th><th>Credit Residual</th>
+                  </tr>
+              
+                </thead>
+                <tbody id="main">
+             
+                </tbody>
+              </table>
+            </div>
+<!-- <hr style="border-style: double; border-color: black;" > -->
+
+<br><br><br><br>
+        <div class="row">
+
+          <div class="col-6">
+            <div class="table-responsive">
+              
+              <table class="table table-bordered text-center" style="font-size: large;">
+                <thead>
+                  <tr>
+                    <th>Brand</th><th>Balance</th>
+                  </tr>
+              
+                </thead>
+                <tbody id="balance">
+             
+                </tbody>
+              </table>
+            </div>
+          </div>
+            <div class="col-6">
+              <div class="table-responsive">
+              <table class="table table-bordered text-center" style="font-size: large;">
+                <thead>
+                 <tr>
+                    <th>Brand</th><th>Collection</th>
+                  </tr>
+              
+                </thead>
+                <tbody id="collection">
+             
+                </tbody>
+              </table>
+            </div>
+            </div>
+
+            
+          </div>
+            
+            <div align="center">
+              <button type="button" id="print" class="btn btn-animate btn-animate-side btn-primary btn-outline">
+                <span><i class="icon wb-print" aria-hidden="true"></i>print</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    
+ 
+    <!-- End Page -->
+
+
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+  
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../global/js/config/colors.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    <script src="../global/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../global/vendor/chartist/chartist.min.js"></script>
+    <script src="../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+    <script src="../global/Calendar/main.js"></script>
+           
+  
+    
+
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "First Line Manager") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+
+
+          $(".logout").click(function (e) {
+            e.preventDefault();
+            $.ajax({
+              url: "https://ameksaapii.xyz/users/LogOut",
+              success: function (res) {
+                if (res == true) {
+                  window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                  window.open("../index.html", "_self")
+                }
+                else {
+                  window.open("../error.html", "_self")
+                }
+              }
+            })
+          })
+             //end layout
+
+
+           
+
+        var q = window.location.search.substring(1).split('&');
+        
+        var id = q[0];
+        var yearfrom = q[1];
+        var monthfrom = q[2];
+        var dayfrom = q[3];
+        var yearto = q[4];
+        var monthto = q[5];
+        var dayto = q[6];
+        $(".from").text(dayfrom+"/"+monthfrom+"/"+yearfrom)
+        $(".to").text(dayto+"/"+monthto+"/"+yearto)
+        
+        $.ajax({
+          url:"https://ameksaapii.xyz/VisitsCollection/AccountBalanceAccount/"+yearfrom+"/"+monthfrom+"/"+dayfrom+"/"+yearto+"/"+monthto+"/"+dayto+"/"+id,
+          success:function(res){
+            $("#main").append('<tr><td>'+res.accountName+'</td><td>'+res.totalBalance+'</td><td colspan="2">'+res.totalCollection+'</td><td>'+res.creditLimit+'</td><td>'+res.residual+'</td></tr>')
+
+            if (res.balanceByBrand.length === 0) {
+              $("#balance").append('<tr><td colspan="2">No Balance For This Account</td></tr>')
+            }
+
+            else{
+              $.each(res.balanceByBrand,function(){
+              $("#balance").append('<tr><td>'+this.brandName+'</td><td>'+this.balance+'</td></tr>')
+            })
+            }
+
+          if (res.collectionByBrand.length === 0) {
+            $("#collection").append('<tr><td colspan="2">No Collection For This Account (Depends on choosen date)</td></tr>')
+          }
+          else{
+            $.each(res.collectionByBrand,function(){
+              $("#collection").append('<tr><td>'+this.brandName+'</td><td>'+this.actualCollection+'</td></tr>')
+            })
+          }
+           
+
+          }
+            
+          })
+
+
+
+          $("#print").click(function(){
+            $("#print").addClass('d-none');
+              $(".fc-button-group").addClass('d-none');
+              window.print();
+              var delay = 1;
+              setTimeout(function () { $("#print").removeClass('d-none'); $(".fc-button-group").removeClass('d-none')}, delay);
+          })
+
+
+      
+       
+      })
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>

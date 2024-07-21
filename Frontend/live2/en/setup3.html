@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Setup appointment types</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+        <link rel="stylesheet" href="../assets/examples/css/pages/errors.css">
+        <link rel="stylesheet" href="../global/fontawesome/css/all.min.css" />
+    
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script src="https://kit.fontawesome.com/15e8ed2b84.js" crossorigin="anonymous"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+    
+
+  </head>
+  <body class="animsition page-error page-error-404 layout-full page-login-v2">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+     <!-- Modal -->
+     <div class="modal fade modal-super-scaled" id="modal" aria-hidden="true"
+     aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+     <div class="modal-dialog modal-simple">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">×</span>
+           </button>
+           <h4 class="modal-title"></h4>
+         </div>
+         <div class="modal-body">
+           <h4>You must have 1 appointment type at least</h4>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- End Modal -->
+
+        <!-- Modal -->
+        <div class="modal fade modal-super-scaled" id="modaltwo" aria-hidden="true"
+        aria-labelledby="exampleModalTitle" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-simple">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <h4>One or more fields are empty, please fill all fields <br>if you don't need this empty field, delete it by clicking on <span style="color: #ff4c52;">delete</span> button</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger btn-pure" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
+ 
+    <div class="page vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">
+      <div class="page-content vertical-align-middle">
+
+   
+
+        <header>
+          
+          <ul class="pagination justify-content-center">
+           
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#">11</a></li>
+            <li class="page-item"><a class="page-link" href="#">12</a></li>
+
+          </ul>
+         <i class="fa-solid fa-calendar-check animation-slide-top fa-10x"></i>
+          <p class="animation-slide-top">Appointment Types</p>
+          
+          <p class="animation-slide-top">How could patients make an examination preappointment?</p>
+          <h4 class="animation-slide-top">Such as phone call, clinic attendance, etc..</h4>
+
+
+
+          <form id="appointment" autocomplete="off">
+          <div class="row">
+            <div class="col-9">
+          <div class="form-group form-material floating" data-plugin="formMaterial">
+            <input value="Clinic Attendance" type="text" class="form-control type"  required>
+            <label class="floating-label">Appointment Type</label>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group form-material floating" data-plugin="formMaterial">
+            <button type="button" class="btn btn-animate btn-animate-side btn-danger btn-round btn-outline btn-lg delete">
+              <span> Delete <i class="icon fas fa-trash" aria-hidden="true"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+    <div class="col-9">
+      <div class="form-group form-material floating" data-plugin="formMaterial">
+        <input value="Phone Call" type="text" class="form-control type"  required>
+        <label class="floating-label">Appointment Type</label>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-group form-material floating" data-plugin="formMaterial">
+        <button type="button"  class="btn btn-animate btn-animate-side btn-danger btn-round btn-outline btn-lg delete">
+          <span> Delete <i class="icon fas fa-trash" aria-hidden="true"></i></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+    <div class="text-center">
+    <div class="form-group form-material floating" data-plugin="formMaterial">
+      <button type="button" id="add" class="btn btn-animate btn-animate-side btn-success btn-round btn-outline btn-lg">
+        <span> Add More<i class="icon fas fa-plus" aria-hidden="true"></i></span>
+      </button>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+   <hr>
+   
+   <div align='center' id="load" class="d-none loader vertical-align-middle">
+    <div class="loader-grill"></div>
+  </div>
+        <button type="submit" id="submit" class="btn btn-animate btn-animate-side btn-primary btn-round btn-outline btn-lg">
+          <span> Next <i class="icon fas fa-angle-right" aria-hidden="true"></i></span>
+        </button>
+        </form>
+        </header>
+        
+
+        <footer class="page-copyright">
+          <p>Designed & Developed By Omar Khaled</p>
+        </footer>
+      </div>
+    </div>
+    
+
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    <script src="../global/vendor/waves/waves.js"></script>
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../global/js/config/colors.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script>Config.set('../assets', '../assets');</script>
+    
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+          $.ajax({
+            url: "http://ameksa-001-site3.gtempurl.com/Setup/CheckSetupStatus",
+            success: function (res) {
+
+            }
+          })
+
+          var list = [];
+
+          $("#submit").click(function(e){
+            e.preventDefault();
+            if ($(".type").val() == undefined) {
+              $("#modal").modal("toggle");
+            }
+            else{
+             
+           $.each($(".type"),function(){
+            if($(this).val() == ""){
+              $("#modaltwo").modal("toggle");
+              return;
+            }
+
+            $("#submit").addClass("d-none");
+          $("#load").removeClass("d-none");
+
+            var obj = {"AppointmentTypeName":$(this).val()}
+        
+            
+            list.push(obj);
+          })
+
+         
+
+        
+            $.ajax({
+              type: "POST",
+              contentType: "application/json",
+              url: "http://ameksa-001-site3.gtempurl.com/Setup/SetupAppointmentTypes",
+              data: JSON.stringify(list),
+              success:function(res){
+                if(res == true){
+                  localStorage.setItem("setupthree",true);
+                  window.open("../en/setup4.html","_self")
+                }
+                else{
+                  $("#submit").removeClass("d-none");
+                  $("#load").addClass("d-none");
+                }
+              }
+            })
+        
+
+
+          
+          }
+          })
+
+        
+
+
+
+          $("#appointment").on("click",".delete",function(){
+            $(this).parent().parent().parent().remove();
+          })
+
+          $("#add").click(function(){
+            $(this).parent().parent().parent().parent().before('<div class="row"> <div class="col-9"> <div class="form-group form-material floating" data-plugin="formMaterial"> <input type="text" class="form-control empty type"  required> <label class="floating-label">Appointment Type</label> </div> </div> <div class="col-3"> <div class="form-group form-material floating" data-plugin="formMaterial"> <button type="button"  class="btn btn-animate btn-animate-side btn-danger btn-round btn-outline btn-lg delete"> <span> Delete <i class="icon fas fa-trash" aria-hidden="true"></i></span> </button> </div> </div> </div>')
+          })
+
+
+          $("#appointment").on('change','.form-control',function(){
+            if ($(this).val() == "" || $(this).val() == null) {
+              $(this).addClass("empty");
+            }
+            else{
+              $(this).removeClass("empty");
+            }
+          })
+
+         
+        });
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>
+
+
+

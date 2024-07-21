@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+
+  <title>Settings</title>
+
+  <link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+  <link rel="shortcut icon" href="../assets/images/fav.ico">
+
+  <!-- Stylesheets -->
+   <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../assets/css/site.min.css">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+  <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <link rel="stylesheet" href="../global/fontawesome/css/all.min.css" />
+  <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Scripts -->
+  <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+  <script>
+    Breakpoints();
+  </script>
+</head>
+
+<body class="animsition">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+        data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
+        <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+      </button>
+      <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+        <!-- <img class="navbar-brand-logo" src="../../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Clinic System</div>
+        
+      </div>
+
+    </div>
+
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="nav-item hidden-float" id="toggleMenubar">
+            <a class="nav-link" data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                <span class="sr-only">Toggle menubar</span>
+                <span class="hamburger-bar"></span>
+              </i>
+            </a>
+          </li>
+          <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+            <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+              <span class="sr-only">Toggle fullscreen</span>
+            </a>
+          </li>
+
+        </ul>
+        <!-- End Navbar Toolbar -->
+
+        <!-- Navbar Toolbar Right -->
+        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+          <li class="nav-item dropdown">
+            <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+              data-animation="scale-up" role="button">
+              <p id="FullName"></p>
+            </a>
+            <div class="dropdown-menu" role="menu">
+
+              <a class="dropdown-item active" href="" id="sett" role="menuitem"><i class="icon wb-settings"
+                  aria-hidden="true"></i> Settings</a>
+              <div class="dropdown-divider" role="presentation"></div>
+              <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i>
+                Logout</a>
+            </div>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+
+
+    </div>
+  </nav>
+
+  <div class="site-menubar">
+        <div class="site-menubar-body">
+          <div>
+            <div>
+              <ul class="site-menu" data-plugin="menu">
+                <li class="site-menu-category">Menu</li>
+
+
+
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../Medical/Home.html">
+                    <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                    <span class="site-menu-title">Home</span>
+                  </a>
+                </li>
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="fas fa-hospital site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Accounts</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="../Medical/MyAccounts.html">
+                                    <span class="site-menu-title">My Accounts</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/MyAccountsVisits.html">                                    
+                                    <span class="site-menu-title">My Visits</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="fas fa-user-md site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Contacts</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="../Medical/MyContacts.html">
+                                    <span class="site-menu-title">My Contacts</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/MyContactsVisits.html">                                    
+                                    <span class="site-menu-title">My Visits</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../Medical/VisitsReporting.html">
+                    <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Visits Reporting</span>
+                  </a>
+                </li>
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Plans</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="../Medical/WeeklyPlan.html">
+                                    <span class="site-menu-title">Weekly Plan</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/MonthlyPlan.html">                                    
+                                    <span class="site-menu-title">Monthly plan</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+
+                <li class="dropdown site-menu-item has-sub">
+                  <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                    <i class="far fa-calendar-times site-menu-icon" aria-hidden="true"></i>
+                          <span class="site-menu-title">Time Off Territory</span>
+                          <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                      </a>
+                      <div class="dropdown-menu">
+                        <div class="site-menu-scroll-wrap is-list">
+                          <div>
+                            <div>
+                              <ul class="site-menu-sub site-menu-normal-list">
+                                <li class="site-menu-item">
+                                  <a class="animsition-link"  href="../Medical/MakeTimeOffTerritory.html">
+                                    <span class="site-menu-title">Create Time Off Territory</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/MyTimeOffTerritory.html">                                    
+                                    <span class="site-menu-title">My Time off Territories</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/TimeOffStatus.html">                                    
+                                    <span class="site-menu-title">Requests Status</span>
+                                  </a>
+                                </li>
+                                <li class="site-menu-item">
+                                  <a class="animsition-link" href="../Medical/Vacancies.html">                                    
+                                    <span class="site-menu-title">Vacancies</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../Medical/VisitsComments.html">
+                    <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                    <span class="site-menu-title">Visits Comments</span>
+                  </a>
+                </li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Page -->
+  <div class="page">
+    <div class="page-content container-fluid">
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">General Info</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+  
+            <form id="general">
+      
+                
+                  <div class="row">
+                    <div class="form-group col-6">
+                     <label class=" form-control-label">Full Name </label>
+                    <input  type="text" id="name"
+                        class="form-control" name="username" placeholder="Full Name" required="">
+                      </div>
+                      <div class="form-group col-6">
+                        <label class="form-control-label">Phone Number </label>
+                         <input  type="tel" id="phone"
+                            class="form-control" name="username" placeholder="Phone Number" required=""> 
+                          </div>
+                    </div>
+
+                <div class="form-group col-xl-12 text-center padding-top-m">
+                  <button type="submit" class="btn btn-primary" id="submitgeneral">Submit</button> </div>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Email</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+  
+            <form id="mail">
+      
+                
+                  <div class="row">
+                    <div class="form-group col-6">
+                     <label class=" form-control-label">Old Email </label>
+                    <input  type="email" id="oldmail"
+                        class="form-control" name="username" placeholder="Old Email" required="">
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="form-group col-6">
+                        <label class="form-control-label">New Email</label>
+                         <input  type="email" id="newmail"
+                            class="form-control" name="username" placeholder="New Email" required=""> 
+                          </div>
+                          <div class="form-group col-6">
+                            <label class="form-control-label">Confirm New Email</label>
+                             <input  type="email" id="confirmnewmail"
+                                class="form-control" name="username" placeholder="Confirm New Email" required=""> 
+                              </div>
+                        </div>
+
+                <div class="form-group col-xl-12 text-center padding-top-m">
+                  <button type="submit" class="btn btn-primary" id="submitmail">Submit</button> </div>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Password</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+  
+            <form id="password">
+      
+                
+                  <div class="row">
+                    <div class="form-group col-6">
+                     <label class=" form-control-label">Old Password </label>
+                    <input  type="password" id="oldpassword"
+                        class="form-control" name="username" placeholder="Old Password" required="">
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="form-group col-6">
+                        <label class="form-control-label">New Password</label>
+                         <input  type="password" id="newpassword"
+                            class="form-control" name="username" placeholder="New Password" required=""> 
+                          </div>
+                          <div class="form-group col-6">
+                            <label class="form-control-label">Confirm New Password</label>
+                             <input  type="password" id="confirmnewpassword"
+                                class="form-control" name="username" placeholder="Confirm New Password" required=""> 
+                              </div>
+                        </div>
+
+                <div class="form-group col-xl-12 text-center padding-top-m">
+                  <button type="submit" class="btn btn-primary" id="submitpassword">Submit</button> </div>
+            </form>
+  
+          </div>
+
+
+
+   
+
+        </div>
+      </div>
+
+
+      <div class="col-lg-12">
+        <!-- Panel -->
+        <div class="panel is-collapse">
+          <div class="panel-heading">
+            <h3 class="panel-title">Accounts Table Setting</h3>
+            <div class="panel-actions panel-actions-keep">
+              <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div class="panel-body">
+
+
+            <form id="accountstables">
+              <div class="row">
+          
+                <div class="form-group col-4">
+                  <label  class="form-control-label">Show/Hide Account #</label><select id="hideaccountnumber" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                </div>
+                <div class="form-group col-4">
+                  <label  class="form-control-label">Show/Hide Account Type</label><select id="hideaccounttype" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                </div>
+                <div class="form-group col-4">
+                  <label  class="form-control-label">Show/Hide Account District</label><select id="hideaccountdistrict" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select> 
+                </div>
+                <div class="form-group col-4">
+                  <label  class="form-control-label">Show/Hide Best Time For Visit</label><select id="hideaccountbesttime" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                </div>
+                <div class="form-group col-4">
+                  <label  class="form-control-label">Show/Hide Call column</label><select id="hideaccountcall" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                </div>
+                <div class="form-group col-4">
+                  <label  class="form-control-label">Show/Hide Email column</label><select id="hideaccountemail" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                </div>
+              </div>
+                <div class="form-group col-xl-12 text-center padding-top-m">
+                  <button type="submit" class="btn btn-primary" id="submitaccountstables">Submit</button>
+                </div>
+            </form>
+
+            </div>
+            </div>
+            </div>
+
+            <div class="col-lg-12">
+              <!-- Panel -->
+              <div class="panel is-collapse">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Contacts Table Setting</h3>
+                  <div class="panel-actions panel-actions-keep">
+                    <a class="panel-action icon wb-plus" data-toggle="panel-collapse" aria-hidden="true"></a>
+                  </div>
+                </div>
+                <div class="panel-body">
+      
+      
+                  <form id="contactstables">
+                    <div class="row">
+                
+                      <div class="form-group col-4">
+                        <label class="form-control-label">Show/Hide Contact #</label><select id="hidecontactnumber" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                      </div>
+                      <div class="form-group col-4">
+                        <label class="form-control-label">Show/Hide Account Affiliation</label><select id="hidecontactaff" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                      </div>
+                      <div class="form-group col-4">
+                        <label class="form-control-label">Show/Hide District</label><select id="hidecontactdistrict" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                      </div>
+                      <div class="form-group col-4">
+                        <label class="form-control-label">Show/Hide Best Time For Visit</label><select id="hidecontactbesttime" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                      </div>
+                      <div class="form-group col-4">
+                        <label class="form-control-label">Show/Hide Call column</label><select id="hidecontactcall" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                      </div>
+                      <div class="form-group col-4">
+                        <label class="form-control-label">Show/Hide Email column</label><select id="hidecontactemail" class="form-control"><option selected value="1" style="color: green;">Show</option><option value="0" style="color: red;">Hide</option></select>
+                      </div>
+                    </div>
+                      <div class="form-group col-xl-12 text-center padding-top-m">
+                        <button type="submit" class="btn btn-primary" id="submitcontactstables">Submit</button>
+                      </div>
+                  </form>
+      
+                  </div>
+                  </div>
+                  </div>
+
+
+
+    </div>
+  </div>
+
+     
+
+  <!-- End Page -->
+  
+  
+
+
+  <!-- Core  -->
+  <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+  <script src="../global/vendor/jquery/jquery.js"></script>
+  <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+  <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../global/vendor/animsition/animsition.js"></script>
+  <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+  <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+  <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+
+  <!-- Plugins -->
+  <script src="../global/vendor/switchery/switchery.js"></script>
+  <script src="../global/vendor/intro-js/intro.js"></script>
+  <script src="../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+
+  <!-- Scripts -->
+  <script src="../global/js/Component.js"></script>
+  <script src="../global/js/Plugin.js"></script>
+  <script src="../global/js/Base.js"></script>
+  <script src="../global/js/Config.js"></script>
+
+  <script src="../assets/js/Section/Menubar.js"></script>
+  <script src="../assets/js/Section/GridMenu.js"></script>
+  <script src="../assets/js/Section/Sidebar.js"></script>
+  <script src="../assets/js/Section/PageAside.js"></script>
+  <script src="../assets/js/Plugin/menu.js"></script>
+  <script src="../global/fontawesome/js/all.min.js"></script>
+  <script src="../global/js/config/colors.js"></script>
+  <script src="../assets/js/config/tour.js"></script>
+  <script>Config.set('assets', '../assets');</script>
+  <script src="../global/js/Plugin/panel.js"></script>
+  <!-- Page -->
+  <script src="../assets/js/Site.js"></script>
+  <script src="../global/js/Plugin/asscrollable.js"></script>
+  <script src="../global/js/Plugin/slidepanel.js"></script>
+  <script src="../global/js/Plugin/switchery.js"></script>
+
+  <script>
+    (function (document, window, $) {
+      'use strict';
+
+      var Site = window.Site;
+      $(document).ready(function () {
+        Site.run();
+
+        //start layout            
+        if (localStorage.getItem("userrole") !== "Medical Representative") {
+          window.open("../notauth.html", "_self")
+        }
+
+        $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+        $(".logout").click(function (e) {
+          e.preventDefault();
+          $.ajax({
+            url: "https://ameksaapii.xyz/users/LogOut",
+            success: function (res) {
+              if (res == true) {
+                window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                window.open("../index.html", "_self")
+              }
+              else {
+                window.open("../error.html", "_self")
+              }
+            }
+          })
+        })
+        //end layout
+
+    
+
+       $("#hideaccountnumber").val(localStorage.getItem('accountnumber')).change();
+       $("#hideaccounttype").val(localStorage.getItem('accounttype')).change();
+       $("#hideaccountdistrict").val(localStorage.getItem('accountdistrict')).change();
+       $("#hideaccountbesttime").val(localStorage.getItem('accountbesttime')).change();
+       $("#hideaccountcall").val(localStorage.getItem('accountcall')).change();
+       $("#hideaccountemail").val(localStorage.getItem('accountemail')).change();
+
+       $("#hidecontactnumber").val(localStorage.getItem('contactnumber')).change();
+       $("#hidecontactaff").val(localStorage.getItem('contactaff')).change();
+       $("#hidecontactdistrict").val(localStorage.getItem('contactdistrict')).change();
+       $("#hidecontactbesttime").val(localStorage.getItem('contactbesttime')).change();
+       $("#hidecontactcall").val(localStorage.getItem('contactcall')).change();
+       $("#hidecontactemail").val(localStorage.getItem('contactemail')).change();
+
+        $("#accountstables").submit(function(e){
+          e.preventDefault();
+          var hideaccountnumber = $("#hideaccountnumber").children('option:selected').val();
+          var hideaccounttype = $("#hideaccounttype").children('option:selected').val();
+          var hideaccountdistrict = $("#hideaccountdistrict").children('option:selected').val();
+          var hideaccountbesttime = $("#hideaccountbesttime").children('option:selected').val();
+          var hideaccountcall = $("#hideaccountcall").children('option:selected').val();
+          var hideaccountemail = $("#hideaccountemail").children('option:selected').val();
+
+          localStorage.setItem('accountnumber',hideaccountnumber);
+          localStorage.setItem('accounttype',hideaccounttype);
+          localStorage.setItem('accountdistrict',hideaccountdistrict);
+          localStorage.setItem('accountbesttime',hideaccountbesttime);
+          localStorage.setItem('accountcall',hideaccountcall);
+          localStorage.setItem('accountemail',hideaccountemail);
+          alert('Accounts Table Setting Updated successfully');
+
+        })
+
+
+
+
+
+        $("#contactstables").submit(function(e){
+          e.preventDefault();
+
+          var hidecontactnumber = $("#hidecontactnumber").children('option:selected').val();
+          var hidecontactaff = $("#hidecontactaff").children('option:selected').val();
+          var hidecontactdistrict = $("#hidecontactdistrict").children('option:selected').val();
+          var hidecontactbesttime = $("#hidecontactbesttime").children('option:selected').val();
+          var hidecontactcall = $("#hidecontactcall").children('option:selected').val();
+          var hidecontactemail = $("#hidecontactemail").children('option:selected').val();
+
+          localStorage.setItem('contactnumber',hidecontactnumber);
+          localStorage.setItem('contactaff',hidecontactaff);
+          localStorage.setItem('contactdistrict',hidecontactdistrict);
+          localStorage.setItem('contactbesttime',hidecontactbesttime);
+          localStorage.setItem('contactcall',hidecontactcall);
+          localStorage.setItem('contactemail',hidecontactemail);
+          alert('Contacts Table Setting Updated successfully');
+        })
+
+
+
+
+
+
+
+
+        var userId = localStorage.getItem("userid");
+        $.ajax({
+          url:"https://ameksaapii.xyz/Users/GetUserById/"+userId,
+          success:function(res){
+            $("#name").val(res.fullName);
+            $("#phone").val(res.phoneNumber)
+            $("#oldmail").val(res.email)
+          }
+        })
+
+
+        $("#general").submit(function(e){
+          e.preventDefault();
+          
+          var name = $("#name").val();
+          var phone = $("#phone").val();
+
+          if (name == "" || phone == "") {
+            if (name == "") {
+              $("#name").css("border-color","#dc3545");
+              $("#submitgeneral").parent().before('<div class="errmsg" style="color:red;">- Name is required</div>');
+            }
+            if (phone == "") {
+              $("#phone").css("border-color","#dc3545");
+              $("#submitgeneral").parent().before('<div class="errmsg" style="color:red;">- Phone Number is required</div>');
+            }
+            return;
+          }
+
+          var obj = {"Id":userId,"FullName":name,"PhoneNumber":phone}
+
+          $.ajax({
+            type:"Post",
+              contentType:"application/json",
+              url:"https://ameksaapii.xyz/Users/EditUserGeneralSetting",
+              data:JSON.stringify(obj),
+              success:function(res){
+                if (res == true) {
+                  alert("Your General Setting has been updated successfuly")
+                  localStorage.removeItem('userfullname');
+                  localStorage.setItem('userfullname',name);
+                  window.location.reload();
+                }
+              }
+          })
+        })
+
+        $("#mail").submit(function(e){
+          e.preventDefault();
+          var oldmail = $("#oldmail").val();
+          var newmail = $("#newmail").val();
+          var confirmnewmail = $("#confirmnewmail").val();
+
+          if (newmail != confirmnewmail) {
+            $("#newmail").css("border-color","#dc3545");
+            $("#confirmnemail").css("border-color","#dc3545");
+            $("#submitmail").parent().before('<div class="errmsg" style="color:red;">- New Email & Confirm New Email not match</div>');
+            return;
+          }
+
+          var obj = {"Id":userId,"OldEmail":oldmail,"NewEmail":newmail}
+
+          $.ajax({
+            type:"Post",
+              contentType:"application/json",
+              url:"https://ameksaapii.xyz/Users/EditEmailSetting",
+              data:JSON.stringify(obj),
+              success:function(res){
+                if (res == true) {
+                  alert("Your Email has been updated successfuly")
+                  $("#oldmail").val(newmail);
+                  $("#newmail").val('');
+                  $("#confirmnewmail").val('');
+                }
+                if (res == false) {
+                  $("#oldmail").css("border-color","#dc3545");
+                  $("#submitmail").parent().before('<div class="errmsg" style="color:red;">- Old Email is wrong</div>');
+                }
+              }
+          })
+        })
+
+
+
+
+        $("#password").submit(function(e){
+          e.preventDefault();
+          var oldpassword = $("#oldpassword").val();
+          var newpassword = $("#newpassword").val();
+          var confirmnewpassword = $("#confirmnewpassword").val();
+
+          if (newpassword != confirmnewpassword) {
+            $("#newpassword").css("border-color","#dc3545");
+            $("#confirmnewpassword").css("border-color","#dc3545");
+            $("#submitmail").parent().before('<div class="errmsg" style="color:red;">- Password & Confirm Password not match</div>');
+            return;
+          }
+
+          var obj = {"UserId":userId,"OldPassword":oldpassword,"NewPassword":newpassword}
+
+          $.ajax({
+            type:"Post",
+              contentType:"application/json",
+              url:"https://ameksaapii.xyz/Users/ResetPassword",
+              data:JSON.stringify(obj),
+              success:function(res){
+                if (res == true) {
+                  alert("Your Password has been updated successfuly")
+                  $("#oldpassword").val(newpassword);
+                  $("#newpassword").val('');
+                  $("#confirmnewpassword").val('');
+                }
+                if (res == false) {
+                  $("#oldpassword").css("border-color","#dc3545");
+                  $("#submitpassword").parent().before('<div class="errmsg" style="color:red;">- Old passowrd is wrong</div>');
+                }
+              }
+          })
+        })
+
+      });
+    })(document, window, jQuery);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>My Team (Medical)</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../global/fontawesome/css/all.min.css"/>
+    <link rel="stylesheet" href="../global/Calendar/main.css">
+    <link rel="stylesheet" href="../global/vendor/jquery-selective/jquery-selective.css">
+
+ 
+
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+    
+
+  <style>
+    :root {
+      --fc-today-bg-color: #ffffff;
+  
+}
+  </style>
+  </head>
+  <body class="animsition">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <!-- <img class="navbar-brand-logo" src="../../assets/images/logo.jpg" title="AME"> -->
+          <div class="navbar-brand-logo">Clinic System</div>
+          
+        </div>
+    
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+                  <p id="FullName"></p>
+              </a>
+              <div class="dropdown-menu" role="menu">
+        
+                <a class="dropdown-item" id="sett" href="../FirstLineManager/Setting.html" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Settings</a>
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+
+      </div>
+    </nav>  
+    
+    <div class="site-menubar">
+      <div class="site-menubar-body">
+        <div>
+          <div>
+            <ul class="site-menu" data-plugin="menu">
+              <li class="site-menu-category">Menu</li>
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../FirstLineManager/Home.html">
+                  <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                  <span class="site-menu-title">Home</span>
+                </a>
+              </li>
+
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Reports</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../FirstLineManager/Visits.html">
+                                  <span class="site-menu-title">Visits Reports</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/CoverageReport.html">                                    
+                                  <span class="site-menu-title">Coverage Reports</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/CollectionReport.html">
+                                  <span class="site-menu-title">Collection Reports</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/BalanceReport.html">
+                                  <span class="site-menu-title">Balance Reports</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/Kpis.html">
+                                  <span class="site-menu-title">KPIs Reports</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="far fa-registered site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Requests</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../FirstLineManager/vacancyrequest.html">
+                                  <span class="site-menu-title">Vacancies Requests</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/TimeOffRequests.html">                                    
+                                  <span class="site-menu-title">Time Off Territory Requests</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/CategoryRequests.html">                                    
+                                  <span class="site-menu-title">Category Change Requests</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+              <li class="dropdown site-menu-item has-sub active">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-users site-menu-icon" aria-hidden="true"></i>
+               
+                        <span class="site-menu-title">My Team</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../FirstLineManager/MedicalRep.html">
+                                  <span class="site-menu-title">Medical Representatives</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/SalesRep.html">                                    
+                                  <span class="site-menu-title">Sales Representatives</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/MonthlyPlan.html">
+                                  <span class="site-menu-title">Monthly Plans</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item active">
+                                <a class="animsition-link" href="../FirstLineManager/TimeOffTerritory.html">
+                                  <span class="site-menu-title">Time Off Territory</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/AttendReport.html">
+                                  <span class="site-menu-title">Working Days</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../FirstLineManager/TerritoryList.html">
+                                  <span class="site-menu-title">Territory List</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../FirstLineManager/MakeTimeOffTerritory.html">
+          
+                   <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">Create Time Off Territory</span>
+                </a>
+              </li>
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../FirstLineManager/TimeOffStatus.html">
+                   <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">My Time Off Requests</span>
+                </a>
+              </li>
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../FirstLineManager/VisitsComments.html">
+                  <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">Vists Comments</span>
+                </a>
+              </li>
+                </ul>
+              </li>
+             
+            </div>  
+          
+          </div>
+        </div>
+      </div> 
+
+
+  
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="mod">
+      
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+
+    <!-- Page -->
+    <div class="page">
+      <div class="page-content">
+    
+        <div class="panel">
+          <div class="panel-body">
+            <button type="button" id="clic" class="btn btn-primary d-none" data-toggle="modal" data-target="#exampleModal">
+       
+            </button>
+    
+            <div class="calendar-container">
+    
+              <div id="calendar"></div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ 
+    <!-- End Page -->
+
+
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+  
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../global/js/config/colors.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    <script src="../global/vendor/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../global/vendor/chartist/chartist.min.js"></script>
+    <script src="../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+    <script src="../global/Calendar/main.js"></script>
+           
+  
+    
+
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "First Line Manager") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+
+
+          $(".logout").click(function (e) {
+            e.preventDefault();
+            $.ajax({
+              url: "https://ameksaapii.xyz/users/LogOut",
+              success: function (res) {
+                if (res == true) {
+                  window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                  window.open("../index.html", "_self")
+                }
+                else {
+                  window.open("../error.html", "_self")
+                }
+              }
+            })
+          })
+             //end layout
+
+             var calendarEl = document.getElementById('calendar');
+           var ev = [];
+
+           $.ajax({
+             url:"https://ameksaapii.xyz/TimeOff/GetMyTeamTimeOff/"+localStorage.getItem('userid'),
+             success:function(res){
+              $.each(res,function(){
+               
+                if(this.dateFrom.substring(11) == '00:00:00' && this.dateTo.substring(11) == "23:59:59")
+                {
+                  this.dateFrom = this.dateFrom.substring(0,10);
+                  this.dateTo = this.dateTo.substring(0,10);
+                  var obj = {id:this.reason+":"+this.description,title:this.fullName,start:this.dateFrom,end:this.dateTo};
+                }
+
+
+                else{
+                if (this.status == true) {
+                  var obj = {id:this.reason+":"+this.description,title:this.fullName,start:this.dateFrom,end:this.dateTo,display:'block',backgroundColor:"#5eb9ff",borderColor:"#5eb9ff"};
+                }
+                else{
+                  if (this.status == false) {
+                  var obj = {id:this.reason+":"+this.description,title:this.fullName,start:this.dateFrom,end:this.dateTo};
+                }
+                }
+              }
+                
+                ev.push(obj);
+              })
+             }
+           }).then(
+            function(){
+              var calendar = new FullCalendar.Calendar(calendarEl,
+            {
+              initialView: 'dayGridMonth',
+              selectable: true,
+              headerToolbar: {
+                start: 'title', // will normally be on the left. if RTL, will be on the right
+                center: '',
+                end: 'prev,next dayGridMonth today' // will normally be on the right. if RTL, will be on the left
+              },
+              firstDay:6,
+              dayHeaderFormat:{weekday: 'short'},
+              fixedWeekCount:false,
+              nowIndicator:true,
+              eventClick:function(cl){
+                $("#exampleModalLabel").text('');
+                $("#mod").text('');
+                var reason = cl.event.id.split(':');
+                $("#mod").append("<strong>Reason: </strong>"+reason[0]+"<br/><br/><strong>Description: </strong>"+reason[1]);
+                $("#exampleModalLabel").append(cl.event.title);
+                $("#clic").click();
+
+               // alert(cl.event.id)
+              },
+              businessHours:{
+                daysOfWeek:[0,1,2,3,4,6,7],
+                startTime: '08:30',
+                endTime: '22:00'
+              },
+              height:'auto'
+              
+            });
+
+          
+
+            calendar.render();
+            calendar.on('dateClick', function (e) {
+            calendar.changeView('timeGridDay', e.dateStr);
+          })
+
+      
+
+
+          calendar.addEventSource(ev)
+            }
+           )
+           
+           
+           
+
+         
+          
+
+
+         
+
+        
+
+       
+      })
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>

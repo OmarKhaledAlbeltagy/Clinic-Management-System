@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    
+    <title>Making A Visit To Contact</title>
+    
+    <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="../assets/images/fav.ico">
+    
+    <!-- Stylesheets -->
+     <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="../assets/css/site.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="../global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="../global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="../global/vendor/switchery/switchery.css">
+    <link rel="stylesheet" href="../global/vendor/intro-js/introjs.css">
+    <link rel="stylesheet" href="../global/vendor/slidepanel/slidePanel.css">
+    <link rel="stylesheet" href="../global/vendor/flag-icon-css/flag-icon.css">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="../global/fonts/brand-icons/brand-icons.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+    <link rel="stylesheet" href="../global/fontawesome/css/all.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lt IE 10]>
+    <script src="../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Scripts -->
+    <script src="../global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+      Breakpoints();
+    </script>
+    
+
+    
+
+  </head>
+  <body class="animsition">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega" role="navigation">
+    
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+          data-toggle="menubar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse"
+          data-toggle="collapse">
+          <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center site-gridmenu-toggle" data-toggle="gridmenu">
+          <img class="navbar-brand-logo" src="../assets/images/amelogo.png" title="AME">
+          
+        </div>
+    
+      </div>
+    
+      <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+          <!-- Navbar Toolbar -->
+          <ul class="nav navbar-toolbar">
+            <li class="nav-item hidden-float" id="toggleMenubar">
+              <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+              </a>
+            </li>
+            <li class="nav-item hidden-sm-down" id="toggleFullscreen">
+              <a class="nav-link icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+                <span class="sr-only">Toggle fullscreen</span>
+              </a>
+            </li>
+      
+          </ul>
+          <!-- End Navbar Toolbar -->
+    
+          <!-- Navbar Toolbar Right -->
+          <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right" style="padding-right: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false" data-animation="scale-up" role="button">
+                  <p id="FullName"></p>
+              </a>
+              <div class="dropdown-menu" role="menu">
+        
+                <a class="dropdown-item" id="sett" href="../Medical/Setting.html" role="menuitem"><i class="icon wb-settings" aria-hidden="true"></i> Settings</a>
+                <div class="dropdown-divider" role="presentation"></div>
+                <a class="dropdown-item logout" href="" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+              </div>
+            </li>
+          </ul>
+          <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    
+
+      </div>
+    </nav>  
+    
+    <div class="site-menubar">
+      <div class="site-menubar-body">
+        <div>
+          <div>
+            <ul class="site-menu" data-plugin="menu">
+              <li class="site-menu-category">Menu</li>
+
+
+
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../Medical/Home.html">
+                  <i class="site-menu-icon wb-layout" aria-hidden="true"></i>
+                  <span class="site-menu-title">Home</span>
+                </a>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-hospital site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Accounts</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/MyAccounts.html">
+                                  <span class="site-menu-title">My Accounts</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyAccountsVisits.html">                                    
+                                  <span class="site-menu-title">My Visits</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+
+
+              <li class="dropdown site-menu-item has-sub active">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-user-md site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Contacts</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item active">
+                                <a class="animsition-link"  href="../Medical/MyContacts.html">
+                                  <span class="site-menu-title">My Contacts</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyContactsVisits.html">                                    
+                                  <span class="site-menu-title">My Visits</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+              
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../Medical/VisitsReporting.html">
+                  <i class="fas fa-file site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">Visits Reporting</span>
+                </a>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="fas fa-calendar-day site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Plans</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/WeeklyPlan.html">
+                                  <span class="site-menu-title">Weekly Plan</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MonthlyPlan.html">                                    
+                                  <span class="site-menu-title">Monthly plan</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </li>
+
+              <li class="dropdown site-menu-item has-sub">
+                <a data-toggle="dropdown" data-dropdown-toggle="false" href="javascript:void(0)">
+                  <i class="far fa-calendar-times site-menu-icon" aria-hidden="true"></i>
+                        <span class="site-menu-title">Time Off Territory</span>
+                        <i class="icon wb-chevron-down-mini" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <div class="site-menu-scroll-wrap is-list">
+                        <div>
+                          <div>
+                            <ul class="site-menu-sub site-menu-normal-list">
+                              <li class="site-menu-item">
+                                <a class="animsition-link"  href="../Medical/MakeTimeOffTerritory.html">
+                                  <span class="site-menu-title">Create Time Off Territory</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/MyTimeOffTerritory.html">                                    
+                                  <span class="site-menu-title">My Time off Territories</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/TimeOffStatus.html">                                    
+                                  <span class="site-menu-title">Requests Status</span>
+                                </a>
+                              </li>
+                              <li class="site-menu-item">
+                                <a class="animsition-link" href="../Medical/Vacancies.html">                                    
+                                  <span class="site-menu-title">Vacancies</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+              <li class="site-menu-item">
+                <a class="animsition-link" href="../Medical/VisitsComments.html">
+                  <i class="fas fa-comments site-menu-icon" aria-hidden="true"></i>
+                  <span class="site-menu-title">Visits Comments</span>
+                </a>
+              </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <!-- Page -->
+    <div class="page" id="page">
+      <div class="page-content">
+        <div class="page-profile">
+          <h2 class="panel-title" id="contactname">Visit To </h2>
+          <div id="errors" class="panel-title">
+            
+          </div>
+        </div>
+
+        <div class="panel d-none" id="loadingpanel">
+          <div class="panel-body">
+
+            <div id="loading" class="col-12">
+              <div>
+                <div class=" h-150 vertical-align text-center">
+                  <div class="loader vertical-align-middle loader-tadpole"></div>
+                </div>
+              </div>
+            </div>
+   
+          </div>
+        </div>
+
+
+        
+        <div class="panel" id="timepanel">
+          <div class="panel-body">
+            <form autocomplete="off" id="timeform">
+              <h3>Visit Date & Time</h3>
+              <div class="row">
+                <div class="form-group col-6">
+                  <label class="form-control-label" for="visitdate">Visit Date <span style="color: red;">*</span></label>
+                  <input required type="date"  class="form-control" id="visitdate" name="inputFirstName" placeholder="Visit Date" autocomplete="off" />
+       
+                </div>
+                <div class="form-group col-6"> <label class="form-control-label" for="visittime">Visit Time <span
+                      style="color: red;">*</span></label>
+                      <input required type="time" class="form-control" id="visittime"
+                      name="inputFirstName" placeholder="Visit Time" autocomplete="off" />
+                    </div>
+                  </div>
+            </form>   
+          </div>
+        </div>
+
+        
+        <div class="panel" id="brandspanel">
+          <div class="panel-body">
+       
+              <h3 id="b">Products</h3>
+
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Product</th><th>Product Share</th><th>Number Of Samples</th>
+                    </tr>
+                  </thead>
+                  <tbody id="brands">
+        
+                  </tbody>
+                </table>
+              </div>
+          </div>
+         </div>
+
+         
+         <div class="panel" id="SalesAidPanel">
+          <div class="panel-body">
+            <form autocomplete="off" id="aidform">
+              <h3>Sales Aids</h3>
+           
+              <div class="form-group" id="addaiddiv">
+                <button id="addaid" type="button" class="btn btn-primary">Add Sales Aid <i class="fas fa-plus"></i></button> </div>
+            </form>
+          </div>
+          </div>
+
+
+          
+        <div class="panel" id="notespanel">
+          <div class="panel-body">
+            <form autocomplete="off" id="notesform">
+              <h3>Notes</h3>
+              <div class="row">
+              <div class="form-group col-6" > 
+                <label class="form-control-label" for="visitnotes">Visit Notes</label>
+                <textarea id="visitnotes" cols="30" rows="5" class="form-control"></textarea>    
+                  </div>
+                  <div class="form-group col-6"> 
+                    <label class="form-control-label" for="paymentnotes">Requests</label>
+                    <textarea id="paymentnotes" cols="30" rows="5" class="form-control"></textarea>    
+                    </div>
+                  </div>
+            </form>
+          </div>
+         </div>
+         
+         <div align="center" id="submitdiv">
+           <input type="button" id="submit" class="btn btn-primary" value="Submit Visit">
+         </div>
+      </div>
+    </div>
+    <!-- End Page -->
+
+
+  
+    <!-- Core  -->
+    <script src="../global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="../global/vendor/jquery/jquery.js"></script>
+    <script src="../global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="../global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="../global/vendor/animsition/animsition.js"></script>
+    <script src="../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+    <script src="../global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="../global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    
+    <!-- Plugins -->
+    <script src="../global/vendor/switchery/switchery.js"></script>
+    <script src="../global/vendor/intro-js/intro.js"></script>
+    <script src="../global/vendor/screenfull/screenfull.js"></script>
+    <script src="../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="../global/fontawesome/js/all.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="../global/js/Component.js"></script>
+    <script src="../global/js/Plugin.js"></script>
+    <script src="../global/js/Base.js"></script>
+    <script src="../global/js/Config.js"></script>
+    
+    <script src="../assets/js/Section/Menubar.js"></script>
+    <script src="../assets/js/Section/GridMenu.js"></script>
+    <script src="../assets/js/Section/Sidebar.js"></script>
+    <script src="../assets/js/Section/PageAside.js"></script>
+    <script src="../assets/js/Plugin/menu.js"></script>
+    
+    <script src="../global/js/config/colors.js"></script>
+    <script src="../assets/js/config/tour.js"></script>
+    <script>Config.set('assets', '../assets');</script>
+    
+    <!-- Page -->
+    <script src="../assets/js/Site.js"></script>
+    <script src="../global/js/Plugin/asscrollable.js"></script>
+    <script src="../global/js/Plugin/slidepanel.js"></script>
+    <script src="../global/js/Plugin/switchery.js"></script>
+    
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+
+          //start layout            
+          if (localStorage.getItem("userrole") !== "Medical Representative") {
+            window.open("../notauth.html", "_self")
+          }
+
+          $("#FullName").append(localStorage.getItem("userfullname") + ' <span><i class="icon wb-chevron-down-mini" aria-hidden="true"></i></span>');
+
+
+
+          $(".logout").click(function (e) {
+            e.preventDefault();
+            $.ajax({
+              url: "https://ameksaapii.xyz/users/LogOut",
+              success: function (res) {
+                if (res == true) {
+                  window.localStorage.removeItem("userfullname");
+                      window.localStorage.removeItem("useremail");
+                      window.localStorage.removeItem("userid");
+                      window.localStorage.removeItem("userrole");
+                  window.open("../index.html", "_self")
+                }
+                else {
+                  window.open("../error.html", "_self")
+                }
+              }
+            })
+          })
+             //end layout
+
+            var limit;
+            var today;
+            var xxx;
+            var asd;
+             $.ajax({
+            url:"https://ameksaapii.xyz/Category/GetTimeNow/",
+            success:function(res){
+              asd = new Date(res);
+              today = new Date(res);
+              xxx =  res;
+              var dd = today.getDate();
+              var mm = today.getMonth() + 1;
+              var yyyy = today.getFullYear();
+
+              
+              
+              if (dd < 10) {
+                dd = '0' + dd
+              }
+              if (mm < 10) {
+                mm = '0' + mm
+              }
+
+             today = yyyy + '-' + mm + '-' + dd;
+              document.getElementById("visitdate").setAttribute("max", today);
+            }
+          })
+
+
+          $.ajax({
+            url:"https://ameksaapii.xyz/Rep/GetVisitsDateLimit/",
+            success:function(res){
+              limit = new Date(res);
+              var dd = limit.getDate();
+              var mm = limit.getMonth() + 1;
+              var yyyy = limit.getFullYear();
+
+              
+              
+              if (dd < 10) {
+                dd = '0' + dd
+              }
+              if (mm < 10) {
+                mm = '0' + mm
+              }
+
+              limit = yyyy + '-' + mm + '-' + dd;
+              document.getElementById("visitdate").setAttribute("min", limit);
+            }
+          })
+
+           var contactId = window.location.search.substring(1);
+          
+          $.ajax({
+            url:"https://ameksaapii.xyz/Contact/GetContactById/"+contactId,
+            success:function(res){
+              $("#contactname").append(res.contactName);
+            }
+          })
+
+          $.ajax({
+              url:"https://ameksaapii.xyz/AccountMedicalVisit/GetMyProducts/"+localStorage.getItem("userid"),
+              success:function(res){
+                $.each(res,function(){
+                  $("#brands").append('<tr><td><div class="form-group"><input type="checkbox" id="'+this.id+'" value="'+this.id+'" class="brandcheck"> <label for="'+this.id+'" class="form-control-label">'+this.productName+'</label><br> </div> </td> <td> <div class="form-group"> <select class="form-control PS"> <option value="0" selected>Product Share</option> <option value="0">0</option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option> <option value="10">10</option> </select> </div> </td>  <td> <div class="form-group"> <input type="number" class="form-control nos" value="0"> </div> </td></tr>');
+                })
+              }
+            })
+         
+
+          $("#addaid").click(function (e) {
+
+          $(this).parent().before('<div class="row"> <div class="form-group col-5"> <label class="form-control-label" >Sales Aid<span style="color: red;">*</span></label> <select class="form-control SA" id="sales"> <option value="0">Choose Sales Aid</option> </select> </div> <div class="form-group col-5 d-none"> <label class="form-control-label" >Sales Aid<span style="color: red;">*</span></label> <input required type="text" class="form-control OSA" name="inputFirstName" placeholder="New Sales Aid" autocomplete="off" /> </div> <div class="col-2" style="padding-top:40px;"><button type="button" class="btn btn-danger deleteperson">Remove</button></div> </div>');
+
+          $.ajax({
+            url:"https://ameksaapii.xyz/SalesAid/GetShowSalesAids",
+            success:function(res){
+              $.each(res,function(){
+                $("#sales").append('<option value="'+this.id+'">'+this.salesAidName+'</option>')
+              })
+            }
+          }).then(function(){
+            $("#sales").append('<option value="o">Other</option>')
+            $("#sales").removeAttr('id');
+          })
+        })
+
+
+        $("#aidform").on('change','.SA',function(){
+          if ($(this).children('option:selected').val() == "o") {
+            $(this).parent().next().removeClass('d-none')
+          }
+
+          if ($(this).children('option:selected').val() != "o") {
+            $(this).parent().next().addClass('d-none')
+          }
+        })
+
+        $("#aidform").on('click','.deleteperson',function(){
+          $(this).parent().parent().remove();
+        })
+
+          var visitdate;
+          var visittime;
+          var aids = [];
+          var products = [];
+          var newaids = [];
+          var visitnotes;
+          var paymentnotes;
+
+        
+        $("#submit").click(function(){
+          $("#timepanel").addClass('d-none');
+          $("#brandspanel").addClass('d-none');
+          $("#SalesAidPanel").addClass('d-none');
+          $("#notespanel").addClass('d-none');
+          $("#submitdiv").addClass('d-none');
+          $("#loadingpanel").removeClass('d-none');
+
+
+          $(".errmsg").remove();
+          $("#visitdate").removeAttr('style');
+          $("#visittime").removeAttr('style');
+          $("#b").removeAttr('style');
+          $('.ps').removeAttr('style');
+          $("#visitdate").removeAttr('style');
+          $("#visittime").removeAttr('style');
+          $("#nos").removeAttr('style');
+          $("#OSA").removeAttr('style');
+          $("#SA").removeAttr('style');
+        
+          if ($("#visitdate").val() == "" || $("#visitdate").val() == null || $("#visittime").val() == "" || $("#visittime").val() == null || $(".brandcheck:checked").val() == null || $("#visitdate").val() < limit || $("#visitdate").val() > today || $(".SA").children('option:selected').val() == 0) {
+            
+            $('html').animate({ scrollTop: 0 }, 'slow');
+
+            if ($("#visitdate").val() == "" || $("#visitdate").val() == null) {
+              $("#visitdate").css("border-color","#dc3545");
+              $("#errors").append('<div class="errmsg" style="color:red;">- Visit Date is required</div>');
+            }
+
+            if ($("#visittime").val() == "" || $("#visittime").val() == null) {
+              $("#visittime").css("border-color","#dc3545");
+              $("#errors").append('<div class="errmsg" style="color:red;">- Visit Time is required</div>');
+            }
+
+            if ($(".brandcheck:checked").val() == null) {
+              $("#b").css("color","#dc3545");
+              $("#errors").append('<div class="errmsg" style="color:red;">- You Must check 1 Product at least</div>');
+            }
+
+
+            
+          $.each($(".brandcheck:checked"),function(){
+            var ps = $(this).parent().parent().next().children().children('select');
+            var numberofsamples = $(this).parent().parent().next().next().children().children('input');
+            if (ps.children('option:selected').val() == 11 || ps.children('option:selected').val() == "11") {
+                $(".PSE").remove();
+                ps.css("border-color","#dc3545");
+                $("#errors").append('<div class="errmsg PSE" style="color:red;">- Product Share is required for checked product</div>');
+            }
+          
+            if (parseInt( numberofsamples.val() )> 3) {
+              $(".nose").remove();
+              numberofsamples.css("border-color","#dc3545");
+              $("#errors").append('<div class="errmsg nose" style="color:red;">-Number of samples must be 3 maximum for each product</div>');
+
+            }
+
+          })
+       
+      
+
+
+          $.each($(".SA"),function(){
+            if ($(this).children('option:selected').val() == 0 || $(this).children('option:selected').val() == null) {
+              $(this).css("border-color","#dc3545");
+              $("#errors").append('<div class="errmsg sae" style="color:red;">-Sales Aid is Required, if there are no sales aids for this visit remove it </div>')
+            }
+            var newsalesaid = $(this).parent().next().children('input');
+            if ($(this).children('option:selected').val() == "o" && newsalesaid.val() == "") {
+              newsalesaid.css("border-color","#dc3545");
+              $("#errors").append('<div class="errmsg nsae" style="color:red;">- New Sales Aid Name is Required, if there are no sales aids for this visit remove it </div>')
+            }
+          })
+
+          if ($("#visitdate").val() < limit || $("#visitdate").val() > today) {
+              $("#visitdate").css("border-color","#dc3545")
+              $("#errors").append('<div class="errmsg PPE" style="color:red;">- Visit date must be in the allowed range between<br>'+limit+' and '+today+'</div>');
+            }
+
+          $("#timepanel").removeClass('d-none');
+          $("#brandspanel").removeClass('d-none');
+          $("#SalesAidPanel").removeClass('d-none');
+          $("#notespanel").removeClass('d-none');
+          $("#submitdiv").removeClass('d-none');
+          $("#loadingpanel").addClass('d-none');
+      
+
+            return;
+
+          }
+
+
+
+
+
+          
+          var hhhh = $("#visittime").val().substring(0,2);
+          var mmmm = $("#visittime").val().substring(3,5);
+    
+          var visittimee = new Date($("#visitdate").val().substr(0,4), parseInt( $("#visitdate").val().substr(5,2) ) - 1,$("#visitdate").val().substr(8,2),hhhh,mmmm);
+
+          if ($("#visitdate").val() == xxx.substring(0,10)) {
+     
+            if (visittimee > asd) {
+              $("#visittime").css("border-color","#dc3545");
+              $("#errors").append('<div class="errmsg" style="color:red;">- You can not set visit time in the future</div>');
+              $('html').animate({ scrollTop: 0 }, 'slow');
+              $("#timepanel").removeClass('d-none');
+          $("#brandspanel").removeClass('d-none');
+          $("#SalesAidPanel").removeClass('d-none');
+          $("#notespanel").removeClass('d-none');
+          $("#submitdiv").removeClass('d-none');
+          $("#loadingpanel").addClass('d-none');
+              return;
+            }
+
+          }
+
+
+
+
+          visitdate = $("#visitdate").val();
+
+          visittime = $("#visittime").val();
+
+          $.each($(".brandcheck:checked"),function(){
+
+          var productId = $(this).val();
+          var productshare = $(this).parent().parent().next().children().children('select').children('option:selected').val();
+          var numberofsamples = $(this).parent().parent().next().next().children().children('input').val();
+          var obj = {"ProductId":productId,"ProductShare":productshare,"NumberOfSamples":numberofsamples}
+
+          products.push(obj); 
+          })
+
+
+          $.each($(".SA"),function(){
+          
+              if ($(this).children('option:selected').val() == "o") {
+                var newaidname = $(this).parent().next().children('input').val();
+                var newaidobj = {"SalesAidName":newaidname}
+                newaids.push(newaidobj);
+              }
+              else{
+                var salesaidid = $(this).children('option:selected').val();
+                var aidobj = {"SalesAidId":salesaidid}
+                aids.push(aidobj)
+              }
+          
+          })
+
+          visitnotes = $("#visitnotes").val();
+
+          paymentnotes = $("#paymentnotes").val();
+
+          if (visitnotes == "") {
+            visitnotes = null
+          }
+
+          if (paymentnotes == "") {
+            paymentnotes = null;
+          }
+
+          var object = {"extendidentityuserid":localStorage.getItem('userid'),"ContactId":contactId,"VisitDate":visitdate,"VisitTime":visittime,"VisitNotes":visitnotes,"Requests":paymentnotes,"products":products,"aids":aids,"newaids":newaids}
+
+
+          $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "https://ameksaapii.xyz/ContactMedicalVisit/MakeVisit",
+            data: JSON.stringify(object),
+            success:function(res){
+              if (res == true) {
+                alert("Visit has been saved successfuly")
+                window.open("../Medical/Home.html","_self");
+              }
+            }
+          })
+
+        
+
+
+        })
+
+      })
+
+
+      })(document, window, jQuery);
+    </script>
+  </body>
+</html>
